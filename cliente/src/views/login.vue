@@ -47,7 +47,7 @@
 
                 <div class="control">
                   
-                  <ion-input type="password" placeholder="Contraseña" id="contra" v-model="contra" @blur="validarcontra" class="input is-success">
+                  <ion-input type="password" placeholder="Contraseña" id="contra" v-model="contra" @blur="validarcontra" class="input is-success"></ion-input>
                   <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
                  <span v-if="altocontra" color="red"> Formato incorrecto </span>
 
@@ -268,4 +268,6 @@ export default  {
   name: 'Tab2',
   components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
 }
+
+
 </script>
