@@ -103,6 +103,13 @@
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
 
+export default  {
+  name: 'login',
+  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
+  methods: {
+  }
+}
+/*
 
   ({
 
@@ -208,7 +215,7 @@ this.altocontra = false;
 
     },
 
-   /* dni(nuevoDni)  {
+    dni(nuevoDni)  {
       //console.log(nuevoDni);
 
       const usuario = {
@@ -222,8 +229,8 @@ this.altocontra = false;
       localStorage.setItem("usuario", JSON.stringify (usuario));
 
     },
-*/
-/*
+
+
       email2(nuevoEmail)  {
       //console.log(nuevoEmail);
 
@@ -239,8 +246,8 @@ this.altocontra = false;
 
     },
 
-*/
-/*
+
+
       matricula(nuevaMatricula)  {
       //console.log(nuevaMatricula);
 
@@ -255,16 +262,10 @@ this.altocontra = false;
       localStorage.setItem("usuario", JSON.stringify (usuario));
 
     },
-*/
+
   }
 
     });
-
-
-export default  {
-
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
-}
-
+*/
 
 </script>
