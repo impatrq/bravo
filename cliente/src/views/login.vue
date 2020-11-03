@@ -11,9 +11,15 @@
           <ion-title size="large">Login</ion-title>
         </ion-toolbar>
       </ion-header>
-      
-		<div id="app" class="hero is-fullheight">
-
+      <ion-list>
+        <ion-list-header>
+        Iniciar sessión
+        </ion-list-header>
+        <ion-item>
+          <ion-label position="floating">Correo Electronico</ion-label>
+          <ion-input type="text" id="email" v-model="email" @blur="validaremail"></ion-input>
+        </ion-item>
+      </ion-list>
     <div class="hero-body">
 
       <div class="container">
