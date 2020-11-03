@@ -25,7 +25,6 @@
             <h1 class="title">Iniciar Sesión</h1>
             <form>
               
-            <!-- Entrada del usuario -->
 
             <div id="app">
               <div class="field">   
@@ -41,7 +40,6 @@
 
               </div>
 
-            <!-- Entrada de la contraseña -->
 
               <div class="field">
 
@@ -59,7 +57,6 @@
 
               <p class="help is-danger"></p>
             </div>
-            <!--Boton de confirmación-->
 
               <div class="field">
 
@@ -71,7 +68,6 @@
 
               </div>
 
-            <!--Recuperación de cuenta-->
 
               <div class="field">
 
