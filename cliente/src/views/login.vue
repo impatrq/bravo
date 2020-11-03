@@ -65,7 +65,7 @@
 
                 <div class="control">
 
-                  <ion-button expand="block" class="button is-outlined is-link is-fullwidth" @click="">INICIAR SESIÓN</ion-button>
+                  <ion-button expand="block" >INICIAR SESIÓN</ion-button>
 
                 </div>
 
@@ -98,16 +98,16 @@
 
 
       
-      <ExploreContainer name="Tab 2 page" />
+     
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/vue';
 
-const app = new Vue({
+
+  ({
 
 el: '#app',
 data: {
@@ -265,8 +265,8 @@ this.altocontra = false;
 
 
 export default  {
-  name: 'Tab2',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
 }
 
 
