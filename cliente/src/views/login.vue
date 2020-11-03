@@ -20,98 +20,61 @@
           <ion-input type="text" id="email" v-model="email" @blur="validaremail"></ion-input>
         </ion-item>
       </ion-list>
-    <div class="hero-body">
-
-      <div class="container">
-
-        <div class="columns"> 
-
-          <div class="column is-full is-4-desktop is-offset-4-desktop">
-            
-            <h1 class="title">Iniciar Sesión</h1>
-            <form>
-              
-
-            <div id="app">
-              <div class="field">   
-
-                <div class="control is-hero-fullscreen">
-                  
-                  <ion-input type="text" id="email" v-model="email" @blur="validaremail" placeholder="Correo Electronico" class="input is-danger"> 
-                  <span v-if="altoemail" color="red"> Formato incorrecto </span>
-                   <span v-if="!email">Ej.: minombre@gmail.com</span>
-                  <p class="help is-danger">Ingrese Un Correo Electronico</p>
-
+      <!--div id="app" class="hero is-fullheight">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns"> 
+            <div class="column is-full is-4-desktop is-offset-4-desktop">
+              <h1 class="title">Iniciar Sesión</h1>
+              <form>
+                <div id="app">
+                  <div class="field">   
+                    <div class="control is-hero-fullscreen">
+                      <ion-input type="text" id="email" v-model="email" @blur="validaremail" placeholder="Correo Electronico" class="input is-danger"></ion-input>
+                      <span v-if="altoemail" color="red"> Formato incorrecto </span>
+                      <span v-if="!email">Ej.: minombre@gmail.com</span>
+                      <p class="help is-danger">Ingrese Un Correo Electronico</p>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="control">
+                      <ion-input type="password" placeholder="Contraseña" id="contra" v-model="contra" @blur="validarcontra" class="input is-success"></ion-input>
+                      <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
+                      <span v-if="altocontra" color="red"> Formato incorrecto </span>
+                      <p class="help is-success"></p>
+                    </div>
+                  </div>
+                  <p class="help is-danger"></p>
                 </div>
-
-              </div>
-
-
-              <div class="field">
-
-                <div class="control">
-                  
-                  <ion-input type="password" placeholder="Contraseña" id="contra" v-model="contra" @blur="validarcontra" class="input is-success"></ion-input>
-                  <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
-                 <span v-if="altocontra" color="red"> Formato incorrecto </span>
-
-                  <p class="help is-success"></p>
-
+                <div class="field">
+                  <div class="control">
+                    <ion-button expand="block" >INICIAR SESIÓN</ion-button>
+                  </div>
                 </div>
-
-              </div>
-
-              <p class="help is-danger"></p>
+                <div class="field">
+                  <div class="control">
+                    <a href="olContraseña.html">¿Olvidó su contraseña?</a><br>
+                    <a href="registroCargo.html">¿No tiene cuenta? Registrese aquí.</a>
+                  </div>
+                </div>
+              </form>
             </div>
-
-              <div class="field">
-
-                <div class="control">
-
-                  <ion-button expand="block" >INICIAR SESIÓN</ion-button>
-
-                </div>
-
-              </div>
-
-
-              <div class="field">
-
-                <div class="control">
-
-                  <a href="olContraseña.html">¿Olvidó su contraseña?</a><br>
-                  <a href="registroCargo.html">¿No tiene cuenta? Registrese aquí.</a>
-
-                </div>
-
-              </div>
-
-            </form>
-
+            </div>
           </div>
-
         </div>
-
-      </div>
-
-    </div>
-    
-  </div>
-
-
-      
-      <ExploreContainer name="tab login" />
+      </div-->
+      <!--ExploreContainer name="tab login" /-->
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+//import ExploreContainer from '@/components/ExploreContainer.vue';
 
 export default  {
   name: 'login',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
+  components: { /*ExploreContainer,*/ IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
   methods: {
   }
 }
