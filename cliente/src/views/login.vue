@@ -1,10 +1,10 @@
 <template>
   <ion-page>
-    <ion-header>
+    <!--ion-header>
       <ion-toolbar>
         <ion-title>Login</ion-title>
       </ion-toolbar>
-    </ion-header>
+    </ion-header-->
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
