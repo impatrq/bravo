@@ -94,13 +94,14 @@
 
 
       
-     
+      <ExploreContainer name="tab login" />
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/vue';
+import ExploreContainer from '@/components/ExploreContainer.vue';
 
 
   ({
