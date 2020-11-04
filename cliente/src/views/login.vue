@@ -29,6 +29,11 @@
             <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
             <span v-if="altocontra" color="red"> Formato incorrecto </span>
       </ion-list>
+      <ion-button expand="block" >INICIAR SESIÓN</ion-button>
+        <br>
+          <ion-router-link to="olContraseña.vue">¿Olvidó su contraseña?</ion-router-link>
+        <br>
+          <ion-router-link to="registroCargo.html">¿No tiene cuenta? Registrese aquí.</ion-router-link>
       <!--div id="app" class="hero is-fullheight">
         <div class="hero-body">
           <div class="container">
