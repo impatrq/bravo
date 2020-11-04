@@ -19,6 +19,15 @@
           <ion-label position="floating">Correo Electronico</ion-label>
           <ion-input type="text" id="email" v-model="email" @blur="validaremail"></ion-input>
         </ion-item>
+          <span v-if="altoemail" color="red"> Formato incorrecto </span>
+          <span v-if="!email">Ej.: minombre@gmail.com</span>
+        <br>
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" id="contra" v-model="contra" @blur="validarcontra"></ion-input>
+          </ion-item>
+            <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
+            <span v-if="altocontra" color="red"> Formato incorrecto </span>
       </ion-list>
       <!--div id="app" class="hero is-fullheight">
         <div class="hero-body">
