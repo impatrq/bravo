@@ -78,12 +78,12 @@
 </template>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader } from '@ionic/vue';
 //import ExploreContainer from '@/components/ExploreContainer.vue';
 
 export default  {
   name: 'login',
-  components: { /*ExploreContainer,*/ IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
+  components: { /*ExploreContainer,*/ IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonListHeader },
   methods: {
   }
 }
