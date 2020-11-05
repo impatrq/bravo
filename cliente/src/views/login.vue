@@ -17,14 +17,14 @@
         </ion-list-header>
         <ion-item>
           <ion-label position="floating">Correo Electronico</ion-label>
-          <ion-input type="text" id="email" v-model="email" @blur="validaremail(email)"></ion-input>
+          <ion-input type="text" id="email" v-model="email" @ionBlur="validaremail(email)"></ion-input>
         </ion-item>
           <span v-if="altoemail" color="red"> Formato incorrecto </span>
           <span v-if="!email">Ej.: minombre@gmail.com</span>
         <br>
           <ion-item>
             <ion-label position="floating">Contraseña</ion-label>
-            <ion-input type="password" id="contra" v-model="contra" @blur="validarcontra(contra)"></ion-input>
+            <ion-input type="password" id="contra" v-model="contra" @ionBlur="validarcontra(contra)"></ion-input>
           </ion-item>
             <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
             <span v-if="altocontra" color="red"> Formato incorrecto </span>
@@ -85,14 +85,29 @@
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader } from '@ionic/vue';
-import { App } from 'vue';
+import { App, ref } from 'vue';
 
 export default  {
   name: 'login',
   components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonListHeader, IonButton },
+  setup() {
+    const email = ref("")
+    const altoemail = ref(false)
+
+    const validaremail = ()=> {
+      const arroba = email.value.includes("@");
+      const punto = email.value.includes(".");
+      console.log(arroba, punto);
+      altoemail.value = (!arroba || !punto) ? true: false;
+      return {
+        email,
+        altoemail,
+        validaremail
+      }
+    }
+  },
   data(){
     return{
-      email: "",
       contra: "",
       altoemail: "",
       altocontra: "",
