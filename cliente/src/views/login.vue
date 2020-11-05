@@ -90,7 +90,22 @@ import { App } from 'vue';
 
 export default  {
   name: 'login',
-  components: { /*ExploreContainer,*/ IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonListHeader },
+  components: { /*ExploreContainer,*/ IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonListHeader, IonButton },
+
+data(){
+  return{
+    email: "",
+    contra: "",
+    altoemail: "",
+    altocontra: "",
+    usuario: {},
+    nombre: "",
+    apellido: "",
+    dni: "",
+    matricula: "",
+    email2: "",
+  }
+},
   methods: {
   }
 }
