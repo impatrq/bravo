@@ -86,239 +86,31 @@
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader } from '@ionic/vue';
 import { App } from 'vue';
-//import ExploreContainer from '@/components/ExploreContainer.vue';
 
 export default  {
   name: 'login',
-  components: { /*ExploreContainer,*/ IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonListHeader, IonButton },
-
-data(){
-  return{
-    email: "",
-    contra: "",
-    altoemail: "",
-    altocontra: "",
-    usuario: {},
-    nombre: "",
-    apellido: "",
-    dni: "",
-    matricula: "",
-    email2: "",
-  }
-},
-  methods: {
-  validaremail: function(this: any, email: string){
-    const arroba = this.email.includes("@");
-    const punto = this.email.includes(".");
-    console.log(arroba, punto);
-    this.altoemail = (!arroba || !punto) ? true: false;
-  },
-validarcontra: function(this: any, contra: string){
-  console.log(this.contra)
-  const num =  /[0-9]/g;
-  const validacion = this.contra.match (num);
-//console.log ("validacion", validacion);
-//console.log (num);
-  const mayus = /[A-Z]/g;
-  const validacion2 = this.contra.match (mayus);
-//console.log ("validacion2", validacion2);
-  const min = /[a-z]/g;
-  const validacion3 = this.contra.match (min);
-if(validacion === null || validacion2 === null || validacion3 === null){
-  this.altocontra = true;
-  }
-else{
-  this.altocontra = false;
-}
-  },
-    },
-
-
-
-
-
-
-
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-  ({
-
-el: '#app',
-data: {
-    
-email: "",
-contra: "",
-altoemail: "",
-altocontra: "",
- usuario: {},
-    nombre: "",
-    apellido: "",
-    dni: "",
-    matricula: "",
-    email2: "",
-
-  },
-
-methods: {
-
-validaremail: function(){
-  
-  var arroba = this.email.includes("@");
-  var punto = this.email.includes(".");
-
-  console.log(arroba, punto);
-
-  this.altoemail = (!arroba || !punto) ? true: false;
-},
-
-validarcontra: function(){
-
-console.log(this.contra)
-
-var num =  /[0-9]/g;
-const validacion = this.contra.match (num);
-//console.log ("validacion", validacion);
-//console.log (num);
-
-var mayus = /[A-Z]/g;
-const validacion2 = this.contra.match (mayus);
-//console.log ("validacion2", validacion2);
-
-var min = /[a-z]/g;
-const validacion3 = this.contra.match (min);
-
-if(validacion === null || validacion2 === null || validacion3 === null){
-
-  this.altocontra = true;
-}
-
-else{
-
-this.altocontra = false;
-
-}
-  },
-    },
-
-  created() { 
-     // console.log("reviso usuario:", localStorage.getItem("usuario"));
-
-    if(localStorage.getItem("usuario")) {
-      const usuario = JSON.parse (localStorage.getItem("usuario"));
-       this.nombre = usuario.nombre;
-       this.apellido = usuario.apellido;
-       this.dni = usuario.dni;
-       this.matricula = usuario.matricula;
-       this.email2 = usuario.email2;
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonListHeader, IonButton },
+  data(){
+    return{
+      email: "",
+      contra: "",
+      altoemail: "",
+      altocontra: "",
+      usuario: {},
+      nombre: "",
+      apellido: "",
+      dni: "",
+      matricula: "",
+      email2: "",
     }
   },
-
-  watch: {
-
-    nombre(nuevoNombre)  {
-      //console.log(nuevoNombre);
-
-      const usuario = {
-        nombre: nuevoNombre,
-        apellido: this.apellido,
-        dni: this.dni,
-        matricula: this.matricula,
-        email2: this.email2,
-        
-      }
-
-      localStorage.setItem("usuario", JSON.stringify (usuario));
-    
-    },
-
-    apellido(nuevoApellido)  {
-      //console.log(nuevoApellido);
-
-      const usuario = {
-        nombre: this.nombre,
-        apellido: nuevoApellido,
-        dni: this.dni,
-        matricula: this.matricula,
-        email2: this.email2,
-      }
-      localStorage.setItem("usuario", JSON.stringify (usuario));
-
-    },
-
-    dni(nuevoDni)  {
-      //console.log(nuevoDni);
-
-      const usuario = {
-        nombre: this.nombre,
-        apellido: this.apellido,
-        dni: nuevoDni,
-        matricula: this.matricula,
-        email2: this.email2,
-        
-      }
-      localStorage.setItem("usuario", JSON.stringify (usuario));
-
-    },
-
-
-      email2(nuevoEmail)  {
-      //console.log(nuevoEmail);
-
-      const usuario = {
-        nombre: this.nombre,
-        apellido: this.apellido,
-        dni: this.dni,
-        matricula: this.matricula,
-        email2: nuevoEmail,
-        
-      }
-      localStorage.setItem("usuario", JSON.stringify (usuario));
-
-    },
-
-
-
-      matricula(nuevaMatricula)  {
-      //console.log(nuevaMatricula);
-
-      const usuario = {
-        nombre: this.nombre,
-        apellido: this.apellido,
-        dni: this.dni,
-        matricula: nuevaMatricula,
-        email2: this.email2,
-        
-      }
-      localStorage.setItem("usuario", JSON.stringify (usuario));
-
-    },
-
+  methods: {
+    validaremail: function(this: any, email: string){
+      const arroba = this.email.includes("@");
+      const punto = this.email.includes(".");
+      console.log(arroba, punto);
+      this.altoemail = (!arroba || !punto) ? true: false;
+    }
   }
-
-    });
-*/
-
+}
 </script>
