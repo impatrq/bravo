@@ -107,8 +107,61 @@ data(){
   }
 },
   methods: {
+  validaremail: function(this: any, email: string){
+    const arroba = this.email.includes("@");
+    const punto = this.email.includes(".");
+    console.log(arroba, punto);
+    this.altoemail = (!arroba || !punto) ? true: false;
+  },
+validarcontra: function(this: any, contra: string){
+  console.log(this.contra)
+  const num =  /[0-9]/g;
+  const validacion = this.contra.match (num);
+//console.log ("validacion", validacion);
+//console.log (num);
+  const mayus = /[A-Z]/g;
+  const validacion2 = this.contra.match (mayus);
+//console.log ("validacion2", validacion2);
+  const min = /[a-z]/g;
+  const validacion3 = this.contra.match (min);
+if(validacion === null || validacion2 === null || validacion3 === null){
+  this.altocontra = true;
   }
+else{
+  this.altocontra = false;
 }
+  },
+    },
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
   ({
