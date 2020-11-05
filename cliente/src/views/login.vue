@@ -50,6 +50,11 @@
         <br>
                 <ion-router-link to="registroCargo.vue">¿No tiene cuenta? Registrese aquí.</ion-router-link>
               </div>
+
+            </ion-list>
+          </ion-card>
+        </ion-col>
+      </ion-row> 
       <!--div id="app" class="hero is-fullheight">
         <div class="hero-body">
           <div class="container">
