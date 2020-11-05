@@ -41,11 +41,11 @@
                 <ion-input type="password" id="contra" v-model="contra" @blur="validarcontra"></ion-input>              
               </ion-item>
               <div class="text-size-12">
-            <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
-            <span v-if="altocontra" color="red"> Formato incorrecto </span>
+                <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
+                <span v-if="altocontra" color="red"> Formato incorrecto </span>
               </div>
 
-        <br>
+              <br>
 
               <ion-button expand="block" fill="outline">INICIAR SESIÓN</ion-button> 
 
