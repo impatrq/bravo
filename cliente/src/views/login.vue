@@ -24,7 +24,7 @@
         <br>
           <ion-item>
             <ion-label position="floating">Contraseña</ion-label>
-            <ion-input type="password" id="contra" v-model="contra" @blur="validarcontra"></ion-input>
+            <ion-input type="password" id="contra" v-model="contra" @blur="validarcontra(contra)"></ion-input>
           </ion-item>
             <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
             <span v-if="altocontra" color="red"> Formato incorrecto </span>
