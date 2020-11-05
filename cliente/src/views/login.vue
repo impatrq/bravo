@@ -28,7 +28,7 @@
                 <span v-if="!email">Ej.: minombre@gmail.com</span>
               </div>
 
-              <br>
+              <br> 
 
               <ion-item class="ion-no-padding">
                 <ion-label position="floating">Contraseña</ion-label>
