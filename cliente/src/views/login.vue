@@ -29,10 +29,10 @@
               </ion-item> 
               <div class="text-size-12">
                 <span v-if="altoemail" color="red">Formato incorrecto</span>
-          <span v-if="!email">Ej.: minombre@gmail.com</span>
+                <span v-if="!email">Ej.: minombre@gmail.com</span>
               </div>
 
-        <br>
+              <br>
 
               <ion-item class="ion-no-padding">
             <ion-label position="floating">Contraseña</ion-label>
