@@ -23,8 +23,6 @@
                 <ion-label position="floating">Correo Electronico</ion-label>
                 <ion-input type="text" id="email" v-model="email" @blur="validaremail"></ion-input>              
               </ion-item> 
-        </ion-item>
-              </ion-item> 
               <div class="text-size-12">
                 <span v-if="altoemail" color="red">Formato incorrecto</span>
                 <span v-if="!email">Ej.: minombre@gmail.com</span>
