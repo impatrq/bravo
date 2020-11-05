@@ -85,6 +85,7 @@
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader } from '@ionic/vue';
+import { App } from 'vue';
 //import ExploreContainer from '@/components/ExploreContainer.vue';
 
 export default  {
