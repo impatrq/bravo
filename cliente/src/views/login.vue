@@ -1,13 +1,12 @@
 <template>
   <ion-page>    
-    <ion-content :fullscreen="true">
+    <ion-content :fullscreen="true">    
 
       <ion-header collapse="condense">
         <ion-toolbar>
           <ion-title size="large">Login</ion-title>
         </ion-toolbar>
       </ion-header>
-<<<<<<< HEAD
 
       <ion-row class="ion-justify-content-center fullheight">
         <ion-col size-xl="6" size-sm="10" class="ion-align-self-center">
@@ -56,32 +55,6 @@
           </ion-card>
         </ion-col>
       </ion-row> 
-=======
-      <ion-list>
-        <ion-list-header>
-        Iniciar sessión
-        </ion-list-header>
-        <ion-item>
-          <ion-label position="floating">Correo Electronico</ion-label>
-          <ion-input type="text" id="email" v-model="email" @blur="validaremail(email)"></ion-input>
-        </ion-item>
-          <span v-if="altoemail" color="red"> Formato incorrecto </span>
-          <span v-if="!email">Ej.: minombre@gmail.com</span>
-        <br>
-          <ion-item>
-            <ion-label position="floating">Contraseña</ion-label>
-            <ion-input type="password" id="contra" v-model="contra" @blur="validarcontra(contra)"></ion-input>
-          </ion-item>
-            <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
-            <span v-if="altocontra" color="red"> Formato incorrecto </span>
-      </ion-list>
-      
-      <ion-button expand="block" >INICIAR SESIÓN</ion-button>
-        <br>
-          <ion-router-link to="olContraseña.vue">¿Olvidó su contraseña?</ion-router-link>
-        <br>
-          <ion-router-link to="registroCargo.html">¿No tiene cuenta? Registrese aquí.</ion-router-link>
->>>>>>> 2397620b89b4cea0edd2bb9fa7ea94b0f96a9b4a
       <!--div id="app" class="hero is-fullheight">
         <div class="hero-body">
           <div class="container">
@@ -143,20 +116,13 @@
 </style>
 
 <script lang="ts">
-<<<<<<< HEAD
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader,IonCol, IonRow} from '@ionic/vue';
-=======
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader } from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow} from '@ionic/vue';
 import { App } from 'vue';
->>>>>>> 2397620b89b4cea0edd2bb9fa7ea94b0f96a9b4a
 //import ExploreContainer from '@/components/ExploreContainer.vue';
 
 export default  {
   name: 'login',
-<<<<<<< HEAD
-  components: { /*ExploreContainer,*/ IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonListHeader,IonCol, IonRow},
-=======
-  components: { /*ExploreContainer,*/ IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonListHeader, IonButton },
+  components: { /*ExploreContainer,*/ IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonListHeader, IonButton, IonCol, IonRow },
 
 data(){
   return{
@@ -172,7 +138,6 @@ data(){
     email2: "",
   }
 },
->>>>>>> 2397620b89b4cea0edd2bb9fa7ea94b0f96a9b4a
   methods: {
   validaremail: function(this: any, email: string){
     const arroba = this.email.includes("@");
