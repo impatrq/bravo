@@ -40,6 +40,10 @@
               </div>
 
         <br>
+
+              <ion-button expand="block" fill="outline">INICIAR SESIÓN</ion-button> 
+
+              <br>
           <ion-router-link to="olContraseña.vue">¿Olvidó su contraseña?</ion-router-link>
         <br>
           <ion-router-link to="registroCargo.html">¿No tiene cuenta? Registrese aquí.</ion-router-link>
