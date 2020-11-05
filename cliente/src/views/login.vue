@@ -7,6 +7,7 @@
           <ion-title size="large">Login</ion-title>
         </ion-toolbar>
       </ion-header>
+      <ion-row class="ion-justify-content-center fullheight">
       <ion-list>
         <ion-list-header>
         Iniciar sessión
