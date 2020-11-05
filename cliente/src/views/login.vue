@@ -52,8 +52,8 @@
               <br>
 
               <div class="text-size-12">
-          <ion-router-link to="olContraseña.vue">¿Olvidó su contraseña?</ion-router-link>
-        <br>
+                <ion-router-link to="olContraseña.vue">¿Olvidó su contraseña?</ion-router-link>
+                <br>
                 <ion-router-link to="registroCargo.vue">¿No tiene cuenta? Registrese aquí.</ion-router-link>
               </div>
 
