@@ -41,9 +41,11 @@
         <br>
         <ion-button expand="block" fill="outline">INICIAR SESIÓN</ion-button>
         <br>
+        <div class="text-size-12">
           <ion-router-link to="olContraseña.vue">¿Olvidó su contraseña?</ion-router-link>
-        <br>
+          <br>
           <ion-router-link to="registroCargo.html">¿No tiene cuenta? Registrese aquí.</ion-router-link>
+        </div>
       <!--div id="app" class="hero is-fullheight">
         <div class="hero-body">
           <div class="container">
