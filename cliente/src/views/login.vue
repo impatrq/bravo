@@ -100,6 +100,18 @@
   </ion-page>
 </template>
 
+<style>
+.text-size-12{
+  font-size:12px;
+}
+.text-size-20{
+  font-size:20px;
+}
+.fullheight{
+  height: 100%; 
+}
+</style>
+
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader } from '@ionic/vue';
 import { App, ref } from 'vue';
