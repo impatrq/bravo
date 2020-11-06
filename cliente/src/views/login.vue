@@ -30,10 +30,10 @@
           <span v-if="!email">Ej.: minombre@gmail.com</span>
         </div>
         <br>
-          <ion-item>
-            <ion-label position="floating">Contraseña</ion-label>
-            <ion-input type="password" id="contra" v-model="contra" @ionBlur="validarcontra(contra)"></ion-input>
-          </ion-item>
+        <ion-item class="ion-no-padding">
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" id="contra" v-model="contra" @ionBlur="validarcontra(contra)"></ion-input>
+        </ion-item>
             <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
             <span v-if="altocontra" color="red"> Formato incorrecto </span>
       </ion-list>
