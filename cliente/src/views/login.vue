@@ -11,6 +11,11 @@
           <ion-title size="large">Login</ion-title>
         </ion-toolbar>
       </ion-header>
+
+      <ion-row class="ion-justify-content-center fullheight">
+      <ion-col size-xl="6" size-sm="10" class="ion-align-self-center">
+      <ion-card class="ion-padding">
+
       <ion-list>
         <ion-list-header>
         Iniciar sessión
