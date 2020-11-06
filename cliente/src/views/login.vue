@@ -21,6 +21,7 @@
           <ion-list-header class="text-size-20 ion-text-justify">Iniciar sesión</ion-list-header>
         </div>
         <br>
+        <ion-item class="ion-no-padding">
           <ion-label position="floating">Correo Electronico</ion-label>
           <ion-input type="text" id="email" v-model="email" @ionBlur="validaremail(email)"></ion-input>
         </ion-item>
