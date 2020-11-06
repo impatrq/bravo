@@ -17,10 +17,10 @@
       <ion-card class="ion-padding">
 
       <ion-list>
-        <ion-list-header>
-        Iniciar sessión
-        </ion-list-header>
-        <ion-item>
+        <div class="ion-text-uppercase ion-no-padding">
+          <ion-list-header class="text-size-20 ion-text-justify">Iniciar sesión</ion-list-header>
+        </div>
+        <br>
           <ion-label position="floating">Correo Electronico</ion-label>
           <ion-input type="text" id="email" v-model="email" @ionBlur="validaremail(email)"></ion-input>
         </ion-item>
