@@ -118,7 +118,7 @@ import { App, ref } from 'vue';
 
 export default  {
   name: 'login',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonListHeader, IonButton },
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonListHeader, IonButton, IonCol, IonRow},
   setup() {
     const email = ref("")
     const altoemail = ref(false)
