@@ -46,6 +46,12 @@
           <br>
           <ion-router-link to="registroCargo.html">¿No tiene cuenta? Registrese aquí.</ion-router-link>
         </div>
+      </ion-list>
+
+      </ion-card>
+      </ion-col>
+      </ion-row> 
+
       <!--div id="app" class="hero is-fullheight">
         <div class="hero-body">
           <div class="container">
