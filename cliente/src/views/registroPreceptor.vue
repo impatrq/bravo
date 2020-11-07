@@ -28,3 +28,15 @@
   height: 100%; 
 }
 </style>
+
+<script lang="ts">
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow } from '@ionic/vue';
+import ExploreContainer from '@/components/ExploreContainer.vue';
+
+export default  {
+  name: 'precReg',
+  components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow },
+  methods: {
+  }
+}
+</script>
