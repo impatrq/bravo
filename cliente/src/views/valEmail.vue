@@ -1,3 +1,8 @@
+
+      <ion-row class="ion-justify-content-center fullheight">
+      <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
+      <ion-card class="ion-padding">
+
       <ion-list>
         <div class="ion-no-padding">
           <ion-list-header class="text-size-20 ion-no-padding">Registro</ion-list-header>
@@ -16,3 +21,7 @@
         <ion-router-link href="tabs/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</ion-router-link>            
         
       </ion-list>
+
+      </ion-card>
+      </ion-col>
+      </ion-row>       
