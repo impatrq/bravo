@@ -25,8 +25,7 @@
         <ion-label>Su direccion de correo es "al***ma**@gmail.com?</ion-label>
         <br>
         <ion-row class="ion-justify-content-center padding-top-20">
-        <ion-button size="small" color="success" href="#" fill="outline" >Si</ion-button>
-        <ion-button size="small" color="danger" href="#" fill="outline" >No</ion-button>            
+        <ion-button size="small" color="success" href="/tabs/valEmailSi" fill="outline" >Si</ion-button>
         </ion-row>   
         <br>
         <ion-router-link href="tabs/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</ion-router-link>            
