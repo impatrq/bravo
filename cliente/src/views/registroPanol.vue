@@ -40,3 +40,16 @@
     </ion-content>
   </ion-page>
 </template>
+
+<style>
+.text-size-12{
+  font-size:12px;
+}
+.text-size-20{
+  font-size:20px;
+}
+.fullheight{
+  height: 100%; 
+}
+</style>
+
