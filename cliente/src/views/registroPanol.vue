@@ -28,7 +28,7 @@
         <br>
         <ion-row class="ion-justify-content-center">
         <ion-button size="small" href="tabs/cargosReg" fill="outline" >Atrás</ion-button>
-        <ion-button size="small" href="#" fill="outline" >Continuar</ion-button>           
+        <ion-button size="small" href="tabs/valEmail" fill="outline" >Continuar</ion-button>           
         </ion-row>
         <br>        
         <ion-router-link href="tabs/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</ion-router-link>
