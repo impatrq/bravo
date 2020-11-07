@@ -41,11 +41,10 @@
         <br>
         <ion-button expand="block" fill="outline">INICIAR SESIÓN</ion-button>
         <br>
-        <div class="text-size-12">
-          <ion-router-link to="olContraseña.vue">¿Olvidó su contraseña?</ion-router-link>
-          <br>
-          <ion-router-link to="registroCargo.html">¿No tiene cuenta? Registrese aquí.</ion-router-link>
-        </div>
+        <ion-router-link to="olContraseña.vue" class="text-size-12">¿Olvidó su contraseña?</ion-router-link>
+        <br>
+        <ion-router-link href="tabs/cargosReg" class="text-size-12">¿No tiene cuenta? Registrese aquí.</ion-router-link>
+        
       </ion-list>
 
       </ion-card>
