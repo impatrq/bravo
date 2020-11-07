@@ -40,6 +40,18 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/registroAlumno.vue')
       },
       {
+        path: 'valEmail',
+        component: () => import('@/views/valEmail.vue')
+      },
+      {
+        path: 'valEmailSi',
+        component: () => import('@/views/valEmail2Si.vue')
+      },
+      {
+        path: 'valEmailno',
+        component: () => import('@/views/valEmail2No.vue')
+      },
+      {
         path: 'tab1',
         component: () => import('@/views/Tab1.vue')
       },
