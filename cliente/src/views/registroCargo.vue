@@ -25,7 +25,7 @@
         <br>    
         <ion-button href="/tabs/profReg" expand="block" fill="outline" >Profesor</ion-button>
         <br>  
-        <ion-button href="#" expand="block" fill="outline" >Personal de pañol</ion-button>      
+        <ion-button href="/tabs/panolReg" expand="block" fill="outline" >Personal de pañol</ion-button>      
         <br>
         <ion-button href="/tabs/AlumReg" expand="block" fill="outline" >Alumno</ion-button>
         <br>        
