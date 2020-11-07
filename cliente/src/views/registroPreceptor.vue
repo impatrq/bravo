@@ -16,3 +16,15 @@
       <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
       <ion-card class="ion-padding">
 
+
+<style>
+.text-size-12{
+  font-size:12px;
+}
+.text-size-20{
+  font-size:20px;
+}
+.fullheight{
+  height: 100%; 
+}
+</style>
