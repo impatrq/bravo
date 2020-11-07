@@ -48,7 +48,7 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/valEmail2Si.vue')
       },
       {
-        path: 'valEmailno',
+        path: 'valEmailNo',
         component: () => import('@/views/valEmail2No.vue')
       },
       {
