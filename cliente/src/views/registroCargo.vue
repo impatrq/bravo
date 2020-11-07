@@ -27,7 +27,7 @@
         <br>  
         <ion-button href="#" expand="block" fill="outline" >Personal de pañol</ion-button>      
         <br>
-        <ion-button href="#" expand="block" fill="outline" >Alumno</ion-button>
+        <ion-button href="/tabs/AlumReg" expand="block" fill="outline" >Alumno</ion-button>
         <br>        
         <ion-router-link href="tabs/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</ion-router-link>
       </ion-list>
