@@ -50,6 +50,9 @@
 .fullheight{
   height: 100%; 
 }
+.padding-top-20{
+  padding-top: 20px;
+}
 </style>
 
 <script lang="ts">
