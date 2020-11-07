@@ -24,6 +24,22 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/registroCargo.vue')
       },
       {
+        path: 'precReg',
+        component: () => import('@/views/registroPreceptor.vue')
+      },
+      {
+        path: 'profReg',
+        component: () => import('@/views/registroProfesor.vue')
+      },
+      {
+        path: 'panolReg',
+        component: () => import('@/views/registroPanol.vue')
+      },
+      {
+        path: 'alumReg',
+        component: () => import('@/views/registroAlumno.vue')
+      },
+      {
         path: 'tab1',
         component: () => import('@/views/Tab1.vue')
       },
