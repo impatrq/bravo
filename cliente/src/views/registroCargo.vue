@@ -23,7 +23,7 @@
         <br>
         <ion-button href="/tabs/precReg" expand="block" fill="outline">Preceptor o Directivo</ion-button>  
         <br>    
-        <ion-button href="#" expand="block" fill="outline" >Profesor</ion-button>
+        <ion-button href="/tabs/profReg" expand="block" fill="outline" >Profesor</ion-button>
         <br>  
         <ion-button href="#" expand="block" fill="outline" >Personal de pañol</ion-button>      
         <br>
