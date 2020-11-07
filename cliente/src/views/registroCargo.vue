@@ -21,7 +21,7 @@
           <ion-list-header class="text-size-20 ion-text-justify">Seleccione su cargo</ion-list-header>
         </div>
         <br>
-        <ion-button href="#" expand="block" fill="outline">Preceptor o Directivo</ion-button>  
+        <ion-button href="/tabs/precReg" expand="block" fill="outline">Preceptor o Directivo</ion-button>  
         <br>    
         <ion-button href="#" expand="block" fill="outline" >Profesor</ion-button>
         <br>  
