@@ -37,3 +37,30 @@
     </ion-content>
   </ion-page>
 </template>
+
+<style>
+.text-size-12{
+  font-size:12px;
+}
+.text-size-20{
+  font-size:20px;
+}
+.fullheight{
+  height: 100%; 
+}
+.padding-top-20{
+  padding-top: 20px;
+}
+</style>
+
+<script lang="ts">
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow } from '@ionic/vue';
+import ExploreContainer from '@/components/ExploreContainer.vue';
+
+export default  {
+  name: 'oCont',
+  components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow },
+  methods: {
+  }
+}
+</script>
