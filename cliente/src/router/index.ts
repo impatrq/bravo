@@ -59,6 +59,11 @@ const routes: Array<RouteRecordRaw> = [
         path: 'oCont',
         component: () => import('@/views/olContrasena.vue')
       },
+      {
+        path: 'valCont',
+        component: () => import('@/views/valContra.vue')
+      },
+      {
         path: 'tab1',
         component: () => import('@/views/Tab1.vue')
       },
