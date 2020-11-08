@@ -8,3 +8,5 @@
         </ion-item>
         <ion-label>Ejemplo: algún-mail-random@gmail.com</ion-label>
         <br>
+        <ion-button expand="block" href="/tabs/ncont" fill="outline" >Enviar Email</ion-button>          
+        
