@@ -1,3 +1,7 @@
+      <ion-row class="ion-justify-content-center fullheight">
+      <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
+      <ion-card class="ion-padding">
+
       <ion-list>
         <div class="ion-no-padding">
           <ion-list-header class="text-size-20 ion-no-padding">Elija una nueva contraseña</ion-list-header>
@@ -15,3 +19,7 @@
         <ion-button expand="block" href="#" fill="outline" >Confirmar</ion-button>            
         
       </ion-list>
+
+      </ion-card>
+      </ion-col>
+      </ion-row>       
