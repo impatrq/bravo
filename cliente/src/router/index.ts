@@ -52,6 +52,9 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/valEmail2No.vue')
       },
       {
+        path: 'nCont',
+        component: () => import('@/views/nuContrasena.vue')
+      },
         path: 'tab1',
         component: () => import('@/views/Tab1.vue')
       },
