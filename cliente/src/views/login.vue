@@ -41,7 +41,7 @@
         <br>
         <ion-button expand="block" fill="outline">INICIAR SESIÓN</ion-button>
         <br>
-        <ion-router-link to="olContraseña.vue" class="text-size-12">¿Olvidó su contraseña?</ion-router-link>
+        <ion-router-link href="/tabs/oCont" class="text-size-12">¿Olvidó su contraseña?</ion-router-link>
         <br>
         <ion-router-link href="tabs/cargosReg" class="text-size-12">¿No tiene cuenta? Registrese aquí.</ion-router-link>
         
