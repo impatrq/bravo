@@ -12,3 +12,7 @@
           <ion-input></ion-input>
         </ion-item>
         <br>
+        <ion-button expand="block" href="#" fill="outline" >Confirmar</ion-button>
+        <br>
+        <ion-router-link href="tabs/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</ion-router-link>            
+        
