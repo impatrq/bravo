@@ -1,3 +1,4 @@
+      <ion-list>
         <div class="ion-no-padding">
           <ion-list-header class="text-size-20 ion-no-padding">Elija una nueva contraseña</ion-list-header>
         </div>
@@ -13,3 +14,4 @@
         <br>
         <ion-button expand="block" href="#" fill="outline" >Confirmar</ion-button>            
         
+      </ion-list>
