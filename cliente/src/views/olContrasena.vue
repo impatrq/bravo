@@ -23,7 +23,7 @@
         <br>
         <ion-item class="ion-no-padding">
           <ion-label position="floating">Email</ion-label>
-          <ion-input></ion-input>
+          <ion-input type="text" id="email" v-model="email" @ionblur="validaremail()"></ion-input>
         </ion-item>
         <ion-label>Ejemplo: algún-mail-random@gmail.com</ion-label>
         <br>
