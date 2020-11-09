@@ -24,12 +24,18 @@
         <br>        
         <ion-item class="ion-no-padding">
           <ion-label position="floating">Nueva contraseña</ion-label>
-          <ion-input></ion-input>
+          <ion-input type="password" id="contra" v-model="contra" ionBlur="validarcontra()"></ion-input>
         </ion-item>
+        <div class="text-size-12">
+          <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
+          <span v-if="altocontra" color="red"> Formato incorrecto </span>
+        </div>
         <ion-item class="ion-no-padding">
           <ion-label position="floating">Repita su contraseña</ion-label>
-          <ion-input></ion-input>
+          <ion-input type="password" id="contra" v-model="contra" ionBlur="validarcontra()"></ion-input>
         </ion-item>
+          <span v-if="!contra">Repita contraseña</span>
+          <span v-if="altocontra" color="red"> Formato incorrecto </span>
         <br>
         <ion-button expand="block" href="#" fill="outline" >Confirmar</ion-button>
         <br>
@@ -62,11 +68,36 @@
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow } from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
+import { App, ref } from 'vue';
 
 export default  {
   name: 'valCont',
   components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow },
-  methods: {
-  }
+  setup() {
+    const contra = ref("")
+    const altocontra = ref(false)
+    const validarcontra = ()=>{
+      const num =  /[0-9]/g;
+      const validacion = contra.value.match (num);
+      //console.log ("validacion", validacion);
+      //console.log (num);
+      const mayus = /[A-Z]/g;
+      const validacion2 = contra.value.match (mayus);
+      //console.log ("validacion2", validacion2);
+      const min = /[a-z]/g;
+      const validacion3 = contra.value.match (min);
+      if(validacion === null || validacion2 === null || validacion3 === null){
+          altocontra.value = true;
+      }
+      else{
+          altocontra.value = false;
+      }
+      return {
+        contra,
+        altocontra,
+        validarcontra,
+      }
+    }
+  },
 }
 </script>

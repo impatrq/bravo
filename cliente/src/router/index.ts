@@ -63,10 +63,10 @@ const routes: Array<RouteRecordRaw> = [
         path: 'valCont',
         component: () => import('@/views/valContra.vue')
       },
-      {
+      /*{
         path: 'home',
         component: () => import('@/views/appProf/home.vue')
-      },
+      },*/
       {
         path: 'tab1',
         component: () => import('@/views/Tab1.vue')

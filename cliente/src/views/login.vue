@@ -23,7 +23,7 @@
         <br>
         <ion-item class="ion-no-padding">
           <ion-label position="floating">Correo Electronico</ion-label>
-          <ion-input type="text" id="email" v-model="email" @ionBlur="validaremail(email)"></ion-input>
+          <ion-input type="text" id="email" v-model="email" ionBlur="validaremail()"></ion-input>
         </ion-item>
         <div class="text-size-12">
           <span v-if="altoemail" color="red"> Formato incorrecto </span>
@@ -32,7 +32,7 @@
         <br>
         <ion-item class="ion-no-padding">
           <ion-label position="floating">Contraseña</ion-label>
-          <ion-input type="password" id="contra" v-model="contra" @ionBlur="validarcontra(contra)"></ion-input>
+          <ion-input type="password" id="contra" v-model="contra" ionBlur="validarcontra()"></ion-input>
         </ion-item>
         <div class="text-size-12">
           <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
@@ -118,10 +118,11 @@ import { App, ref } from 'vue';
 export default  {
   name: 'login',
   components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonListHeader, IonButton, IonCol, IonRow},
-  setup() {
+  setup() { //FALTA VINCULARLO CON EL TEMPLATE
     const email = ref("")
     const altoemail = ref(false)
-
+    const contra = ref("")
+    const altocontra = ref(false)
     const validaremail = ()=> {
       const arroba = email.value.includes("@");
       const punto = email.value.includes(".");
@@ -130,30 +131,32 @@ export default  {
       return {
         email,
         altoemail,
-        validaremail
+        validaremail,
+      }
+    }
+    const validarcontra = ()=>{
+      const num =  /[0-9]/g;
+      const validacion = contra.value.match (num);
+      //console.log ("validacion", validacion);
+      //console.log (num);
+      const mayus = /[A-Z]/g;
+      const validacion2 = contra.value.match (mayus);
+      //console.log ("validacion2", validacion2);
+      const min = /[a-z]/g;
+      const validacion3 = contra.value.match (min);
+      if(validacion === null || validacion2 === null || validacion3 === null){
+          altocontra.value = true;
+      }
+      else{
+          altocontra.value = false;
+      }
+      return {
+        contra,
+        altocontra,
+        validarcontra,
       }
     }
   },
-  data(){
-    return{
-      contra: "",
-      altoemail: "",
-      altocontra: "",
-      usuario: {},
-      nombre: "",
-      apellido: "",
-      dni: "",
-      matricula: "",
-      email2: "",
-    }
-  },
-  methods: {
-    validaremail: function(this: any, email: string){
-      const arroba = this.email.includes("@");
-      const punto = this.email.includes(".");
-      console.log(arroba, punto);
-      this.altoemail = (!arroba || !punto) ? true: false;
-    }
-  }
+
 }
 </script>

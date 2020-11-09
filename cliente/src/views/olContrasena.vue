@@ -18,14 +18,18 @@
 
       <ion-list>
         <div class="ion-no-padding">
-          <ion-list-header class="text-size-20 ion-no-padding">¿Olvidaste tu contraseña?</ion-list-header>
+          <ion-list-header class="text-size-20 ion-no-padding">¿Olvidó su contraseña?</ion-list-header>
         </div>
         <br>
         <ion-item class="ion-no-padding">
           <ion-label position="floating">Email</ion-label>
-          <ion-input></ion-input>
+          <ion-input type="text" id="email" v-model="email" ionBlur="validaremail()"></ion-input>
         </ion-item>
-        <ion-label>Ejemplo: algún-mail-random@gmail.com</ion-label>
+        <div class="text-size-12">
+          <span v-if="altoemail" color="red"> Formato incorrecto </span>
+          <span v-if="!email">Ej.: minombre@gmail.com</span>
+        </div>
+        <!--<ion-label>Ejemplo: algún-mail-random@gmail.com</ion-label>-->
         <br>
         <ion-button expand="block" href="/tabs/ncont" fill="outline" >Enviar Email</ion-button>          
         
@@ -56,11 +60,26 @@
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow } from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
+import { App, ref } from 'vue';
 
 export default  {
   name: 'oCont',
   components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow },
-  methods: {
+  setup() { //FALTA VINCULARLO CON EL TEMPLATE
+    const email = ref("")
+    const altoemail = ref(false)
+    const validaremail = ()=> {
+      const arroba = email.value.includes("@");
+      const punto = email.value.includes(".");
+      //console.log(arroba, punto);
+      altoemail.value = (!arroba || !punto) ? true: false;
+      return {
+        email,
+        altoemail,
+        validaremail,
+      }
+    }
+
   }
 }
 </script>
