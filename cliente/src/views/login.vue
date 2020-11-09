@@ -157,26 +157,6 @@ export default  {
       }
     }
   },
-  data(){
-    return{
-      contra: "",
-      altoemail: "",
-      altocontra: "",
-      usuario: {},
-      nombre: "",
-      apellido: "",
-      dni: "",
-      matricula: "",
-      email2: "",
-    }
-  },
-  methods: {
-    validaremail: function(this: any, email: string){
-      const arroba = this.email.includes("@");
-      const punto = this.email.includes(".");
-      console.log(arroba, punto);
-      this.altoemail = (!arroba || !punto) ? true: false;
-    }
-  }
+
 }
 </script>
