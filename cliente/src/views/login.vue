@@ -135,14 +135,14 @@ export default  {
       }
     }
     const validarcontra = ()=>{
-      var num =  /[0-9]/g;
+      const num =  /[0-9]/g;
       const validacion = contra.value.match (num);
       //console.log ("validacion", validacion);
       //console.log (num);
-      var mayus = /[A-Z]/g;
+      const mayus = /[A-Z]/g;
       const validacion2 = contra.value.match (mayus);
       //console.log ("validacion2", validacion2);
-      var min = /[a-z]/g;
+      const min = /[a-z]/g;
       const validacion3 = contra.value.match (min);
       if(validacion === null || validacion2 === null || validacion3 === null){
           altocontra.value = true;
