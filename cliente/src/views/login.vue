@@ -121,7 +121,8 @@ export default  {
   setup() {
     const email = ref("")
     const altoemail = ref(false)
-
+    const contra = ref("")
+    const altocontra = ref(false)
     const validaremail = ()=> {
       const arroba = email.value.includes("@");
       const punto = email.value.includes(".");
