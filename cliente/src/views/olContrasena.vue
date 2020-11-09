@@ -23,7 +23,7 @@
         <br>
         <ion-item class="ion-no-padding">
           <ion-label position="floating">Email</ion-label>
-          <ion-input type="text" id="email" v-model="email" @ionblur="validaremail()"></ion-input>
+          <ion-input type="text" id="email" v-model="email" ionBlur="validaremail()"></ion-input>
         </ion-item>
         <div class="text-size-12">
           <span v-if="altoemail" color="red"> Formato incorrecto </span>
