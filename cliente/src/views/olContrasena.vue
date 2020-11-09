@@ -18,7 +18,7 @@
 
       <ion-list>
         <div class="ion-no-padding">
-          <ion-list-header class="text-size-20 ion-no-padding">¿Olvidaste tu contraseña?</ion-list-header>
+          <ion-list-header class="text-size-20 ion-no-padding">¿Olvidó su contraseña?</ion-list-header>
         </div>
         <br>
         <ion-item class="ion-no-padding">
