@@ -97,9 +97,7 @@ export default  {
         altocontra,
         validarcontra,
       }
-  }
-
-
+    }
   },
 }
 </script>
