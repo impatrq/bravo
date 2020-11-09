@@ -32,8 +32,10 @@
         </div>
         <ion-item class="ion-no-padding">
           <ion-label position="floating">Repita su contraseña</ion-label>
-          <ion-input></ion-input>
+          <ion-input type="password" id="contra" v-model="contra" ionBlur="validarcontra()"></ion-input>
         </ion-item>
+          <span v-if="!contra">Repita contraseña</span>
+          <span v-if="altocontra" color="red"> Formato incorrecto </span>
         <br>
         <ion-button expand="block" href="#" fill="outline" >Confirmar</ion-button>
         <br>
