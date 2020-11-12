@@ -75,6 +75,15 @@
 .background-white{
 background-color: #808289 ;
 }
+.background-white2{
+  background-color: #92949c ;
+}
+.background-white3{
+  background-color: #383a3e ;
+}
+.background-white2{
+  background-color: #d7d8da ;
+}
 
 </style>
 
