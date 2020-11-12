@@ -58,8 +58,12 @@
           <ion-list-header>
             <ion-text class="ion-text-center width-95per"><h4>Hoy</h4></ion-text>
           </ion-list-header>
-                    
 
+          <ion-card>
+            <ion-card-header class="background-grey">                      
+              <ion-card-title class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
+              <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+            </ion-card-header>
           </ion-card>
 
           <!--Dias cercanos-->
