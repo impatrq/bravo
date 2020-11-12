@@ -1,149 +1,185 @@
 <template>
-  <ion-page>
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Home</ion-title>
-        </ion-toolbar>
-      </ion-header>
+<ion-page>
 
-      <ion-row class="ion-justify-content-center fullheight">
-      <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
+<ion-header>
+  <ion-toolbar><img src="@/components/img/headerLogo.png" class="ion-padding"></ion-toolbar>
+</ion-header>
 
-          <!--Novedades-->
-          <ion-slides pager="true" :options="slideOpts">
+<ion-content :fullscreen="true">
+  <ion-header collapse="condense">
+    <ion-toolbar><ion-title size="large">Home</ion-title></ion-toolbar>
+  </ion-header>
 
-            <!--novedad 1-->
-            <ion-slide>
-                <ion-card class="card">
-                    <ion-item  class="novedad"><img src="@/components/img/not1.png"></ion-item>
-                    <ion-card-content> Titulo de Noticia 1 </ion-card-content>
-                </ion-card>
-            </ion-slide>
-            <!--novedad 2-->
-            <ion-slide>
-                <ion-card class="card">
-                    <ion-item class="novedad"><img src="@/components/img/not2.png"></ion-item>
-                    <ion-card-content> Titulo de Noticia 2 </ion-card-content>
-                </ion-card>
-            </ion-slide>
-            <!--novedad 3-->
-            <ion-slide>
-                <ion-card class="card">
-                    <ion-item  class="novedad"><img src="@/components/img/not3.png" ></ion-item>
-                    <ion-card-content> Titulo de Noticia 3 </ion-card-content>
-                </ion-card>
-            </ion-slide>
+  <ion-row class="ion-justify-content-center fullheight">
+  <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
 
-          </ion-slides>
+    <ion-slides pager="true" :options="slideOpts">  
 
-          <!--Comentario-->
-          <ion-card>
-              
-              <!--ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
-    <ion-infinite-scroll-content
-      loadingSpinner="bubbles"
-      loadingText="Loading more data...">
-                <ion-item>
-                <ion-label>Pokémon Yellow</ion-label>
-                </ion-item>
-                <ion-item>
-                <ion-label>Mega Man X</ion-label>
-                </ion-item>
-                <ion-item>
-                <ion-label>The Legend of Zelda</ion-label>
-                </ion-item>
-                <ion-item>
-                <ion-label>Pac-Man</ion-label>
-                </ion-item>                
-                <ion-item>
-                <ion-label>Pac-Man</ion-label>
-                </ion-item>                
-                <ion-item>
-                <ion-label>Pac-Man</ion-label>
-                </ion-item><ion-item>
-                <ion-label>Pac-Man</ion-label>
-                </ion-item>                
-                <ion-item>
-                <ion-label>Pac-Man</ion-label>
-                </ion-item>                
-                <ion-item>
-                <ion-label>Pac-Man</ion-label>
-                </ion-item>
-      </ion-infinite-scroll-content>
-            </ion-infinite-scroll-->
-      
-                <!--ion-item>
-                    <ion-text class="ion-padding-vertical">
-                      <h5 class="ion-text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non congue odio, sed vehicula turpis. Morbi in vulputate urna. </h5>
-                      <br>
-                      <ion-label class="ion-text-end ion-text-wrap ion-text-capitalize ion-padding-buttom">Nombre de alumno</ion-label>
-                    </ion-text>
+      <ion-slide>
+        <ion-card class="ion-padding-top margin-buttom-60">
+          <ion-item class="img"><img src="@/components/img/not1.png"></ion-item>
+          <ion-card-content> Titulo de Noticia 1 </ion-card-content>
+        </ion-card>
+      </ion-slide>            
+      <ion-slide>
+        <ion-card class="ion-padding-top margin-buttom-60">
+          <ion-item class="img"><img src="@/components/img/not2.png"></ion-item>
+          <ion-card-content> Titulo de Noticia 2 </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card class="ion-padding-top margin-buttom-60">
+          <ion-item class="img"><img src="@/components/img/not3.png" ></ion-item>
+          <ion-card-content> Titulo de Noticia 3 </ion-card-content>
+        </ion-card>
+      </ion-slide>
 
-                </ion-item--> 
+    </ion-slides>
+
+<!--Comentario incompleto--> 
   
-                    
+<!--ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Comentarios</ion-label>
+    </ion-list-header>
+  </ion-list>
+  <ion-infinite-scroll threshold="100px" id="infinite-scroll">
+    <ion-infinite-scroll-content loading-spinner="bubbles" loading-text="Loading more data..."></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content-->
+          
+    <ion-slides pager="true" :options="slideOpts" class="margin-buttom-60">    
+      <ion-slide class="margin-buttom-60">
+        <ion-list class="width-95per">
 
-          </ion-card>
+          <ion-list-header>
+            <ion-text class="ion-text-center width-95per"><h4>Hoy</h4></ion-text>
+          </ion-list-header>
 
-          <!--Dias cercanos-->
           <ion-card>
-              
+            <ion-card-header class="background-grey">                      
+              <ion-card-title class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
+              <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+            </ion-card-header>
           </ion-card>
+          <ion-card>
+            <ion-card-header class="background-grey">                      
+              <ion-card-title class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
+              <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+          <ion-card>
+            <ion-card-header class="background-grey">                      
+              <ion-card-title class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
+              <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+          <ion-card>
+            <ion-card-header class="background-grey">                      
+              <ion-card-title class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
+              <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+                    
+        </ion-list>                
+      </ion-slide>
+      <ion-slide class="margin-buttom-60">                
+        <ion-list class="width-95per">
 
-      </ion-col>
-      </ion-row>
+          <ion-list-header>
+            <ion-text class="ion-text-center width-95per"><h4>Mañana</h4></ion-text>
+          </ion-list-header>
 
-    </ion-content>
-  </ion-page>
+          <ion-card>
+            <ion-card-header class="background-grey">                      
+              <ion-card-title class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
+              <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+          <ion-card>
+            <ion-card-header class="background-grey">                      
+              <ion-card-title class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
+              <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+          <ion-card>
+            <ion-card-header class="background-grey">                      
+              <ion-card-title class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
+              <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+          <ion-card>
+            <ion-card-header class="background-grey">                      
+              <ion-card-title class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
+              <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+                    
+        </ion-list>                
+      </ion-slide>
+    </ion-slides>
+
+  </ion-col>
+  </ion-row>
+
+</ion-content>
+</ion-page>
 </template>
 
 <style>
-.text-size-12{
-  font-size: 12px;
-}
-.text-size-20{
-  font-size: 20px;
+.margin-buttom-60{
+  margin-bottom: 60px;
 }
 .fullheight{
   height: 100%; 
 }
-.novedad{
+.width-95per{
+  width: 95%; 
+}
+.background-grey{
+  background-color: rgb(50, 50, 50);
+}
+.img{
   width: 100%;
-  height: 30vh;
-}
-.scroll{
-    overflow: scroll;
-}
-.card{
-  padding-top: 20px;
-  margin-bottom: 30px;
+  height: 23vh;
 }
 </style>
 
 <script lang="ts">
-/*import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
-
-export default  {
-  name: 'home',
-  components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow },
-  methods: {
-  }
-}*/
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow, IonSlides, IonSlide } from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow, IonSlides, IonSlide} from '@ionic/vue';
 import { defineComponent } from 'vue';
+import ExploreContainerVue from '../../components/ExploreContainer.vue';
 
 export default defineComponent({
   components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow, IonSlides, IonSlide },
   setup() {
-    // Optional parameters to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options.
+    
     const slideOpts = {
       initialSlide: 1,
       speed: 400
     };
-    return { slideOpts }
+    return { slideOpts } 
+    
+    /*const infiniteScroll = document.getElementById('infinite-scroll');
+
+    infiniteScroll.addEventListener('ionInfinite', function(event) {
+      setTimeout(function() {
+        console.log('Done');
+        event.target.complete();
+
+        // App logic to determine if all data is loaded
+        // and disable the infinite scroll
+        if (data.length == 1000) {
+          event.target.disabled = true;
+        }
+      }, 500);
+    });
+
+    function toggleInfiniteScroll() {
+      infiniteScroll.disabled = !infiniteScroll.disabled;
+    } */ 
+
   }
 });
-
 </script>
