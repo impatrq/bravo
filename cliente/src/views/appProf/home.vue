@@ -23,11 +23,7 @@
           <ion-card-content> Titulo de Noticia 1 </ion-card-content>
         </ion-card>
       </ion-slide>            
-                <ion-card class="card">
-                    <ion-item class="novedad"><img src="@/components/img/not2.png"></ion-item>
-                    <ion-card-content> Titulo de Noticia 2 </ion-card-content>
-                </ion-card>
-            </ion-slide>
+      <ion-slide>
             <!--novedad 3-->
             <ion-slide>
                 <ion-card class="card">
