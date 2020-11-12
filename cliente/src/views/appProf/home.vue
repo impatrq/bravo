@@ -19,11 +19,7 @@
 
             <!--novedad 1-->
             <ion-slide>
-                <ion-card class="card">
-                    <ion-item  class="novedad"><img src="@/components/img/not1.png"></ion-item>
-                    <ion-card-content> Titulo de Noticia 1 </ion-card-content>
-                </ion-card>
-            </ion-slide>
+        <ion-card class="ion-padding-top margin-buttom-60">
             <!--novedad 2-->
             <ion-slide>
                 <ion-card class="card">
