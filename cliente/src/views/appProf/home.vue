@@ -36,7 +36,7 @@
         </ion-card>
       </ion-slide>
 
-          </ion-slides>
+    </ion-slides>
 
           <!--Comentario-->
           <ion-card>
