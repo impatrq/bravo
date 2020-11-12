@@ -159,7 +159,7 @@ import ExploreContainerVue from '../../components/ExploreContainer.vue';
 export default defineComponent({
   components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow, IonSlides, IonSlide },
   setup() {
-    // Optional parameters to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options.
+    
     const slideOpts = {
       initialSlide: 1,
       speed: 400
