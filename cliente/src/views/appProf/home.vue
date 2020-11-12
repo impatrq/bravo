@@ -51,12 +51,9 @@
   </ion-infinite-scroll>
 </ion-content-->
           
-                <!--ion-item>
-                    <ion-text class="ion-padding-vertical">
-                      <h5 class="ion-text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non congue odio, sed vehicula turpis. Morbi in vulputate urna. </h5>
-                      <br>
-                      <ion-label class="ion-text-end ion-text-wrap ion-text-capitalize ion-padding-buttom">Nombre de alumno</ion-label>
-                    </ion-text>
+    <ion-slides pager="true" :options="slideOpts" class="margin-buttom-60">    
+      <ion-slide class="margin-buttom-60">
+        <ion-list class="width-95per">
 
                 </ion-item--> 
   
