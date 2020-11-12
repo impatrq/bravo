@@ -38,42 +38,19 @@
 
     </ion-slides>
 
-          <!--Comentario-->
-          <ion-card>
-              
-              <!--ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
-    <ion-infinite-scroll-content
-      loadingSpinner="bubbles"
-      loadingText="Loading more data...">
-                <ion-item>
-                <ion-label>Pokémon Yellow</ion-label>
-                </ion-item>
-                <ion-item>
-                <ion-label>Mega Man X</ion-label>
-                </ion-item>
-                <ion-item>
-                <ion-label>The Legend of Zelda</ion-label>
-                </ion-item>
-                <ion-item>
-                <ion-label>Pac-Man</ion-label>
-                </ion-item>                
-                <ion-item>
-                <ion-label>Pac-Man</ion-label>
-                </ion-item>                
-                <ion-item>
-                <ion-label>Pac-Man</ion-label>
-                </ion-item><ion-item>
-                <ion-label>Pac-Man</ion-label>
-                </ion-item>                
-                <ion-item>
-                <ion-label>Pac-Man</ion-label>
-                </ion-item>                
-                <ion-item>
-                <ion-label>Pac-Man</ion-label>
-                </ion-item>
-      </ion-infinite-scroll-content>
-            </ion-infinite-scroll-->
-      
+<!--Comentario incompleto--> 
+  
+<!--ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Comentarios</ion-label>
+    </ion-list-header>
+  </ion-list>
+  <ion-infinite-scroll threshold="100px" id="infinite-scroll">
+    <ion-infinite-scroll-content loading-spinner="bubbles" loading-text="Loading more data..."></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content-->
+          
                 <!--ion-item>
                     <ion-text class="ion-padding-vertical">
                       <h5 class="ion-text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non congue odio, sed vehicula turpis. Morbi in vulputate urna. </h5>
