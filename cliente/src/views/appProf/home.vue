@@ -121,8 +121,9 @@
         </ion-list>                
       </ion-slide>
     </ion-slides>
-      </ion-col>
-      </ion-row>
+
+  </ion-col>
+  </ion-row>
 
     </ion-content>
   </ion-page>
