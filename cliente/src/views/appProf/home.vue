@@ -86,8 +86,41 @@
                     
         </ion-list>                
       </ion-slide>
-          </ion-card>
+      <ion-slide class="margin-buttom-60">                
+        <ion-list class="width-95per">
 
+          <ion-list-header>
+            <ion-text class="ion-text-center width-95per"><h4>Mañana</h4></ion-text>
+          </ion-list-header>
+
+          <ion-card>
+            <ion-card-header class="background-grey">                      
+              <ion-card-title class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
+              <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+          <ion-card>
+            <ion-card-header class="background-grey">                      
+              <ion-card-title class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
+              <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+          <ion-card>
+            <ion-card-header class="background-grey">                      
+              <ion-card-title class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
+              <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+          <ion-card>
+            <ion-card-header class="background-grey">                      
+              <ion-card-title class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
+              <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+                    
+        </ion-list>                
+      </ion-slide>
+    </ion-slides>
       </ion-col>
       </ion-row>
 
