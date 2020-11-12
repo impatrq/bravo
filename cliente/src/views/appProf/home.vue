@@ -1,5 +1,10 @@
 <template>
 <ion-page>
+
+<ion-header>
+  <ion-toolbar><img src="@/components/img/headerLogo.png" class="ion-padding"></ion-toolbar>
+</ion-header>
+
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
