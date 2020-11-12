@@ -142,8 +142,8 @@
 .width-95per{
   width: 95%; 
 }
-.scroll{
-    overflow: scroll;
+.background-grey{
+  background-color: rgb(50, 50, 50);
 }
 .img{
   width: 100%;
