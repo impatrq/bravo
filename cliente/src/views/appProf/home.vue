@@ -125,8 +125,8 @@
   </ion-col>
   </ion-row>
 
-    </ion-content>
-  </ion-page>
+</ion-content>
+</ion-page>
 </template>
 
 <style>
