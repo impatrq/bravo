@@ -14,8 +14,6 @@
   <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
 
     <ion-slides pager="true" :options="slideOpts">  
-          <ion-slides pager="true" :options="slideOpts">
-    <ion-slides pager="true" :options="slideOpts">  
 
       <ion-slide>
         <ion-card class="ion-padding-top margin-buttom-60">
