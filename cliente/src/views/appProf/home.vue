@@ -83,10 +83,9 @@
               <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
             </ion-card-header>
           </ion-card>
-
-          <!--Dias cercanos-->
-          <ion-card>
-              
+                    
+        </ion-list>                
+      </ion-slide>
           </ion-card>
 
       </ion-col>
