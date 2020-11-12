@@ -152,17 +152,9 @@
 </style>
 
 <script lang="ts">
-/*import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
-
-export default  {
-  name: 'home',
-  components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow },
-  methods: {
-  }
-}*/
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow, IonSlides, IonSlide } from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow, IonSlides, IonSlide} from '@ionic/vue';
 import { defineComponent } from 'vue';
+import ExploreContainerVue from '../../components/ExploreContainer.vue';
 
 export default defineComponent({
   components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow, IonSlides, IonSlide },
