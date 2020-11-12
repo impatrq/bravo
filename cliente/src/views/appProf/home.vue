@@ -139,9 +139,8 @@
 .fullheight{
   height: 100%; 
 }
-.novedad{
-  width: 100%;
-  height: 30vh;
+.width-95per{
+  width: 95%; 
 }
 .scroll{
     overflow: scroll;
