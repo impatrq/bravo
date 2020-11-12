@@ -65,6 +65,24 @@
               <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
             </ion-card-header>
           </ion-card>
+          <ion-card>
+            <ion-card-header class="background-grey">                      
+              <ion-card-title class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
+              <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+          <ion-card>
+            <ion-card-header class="background-grey">                      
+              <ion-card-title class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
+              <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+          <ion-card>
+            <ion-card-header class="background-grey">                      
+              <ion-card-title class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
+              <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
 
           <!--Dias cercanos-->
           <ion-card>
