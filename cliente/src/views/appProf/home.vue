@@ -17,8 +17,7 @@
           <ion-slides pager="true" :options="slideOpts">
     <ion-slides pager="true" :options="slideOpts">  
 
-            <!--novedad 1-->
-            <ion-slide>
+      <ion-slide>
         <ion-card class="ion-padding-top margin-buttom-60">
             <!--novedad 2-->
             <ion-slide>
