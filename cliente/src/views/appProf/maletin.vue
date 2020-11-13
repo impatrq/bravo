@@ -70,6 +70,9 @@
 .width-95per{
   width: 95%; 
 }
+.left-move{
+  padding-left: 250px;
+}
 .background-grey{
   background-color: rgb(50, 50, 50);
 }
