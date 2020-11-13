@@ -103,9 +103,8 @@ export default defineComponent({
       initialSlide: 1,
       speed: 400
     };
-    return { slideOpts } 
+    return { slideOpts, add } 
     
-
     //FALTA LÓGICA DEL INFINITE SCROLL
   }
 });
