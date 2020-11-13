@@ -7,14 +7,14 @@
           <ion-label>Home</ion-label>
         </ion-tab-button>
           
-        <ion-tab-button tab="tab2" href="/tabs/tab2">
-          <ion-icon :icon="ellipse" />
-          <ion-label>Tab 2</ion-label>
+        <ion-tab-button tab="search" href="/tabs/search">
+          <ion-icon :icon="search" />
+          <ion-label>Buscar</ion-label>
         </ion-tab-button>
         
-        <ion-tab-button tab="tab3" href="/tabs/tab3">
-          <ion-icon :icon="square" />
-          <ion-label>Tab 3</ion-label>
+        <ion-tab-button tab="briefcase" href="/tabs/briefcase">
+          <ion-icon :icon="briefcase" />
+          <ion-label>Tareas</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
@@ -23,7 +23,7 @@
 
 <script lang="ts">
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage } from '@ionic/vue';
-import { home, ellipse, square, triangle } from 'ionicons/icons';
+import { home, ellipse, square, triangle, search, briefcase } from 'ionicons/icons';
 
 export default {
   name: 'Tabs',
@@ -31,6 +31,8 @@ export default {
   setup() {
     return {
       home,
+      search,
+      briefcase,
       ellipse, 
       square, 
       triangle,
