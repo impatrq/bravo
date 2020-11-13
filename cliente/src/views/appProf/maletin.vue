@@ -13,7 +13,7 @@
           <ion-card-header class="background-white2">
             <ion-card-title class="ion-text-capitalize ion-text-start"> Materia: </ion-card-title>
               <br>
-            <ion-card-subtitle color="light" class="ion-text-capitalize ion-text-start">Curso:</ion-card-subtitle>
+            <ion-card-subtitle color="Tint" class="ion-text-capitalize ion-text-start">Curso:</ion-card-subtitle>
           </ion-card-header>
         </ion-list>             
     <ion-list class="width-95per">
