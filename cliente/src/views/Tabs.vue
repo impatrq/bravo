@@ -23,7 +23,7 @@
 
 <script lang="ts">
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage } from '@ionic/vue';
-import { home, ellipse, square, triangle } from 'ionicons/icons';
+import { home, ellipse, square, triangle, search, briefcase } from 'ionicons/icons';
 
 export default {
   name: 'Tabs',
@@ -31,6 +31,8 @@ export default {
   setup() {
     return {
       home,
+      search,
+      briefcase,
       ellipse, 
       square, 
       triangle,
