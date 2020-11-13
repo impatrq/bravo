@@ -49,10 +49,9 @@
                 </ion-card> 
               </ion-list>
             </ion-slide>
-            </ion-card-header>
-        </ion-card>
+        </ion-card-header>
+      </ion-card>
     </ion-list>            
-
   <!-- TIENE QUE IR EL INFINITE SCROLL-->     
         </ion-col>
       </ion-row>
