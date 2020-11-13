@@ -94,6 +94,7 @@ background-color: #808289 ;
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow, IonSlide} from '@ionic/vue';
 import { defineComponent } from 'vue';
 import ExploreContainerVue from '../../components/ExploreContainer.vue';
+import{add}from 'ionicons/icons';
 export default defineComponent({
   components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow, IonSlide },
   setup() {
