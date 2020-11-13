@@ -28,22 +28,22 @@
             <ion-slide class="margin-buttom-60">
               <ion-list class="width-95per">
                 <ion-card>
-                  <ion-card-header class="background-white">                      
+                  <ion-card-header class="background-white3">                      
                     <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 1</ion-card-title>
                   </ion-card-header>
                 </ion-card>
                 <ion-card>
-                  <ion-card-header class="background-white">                      
+                  <ion-card-header class="background-white3">                      
                     <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 2</ion-card-title>
                   </ion-card-header>
                 </ion-card>
                 <ion-card>
-                  <ion-card-header class="background-white">                      
+                  <ion-card-header class="background-white3">                      
                     <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 3</ion-card-title>
                   </ion-card-header>
                 </ion-card>
                 <ion-card>
-                  <ion-card-header class="background-white">                      
+                  <ion-card-header class="background-white3">                      
                     <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 4</ion-card-title>
                   </ion-card-header>
                 </ion-card> 
