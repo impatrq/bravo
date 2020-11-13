@@ -18,12 +18,13 @@
             <ion-card-subtitle color="light" class="ion-text-capitalize ion-text-start">Curso:</ion-card-subtitle>
           </ion-card-header>
         </ion-list>
-      </ion-slide>            
-  <ion-slide>
     <ion-list class="width-95per">
-      <ion-card-content class="backgroun-white">
-        <ion-card-title class="ion-text-capitalize ion-text-start"> Actividades: </ion-card-title>
-          <br>
+      <ion-card>
+        <ion-card-header class="background-white2">
+          <ion-card-title class="ion-text-capitalize ion-text-start"> Actividades: </ion-card-title>
+          <ion-icon class="left-move" name="add"></ion-icon>
+          <ion-label class="left-move">Agregar tareas</ion-label>
+          <br><br>
             <ion-slide class="margin-buttom-60">
               <ion-list class="width-95per">
                 <ion-card>
