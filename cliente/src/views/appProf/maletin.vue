@@ -20,8 +20,10 @@
       <ion-card>
         <ion-card-header class="background-white2">
           <ion-card-title class="ion-text-capitalize ion-text-start"> Actividades: </ion-card-title>
-          <ion-icon class="left-move" name="add"></ion-icon>
-          <ion-label class="left-move">Agregar tareas</ion-label>
+          <ion-tab-button>
+            <ion-icon :icon="add" class="left-move"></ion-icon>
+            <ion-label class="left-move">Agregar tareas</ion-label>
+          </ion-tab-button>
           <br><br>
             <ion-slide class="margin-buttom-60">
               <ion-list class="width-95per">
