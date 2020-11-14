@@ -102,6 +102,7 @@
 <style>
 .text-size-12{
   font-size:12px;
+  text-decoration: none;
 }
 .text-size-20{
   font-size:20px;
