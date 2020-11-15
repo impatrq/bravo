@@ -37,9 +37,9 @@
                     <span v-if="altocontra" color="red"> Formato incorrecto </span>
                   </div>
                   <br>
-                  <ion-button expand="block" fill="outline">INICIAR SESIÓN</ion-button>
+                    <ion-button expand="block" fill="outline">INICIAR SESIÓN</ion-button>
                   <br>
-                  <ion-router-link href="/tabs/oCont" class="text-size-12">¿Olvidó su contraseña?</ion-router-link>
+                    <ion-router-link href="/tabs/oCont" class="text-size-12">¿Olvidó su contraseña?</ion-router-link>
                   <br>
                   <router-link to="/cargosReg">¿No tiene cuenta? Registrese aquí.</router-link>
                 </ion-list>
