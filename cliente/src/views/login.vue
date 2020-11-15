@@ -46,8 +46,6 @@
               </ion-card>
             </ion-col>
           </ion-row> 
-      </ion-row> 
-          </ion-row> 
       <!--ExploreContainer name="tab login" /-->
     </ion-content>
   </ion-page>
