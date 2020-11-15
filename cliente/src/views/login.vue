@@ -41,7 +41,7 @@
         <br>
         <ion-button expand="block" fill="outline">INICIAR SESIÓN</ion-button>
         <br>
-        <ion-router-link href="/tabs/oCont" class="text-size-12">¿Olvidó su contraseña?</ion-router-link>
+        <router-link to="oCont" class="text-size-12">¿Olvidó su contraseña?</router-link>
         <br>
         <ion-router-link href="tabs/cargosReg" class="text-size-12">¿No tiene cuenta? Registrese aquí.</ion-router-link>
         
@@ -102,6 +102,7 @@
 <style>
 .text-size-12{
   font-size:12px;
+  text-decoration: none;
 }
 .text-size-20{
   font-size:20px;
