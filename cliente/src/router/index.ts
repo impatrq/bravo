@@ -16,6 +16,27 @@ const routes: Array<RouteRecordRaw> = [
         redirect: 'tab1'
       },
       {
+        path: 'home',
+        component: () => import('@/views/appProf/home.vue')
+      },
+      {
+        path: 'maletin',
+        component: () => import('@/views/appProf/maletin.vue')
+      },
+      {
+        path: 'tab1',
+        component: () => import('@/views/Tab1.vue')
+      },
+      {
+        path: 'tab2',
+        component: () => import('@/views/Tab2.vue')
+      },
+      {
+        path: 'tab3',
+        component: () => import('@/views/Tab3.vue')
+      }
+    ]
+  },
         path: 'login',
         component: () => import('@/views/login.vue')
       },
