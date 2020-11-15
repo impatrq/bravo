@@ -43,8 +43,9 @@
         <br>
         <ion-router-link href="/tabs/oCont" class="text-size-12">¿Olvidó su contraseña?</ion-router-link>
         <br>
-        <ion-router-link href="tabs/cargosReg" class="text-size-12">¿No tiene cuenta? Registrese aquí.</ion-router-link>
-        
+        <!--<ion-router-link href="tabs/cargosReg" class="text-size-12">¿No tiene cuenta? Registrese aquí.</ion-router-link>
+        -->
+        <router-link to="/cargosReg">¿No tiene cuenta? Registrese aquí.</router-link>
       </ion-list>
 
       </ion-card>
