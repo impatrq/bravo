@@ -45,8 +45,6 @@
 
   </ion-col>
   </ion-row> 
-          </ion-row> 
-  </ion-row> 
       
 </ion-content>
 </ion-page>
