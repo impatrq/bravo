@@ -89,11 +89,10 @@ export default  {
     const validarcontra = ()=>{
       const num =  /[0-9]/g;
       const validacion = contra.value.match (num);
-      //console.log ("validacion", validacion);
-      //console.log (num);
+      
       const mayus = /[A-Z]/g;
       const validacion2 = contra.value.match (mayus);
-      //console.log ("validacion2", validacion2);
+      
       const min = /[a-z]/g;
       const validacion3 = contra.value.match (min);
       if(validacion === null || validacion2 === null || validacion3 === null){
