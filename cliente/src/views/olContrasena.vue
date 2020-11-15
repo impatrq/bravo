@@ -57,13 +57,13 @@ import { App, ref } from 'vue';
 export default  {
   name: 'oCont',
   components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow },
-  setup() { //FALTA VINCULARLO CON EL TEMPLATE
+  setup() {
     const email = ref("")
     const altoemail = ref(false)
     const validaremail = ()=> {
       const arroba = email.value.includes("@");
       const punto = email.value.includes(".");
-      //console.log(arroba, punto);
+
       altoemail.value = (!arroba || !punto) ? true: false;
       return {
         email,
