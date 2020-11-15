@@ -39,9 +39,9 @@
                   <br>
                     <ion-button expand="block" fill="outline">INICIAR SESIÓN</ion-button>
                   <br>
-                    <ion-router-link href="/tabs/oCont" class="text-size-12">¿Olvidó su contraseña?</ion-router-link>
+                    <router-link to="/oCont" class="text-size-12">¿Olvidó su contraseña?</router-link>
                   <br>
-                  <router-link to="/tabs/cargosReg">¿No tiene cuenta? Registrese aquí.</router-link>
+                  <router-link to="/cargosReg">¿No tiene cuenta? Registrese aquí.</router-link>
                 </ion-list>
               </ion-card>
             </ion-col>
