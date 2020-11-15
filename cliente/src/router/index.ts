@@ -37,6 +37,15 @@ const routes: Array<RouteRecordRaw> = [
       }
     ]
   },
+  {
+    path: '/',
+    component: Tabs,
+    children: [
+      {
+        path: '',
+        redirect: 'login'
+      },
+      {
         path: 'login',
         component: () => import('@/views/login.vue')
       },
