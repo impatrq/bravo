@@ -11,89 +11,41 @@
           <ion-title size="large">Login</ion-title>
         </ion-toolbar>
       </ion-header>
-
-      <ion-row class="ion-justify-content-center fullheight">
-      <ion-col size-xl="6" size-sm="10" class="ion-align-self-center">
-      <ion-card class="ion-padding">
-
-      <ion-list>
-        <div class="ion-text-uppercase ion-no-padding">
-          <ion-list-header class="text-size-20 ion-text-justify">Iniciar sesión</ion-list-header>
-        </div>
-        <br>
-        <ion-item class="ion-no-padding">
-          <ion-label position="floating">Correo Electronico</ion-label>
-          <ion-input type="text" id="email" v-model="email" ionBlur="validaremail()"></ion-input>
-        </ion-item>
-        <div class="text-size-12">
-          <span v-if="altoemail" color="red"> Formato incorrecto </span>
-          <span v-if="!email">Ej.: minombre@gmail.com</span>
-        </div>
-        <br>
-        <ion-item class="ion-no-padding">
-          <ion-label position="floating">Contraseña</ion-label>
-          <ion-input type="password" id="contra" v-model="contra" ionBlur="validarcontra()"></ion-input>
-        </ion-item>
-        <div class="text-size-12">
-          <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
-          <span v-if="altocontra" color="red"> Formato incorrecto </span>
-        </div>
-        <br>
-        <ion-button expand="block" fill="outline">INICIAR SESIÓN</ion-button>
-        <br>
-        <router-link to="oCont" class="text-size-12">¿Olvidó su contraseña?</router-link>
-        <br>
-        <ion-router-link href="tabs/cargosReg" class="text-size-12">¿No tiene cuenta? Registrese aquí.</ion-router-link>
-        
-      </ion-list>
-
-      </ion-card>
-      </ion-col>
-      </ion-row> 
-
-      <!--div id="app" class="hero is-fullheight">
-        <div class="hero-body">
-          <div class="container">
-            <div class="columns"> 
-            <div class="column is-full is-4-desktop is-offset-4-desktop">
-              <h1 class="title">Iniciar Sesión</h1>
-              <form>
-                <div id="app">
-                  <div class="field">   
-                    <div class="control is-hero-fullscreen">
-                      <ion-input type="text" id="email" v-model="email" @blur="validaremail" placeholder="Correo Electronico" class="input is-danger"></ion-input>
-                      <span v-if="altoemail" color="red"> Formato incorrecto </span>
-                      <span v-if="!email">Ej.: minombre@gmail.com</span>
-                      <p class="help is-danger">Ingrese Un Correo Electronico</p>
-                    </div>
+          <ion-row class="ion-justify-content-center fullheight">
+            <ion-col size-xl="6" size-sm="10" class="ion-align-self-center">
+              <ion-card class="ion-padding">
+                <ion-list>
+                  <div class="ion-text-uppercase ion-no-padding">
+                    <ion-list-header class="text-size-20 ion-text-justify">Iniciar sesión</ion-list-header>
                   </div>
-                  <div class="field">
-                    <div class="control">
-                      <ion-input type="password" placeholder="Contraseña" id="contra" v-model="contra" @blur="validarcontra" class="input is-success"></ion-input>
-                      <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
-                      <span v-if="altocontra" color="red"> Formato incorrecto </span>
-                      <p class="help is-success"></p>
-                    </div>
+                  <br>
+                  <ion-item class="ion-no-padding">
+                    <ion-label position="floating">Correo Electronico</ion-label>
+                    <ion-input type="text" id="email" v-model="email" ionBlur="validaremail()"></ion-input>
+                  </ion-item>
+                  <div class="text-size-12">
+                    <span v-if="altoemail" color="red"> Formato incorrecto </span>
+                    <span v-if="!email">Ej.: minombre@gmail.com</span>
                   </div>
-                  <p class="help is-danger"></p>
-                </div>
-                <div class="field">
-                  <div class="control">
-                    <ion-button expand="block" >INICIAR SESIÓN</ion-button>
+                  <br>
+                  <ion-item class="ion-no-padding">
+                    <ion-label position="floating">Contraseña</ion-label>
+                    <ion-input type="password" id="contra" v-model="contra" ionBlur="validarcontra()"></ion-input>
+                  </ion-item>
+                  <div class="text-size-12">
+                    <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
+                    <span v-if="altocontra" color="red"> Formato incorrecto </span>
                   </div>
-                </div>
-                <div class="field">
-                  <div class="control">
-                    <a href="olContraseña.html">¿Olvidó su contraseña?</a><br>
-                    <a href="registroCargo.html">¿No tiene cuenta? Registrese aquí.</a>
-                  </div>
-                </div>
-              </form>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div-->
+                  <br>
+                    <ion-button expand="block" fill="outline">INICIAR SESIÓN</ion-button>
+                  <br>
+                    <ion-router-link href="/tabs/oCont" class="text-size-12">¿Olvidó su contraseña?</ion-router-link>
+                  <br>
+                  <router-link to="/tabs/cargosReg">¿No tiene cuenta? Registrese aquí.</router-link>
+                </ion-list>
+              </ion-card>
+            </ion-col>
+          </ion-row> 
       <!--ExploreContainer name="tab login" /-->
     </ion-content>
   </ion-page>
