@@ -29,11 +29,14 @@
       <ion-button expand="block" routerLink="login" fill="outline" >Confirmar</ion-button>
     </ion-list>
 
-      </ion-card>
-      </ion-col>
+  </ion-card>
+  </ion-col>
+  </ion-row>     
       </ion-row>       
-    </ion-content>
-  </ion-page>
+  </ion-row>     
+
+</ion-content>
+</ion-page>
 </template>
 
 <style>
