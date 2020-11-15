@@ -26,9 +26,7 @@
         <span v-if="!email">Ej.: minombre@gmail.com</span>
       </div>
       <br>
-        <ion-button expand="block" href="/tabs/ncont" fill="outline" >Enviar Email</ion-button>          
-        
-      </ion-list>
+      <ion-button expand="block" routerLink="ncont" fill="outline" >Enviar Email</ion-button>
 
       </ion-card>
       </ion-col>
