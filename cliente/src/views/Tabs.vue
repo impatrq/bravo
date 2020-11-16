@@ -4,7 +4,7 @@
       <ion-tab-bar slot="bottom">
         <ion-tab-button tab="Home" href="/tabs/home">
           <ion-icon :icon="home" />
-          <ion-label>Home</ion-label>
+          <ion-label>Inicio</ion-label>
         </ion-tab-button>
           
         <ion-tab-button tab="search" href="/tabs/search">
