@@ -32,14 +32,13 @@
       </ion-slide>
 
     </ion-slides>
+                    
+    <ion-list class="ion-margin margin-buttom-50">
 
-<!--Comentario incompleto--> 
-  
-<!--ion-content>
-  <ion-list>
-    <ion-list-header>
-      <ion-label>Comentarios</ion-label>
-    </ion-list-header>
+      <ion-list-header>
+        <ion-text><h4>Chat reciente</h4></ion-text>
+      </ion-list-header>
+
       <ion-card>
         <ion-card-header class="background-grey">                      
           <ion-card-title class="ion-text-capitalize ion-text-start">Profesor</ion-card-title>
@@ -67,11 +66,8 @@
           <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
         </ion-card-header>
       </ion-card>
-  </ion-list>
-  <ion-infinite-scroll threshold="100px" id="infinite-scroll">
-    <ion-infinite-scroll-content loading-spinner="bubbles" loading-text="Loading more data..."></ion-infinite-scroll-content>
-  </ion-infinite-scroll>
-</ion-content-->
+
+    </ion-list>
           
     <ion-slides pager="true" :options="slideOpts" class="margin-buttom-60">    
       <ion-slide class="margin-buttom-60">
