@@ -167,12 +167,12 @@
 </style>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow, IonSlides, IonSlide} from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonSlides, IonSlide} from '@ionic/vue';
 import { defineComponent } from 'vue';
 import ExploreContainerVue from '../../components/ExploreContainer.vue';
 
 export default defineComponent({
-  components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow, IonSlides, IonSlide },
+  components: { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonSlides, IonSlide },
   setup() {
     
     const slideOpts = {
