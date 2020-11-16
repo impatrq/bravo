@@ -148,8 +148,8 @@
 </template>
 
 <style>
-.margin-buttom-60{
-  margin-bottom: 60px;
+.margin-buttom-50{
+  margin-bottom: 50px;
 }
 .fullheight{
   height: 100%; 
