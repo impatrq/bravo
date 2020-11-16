@@ -13,19 +13,19 @@
     <ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">  
 
       <ion-slide>
-        <ion-card class="ion-padding-top margin-buttom-60">
+        <ion-card class="ion-padding-top margin-buttom-50">
           <ion-item class="img"><img src="@/components/img/not1.png"></ion-item>
           <ion-card-content> Titulo de Noticia 1 </ion-card-content>
         </ion-card>
       </ion-slide>            
       <ion-slide>
-        <ion-card class="ion-padding-top margin-buttom-60">
+        <ion-card class="ion-padding-top margin-buttom-50">
           <ion-item class="img"><img src="@/components/img/not2.png"></ion-item>
           <ion-card-content> Titulo de Noticia 2 </ion-card-content>
         </ion-card>
       </ion-slide>
       <ion-slide>
-        <ion-card class="ion-padding-top margin-buttom-60">
+        <ion-card class="ion-padding-top margin-buttom-50">
           <ion-item class="img"><img src="@/components/img/not3.png" ></ion-item>
           <ion-card-content> Titulo de Noticia 3 </ion-card-content>
         </ion-card>
