@@ -40,6 +40,33 @@
     <ion-list-header>
       <ion-label>Comentarios</ion-label>
     </ion-list-header>
+      <ion-card>
+        <ion-card-header class="background-grey">                      
+          <ion-card-title class="ion-text-capitalize ion-text-start">Profesor</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      <ion-card>
+        <ion-card-header class="background-grey">                      
+          <ion-card-title class="ion-text-capitalize ion-text-start">Alumno</ion-card-title>
+          <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+      <ion-card>
+        <ion-card-header class="background-grey">                      
+          <ion-card-title class="ion-text-capitalize ion-text-start">Pañol</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      <ion-card>
+        <ion-card-header class="background-grey">                      
+          <ion-card-title class="ion-text-capitalize ion-text-start">Preceptor</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      <ion-card>
+        <ion-card-header class="background-grey">                      
+          <ion-card-title class="ion-text-capitalize ion-text-start">Alumno</ion-card-title>
+          <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
   </ion-list>
   <ion-infinite-scroll threshold="100px" id="infinite-scroll">
     <ion-infinite-scroll-content loading-spinner="bubbles" loading-text="Loading more data..."></ion-infinite-scroll-content>
