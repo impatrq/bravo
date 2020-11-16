@@ -68,10 +68,10 @@
       </ion-card>
 
     </ion-list>
-          
-    <ion-slides pager="true" :options="slideOpts" class="margin-buttom-60">    
-      <ion-slide class="margin-buttom-60">
-        <ion-list class="width-95per">
+
+    <ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">    
+      <ion-slide class="margin-buttom-50">
+        <ion-list class="fullwidth ion-margin">
 
           <ion-list-header>
             <ion-text class="ion-text-center width-95per"><h4>Hoy</h4></ion-text>
