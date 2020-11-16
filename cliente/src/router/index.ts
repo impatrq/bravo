@@ -84,7 +84,15 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'valCont',
         component: () => import('@/views/valContra.vue')
-      }
+      },
+      {
+        path: 'home',
+        component: () => import('@/views/appProf/home.vue')
+      },
+      {
+        path: 'maletin',
+        component: () => import('@/views/appProf/maletin.vue')
+      },
     ]
   }
 ]
