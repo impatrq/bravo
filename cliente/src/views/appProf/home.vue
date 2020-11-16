@@ -104,11 +104,11 @@
                     
         </ion-list>                
       </ion-slide>
-      <ion-slide class="margin-buttom-60">                
-        <ion-list class="width-95per">
+      <ion-slide class="margin-buttom-50">                
+        <ion-list class="fullwidth ion-margin">
 
           <ion-list-header>
-            <ion-text class="ion-text-center width-95per"><h4>Mañana</h4></ion-text>
+            <ion-text class="ion-margin-left"><h4>Mañana</h4></ion-text>
           </ion-list-header>
 
           <ion-card>
