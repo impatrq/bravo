@@ -154,8 +154,8 @@
 .fullheight{
   height: 100%; 
 }
-.width-95per{
-  width: 95%; 
+.fullwidth{
+  width: 100%; 
 }
 .background-grey{
   background-color: rgb(50, 50, 50);
