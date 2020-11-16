@@ -74,7 +74,7 @@
         <ion-list class="fullwidth ion-margin">
 
           <ion-list-header>
-            <ion-text class="ion-text-center width-95per"><h4>Hoy</h4></ion-text>
+            <ion-text class="ion-margin-left"><h4>Hoy</h4></ion-text>
           </ion-list-header>
 
           <ion-card>
