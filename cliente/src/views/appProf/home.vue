@@ -180,26 +180,6 @@ export default defineComponent({
       speed: 400
     };
     return { slideOpts } 
-    
-    /*const infiniteScroll = document.getElementById('infinite-scroll');
-
-    infiniteScroll.addEventListener('ionInfinite', function(event) {
-      setTimeout(function() {
-        console.log('Done');
-        event.target.complete();
-
-        // App logic to determine if all data is loaded
-        // and disable the infinite scroll
-        if (data.length == 1000) {
-          event.target.disabled = true;
-        }
-      }, 500);
-    });
-
-    function toggleInfiniteScroll() {
-      infiniteScroll.disabled = !infiniteScroll.disabled;
-    } */ 
-
   }
 });
 </script>
