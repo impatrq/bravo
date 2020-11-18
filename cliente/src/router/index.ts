@@ -90,6 +90,10 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/appProf/home.vue')
       },
       {
+        path: 'home2',
+        component: () => import('@/views/appAlum/home2.vue')
+      },
+      {
         path: 'maletin',
         component: () => import('@/views/appProf/maletin.vue')
       },
