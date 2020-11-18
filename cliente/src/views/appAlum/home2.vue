@@ -238,3 +238,40 @@
             </ion-content>
     </ion-page>
 </template>
+
+<style>
+.margin-buttom-50{
+  margin-bottom: 50px;
+}
+.fullheight{
+  height: 100%; 
+}
+.fullwidth{
+  width: 100%; 
+}
+.background-grey{
+  background-color: rgb(50, 50, 50);
+}
+.img{
+  width: 100%;
+  height: 23vh;
+}
+</style>
+
+<script lang="ts">
+import { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonSlides, IonSlide} from '@ionic/vue';
+import { defineComponent } from 'vue';
+import ExploreContainerVue from '../../components/ExploreContainer.vue';
+
+export default defineComponent({
+  components: { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonSlides, IonSlide },
+  setup() {
+    
+    const slideOpts = {
+      initialSlide: 1,
+      speed: 400
+    };
+    return { slideOpts } 
+  }
+});
+</script>
