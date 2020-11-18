@@ -46,7 +46,7 @@
         <ion-button href="/tabs/AlumReg" expand="block" fill="outline" >Alumno</ion-button>
         </router-link>-->
         <br>        
-        <router-link to="tabs/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</router-link>
+        <router-link to="login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</router-link>
       </ion-list>
 
       </ion-card>
