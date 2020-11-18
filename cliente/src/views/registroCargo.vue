@@ -78,6 +78,8 @@
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow } from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
+import dinamico from '@components/dinamico.vue'
+import { App, ref } from 'vue';
 
 export default  {
   name: 'registroCargo',
