@@ -82,7 +82,22 @@ import ExploreContainer from '@/components/ExploreContainer.vue';
 export default  {
   name: 'registroCargo',
   components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow },
-  methods: {
+methods: {
+    seleccionProf: ()=>{
+      console.log("se seleccionó profesor")
+    },
+    seleccionAlum: ()=>{
+      console.log("se seleccionó alumno")
+    },
+    seleccionPrec: ()=>{
+      console.log("se seleccionó preceptor")
+    },
+    seleccionPanol: ()=>{
+      console.log("se seleccionó pañol")
+    },
   }
+
+  
+
 }
 </script>
