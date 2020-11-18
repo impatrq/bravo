@@ -6,55 +6,75 @@
 </ion-header>
 
 <ion-content :fullscreen="true">
-  <ion-header collapse="condense">
-    <ion-toolbar><ion-title size="large">Home</ion-title></ion-toolbar>
-  </ion-header>
 
   <ion-row class="ion-justify-content-center fullheight">
   <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
 
-    <ion-slides pager="true" :options="slideOpts">  
+    <ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">  
 
       <ion-slide>
-        <ion-card class="ion-padding-top margin-buttom-60">
+        <ion-card class="ion-padding-top margin-buttom-50">
           <ion-item class="img"><img src="@/components/img/not1.png"></ion-item>
           <ion-card-content> Titulo de Noticia 1 </ion-card-content>
         </ion-card>
       </ion-slide>            
       <ion-slide>
-        <ion-card class="ion-padding-top margin-buttom-60">
+        <ion-card class="ion-padding-top margin-buttom-50">
           <ion-item class="img"><img src="@/components/img/not2.png"></ion-item>
           <ion-card-content> Titulo de Noticia 2 </ion-card-content>
         </ion-card>
       </ion-slide>
       <ion-slide>
-        <ion-card class="ion-padding-top margin-buttom-60">
+        <ion-card class="ion-padding-top margin-buttom-50">
           <ion-item class="img"><img src="@/components/img/not3.png" ></ion-item>
           <ion-card-content> Titulo de Noticia 3 </ion-card-content>
         </ion-card>
       </ion-slide>
 
     </ion-slides>
+                    
+    <ion-list class="ion-margin margin-buttom-50">
 
-<!--Comentario incompleto--> 
-  
-<!--ion-content>
-  <ion-list>
-    <ion-list-header>
-      <ion-label>Comentarios</ion-label>
-    </ion-list-header>
-  </ion-list>
-  <ion-infinite-scroll threshold="100px" id="infinite-scroll">
-    <ion-infinite-scroll-content loading-spinner="bubbles" loading-text="Loading more data..."></ion-infinite-scroll-content>
-  </ion-infinite-scroll>
-</ion-content-->
-          
-    <ion-slides pager="true" :options="slideOpts" class="margin-buttom-60">    
-      <ion-slide class="margin-buttom-60">
-        <ion-list class="width-95per">
+      <ion-list-header>
+        <ion-text><h4>Chat reciente</h4></ion-text>
+      </ion-list-header>
+
+      <ion-card>
+        <ion-card-header class="background-grey">                      
+          <ion-card-title class="ion-text-capitalize ion-text-start">Profesor</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      <ion-card>
+        <ion-card-header class="background-grey">                      
+          <ion-card-title class="ion-text-capitalize ion-text-start">Alumno</ion-card-title>
+          <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+      <ion-card>
+        <ion-card-header class="background-grey">                      
+          <ion-card-title class="ion-text-capitalize ion-text-start">Pañol</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      <ion-card>
+        <ion-card-header class="background-grey">                      
+          <ion-card-title class="ion-text-capitalize ion-text-start">Preceptor</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      <ion-card>
+        <ion-card-header class="background-grey">                      
+          <ion-card-title class="ion-text-capitalize ion-text-start">Alumno</ion-card-title>
+          <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+
+    </ion-list>
+
+    <ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">    
+      <ion-slide class="margin-buttom-50">
+        <ion-list class="fullwidth ion-margin">
 
           <ion-list-header>
-            <ion-text class="ion-text-center width-95per"><h4>Hoy</h4></ion-text>
+            <ion-text class="ion-margin-left"><h4>Hoy</h4></ion-text>
           </ion-list-header>
 
           <ion-card>
@@ -84,11 +104,11 @@
                     
         </ion-list>                
       </ion-slide>
-      <ion-slide class="margin-buttom-60">                
-        <ion-list class="width-95per">
+      <ion-slide class="margin-buttom-50">                
+        <ion-list class="fullwidth ion-margin">
 
           <ion-list-header>
-            <ion-text class="ion-text-center width-95per"><h4>Mañana</h4></ion-text>
+            <ion-text class="ion-margin-left"><h4>Mañana</h4></ion-text>
           </ion-list-header>
 
           <ion-card>
@@ -128,14 +148,14 @@
 </template>
 
 <style>
-.margin-buttom-60{
-  margin-bottom: 60px;
+.margin-buttom-50{
+  margin-bottom: 50px;
 }
 .fullheight{
   height: 100%; 
 }
-.width-95per{
-  width: 95%; 
+.fullwidth{
+  width: 100%; 
 }
 .background-grey{
   background-color: rgb(50, 50, 50);
@@ -147,12 +167,12 @@
 </style>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow, IonSlides, IonSlide} from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonSlides, IonSlide} from '@ionic/vue';
 import { defineComponent } from 'vue';
 import ExploreContainerVue from '../../components/ExploreContainer.vue';
 
 export default defineComponent({
-  components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow, IonSlides, IonSlide },
+  components: { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonSlides, IonSlide },
   setup() {
     
     const slideOpts = {
@@ -160,26 +180,6 @@ export default defineComponent({
       speed: 400
     };
     return { slideOpts } 
-    
-    /*const infiniteScroll = document.getElementById('infinite-scroll');
-
-    infiniteScroll.addEventListener('ionInfinite', function(event) {
-      setTimeout(function() {
-        console.log('Done');
-        event.target.complete();
-
-        // App logic to determine if all data is loaded
-        // and disable the infinite scroll
-        if (data.length == 1000) {
-          event.target.disabled = true;
-        }
-      }, 500);
-    });
-
-    function toggleInfiniteScroll() {
-      infiniteScroll.disabled = !infiniteScroll.disabled;
-    } */ 
-
   }
 });
 </script>
