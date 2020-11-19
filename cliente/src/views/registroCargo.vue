@@ -21,21 +21,14 @@
           <ion-list-header class="text-size-20 ion-text-justify">Seleccione su cargo</ion-list-header>
         </div>
         <br>
-          <router-link to="/tabs/profReg">
-        <ion-button @click="seleccionPrec()" expand="block" fill="outline">Preceptor o Directivo</ion-button> 
-        </router-link> 
+        <ion-button  @click="seleccionPrec()" expand="block" routerLink="profReg" fill="outline">Preceptor o Directivo</ion-button> 
         <br>    
-        <router-link to="/tabs/profReg">
-        <ion-button @click="seleccionProf()"  expand="block" fill="outline" >Profesor</ion-button>
-        </router-link>
+        <ion-button  @click="seleccionProf()"  expand="block" routerLink="profReg" fill="outline" >Profesor</ion-button>
         <br>
-        <router-link to="/tabs/profReg">  
-        <ion-button @click="seleccionPanol()"  expand="block" fill="outline" >Personal de pañol</ion-button>
-        </router-link>      
+        <ion-button  @click="seleccionPanol()"  expand="block" routerLink="profReg" fill="outline" >Personal de pañol</ion-button>  
         <br>
-        <router-link to="/tabs/profReg">
-        <ion-button @click="seleccionAlum()" expand="block" fill="outline" >Alumno</ion-button>
-        </router-link>
+        <ion-button  @click="seleccionAlum()" expand="block" routerLink="AlumReg" fill="outline" >Alumno</ion-button>
+        
         <!--
         <router-link to="1">
         <ion-button href="/tabs/precReg" expand="block" fill="outline">Preceptor o Directivo</ion-button> 
@@ -53,7 +46,7 @@
         <ion-button href="/tabs/AlumReg" expand="block" fill="outline" >Alumno</ion-button>
         </router-link>-->
         <br>        
-        <router-link to="tabs/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</router-link>
+        <router-link to="login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</router-link>
       </ion-list>
 
       </ion-card>
