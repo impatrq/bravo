@@ -21,15 +21,32 @@
           <ion-list-header class="text-size-20 ion-text-justify">Seleccione su cargo</ion-list-header>
         </div>
         <br>
-        <ion-button href="/tabs/precReg" expand="block" fill="outline">Preceptor o Directivo</ion-button>  
+        <ion-button  @click="seleccionPrec()" expand="block" routerLink="profReg" fill="outline">Preceptor o Directivo</ion-button> 
         <br>    
-        <ion-button href="/tabs/profReg" expand="block" fill="outline" >Profesor</ion-button>
-        <br>  
-        <ion-button href="/tabs/panolReg" expand="block" fill="outline" >Personal de pañol</ion-button>      
+        <ion-button  @click="seleccionProf()"  expand="block" routerLink="profReg" fill="outline" >Profesor</ion-button>
         <br>
+        <ion-button  @click="seleccionPanol()"  expand="block" routerLink="profReg" fill="outline" >Personal de pañol</ion-button>  
+        <br>
+        <ion-button  @click="seleccionAlum()" expand="block" routerLink="AlumReg" fill="outline" >Alumno</ion-button>
+        
+        <!--
+        <router-link to="1">
+        <ion-button href="/tabs/precReg" expand="block" fill="outline">Preceptor o Directivo</ion-button> 
+        </router-link> 
+        <br>    
+        <router-link to="2">
+        <ion-button href="/tabs/profReg" expand="block" fill="outline" >Profesor</ion-button>
+        </router-link>
+        <br>
+        <router-link to="3">  
+        <ion-button href="/tabs/panolReg" expand="block" fill="outline" >Personal de pañol</ion-button>
+        </router-link>      
+        <br>
+        <router-link to="4">
         <ion-button href="/tabs/AlumReg" expand="block" fill="outline" >Alumno</ion-button>
+        </router-link>-->
         <br>        
-        <ion-router-link href="tabs/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</ion-router-link>
+        <router-link to="login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</router-link>
       </ion-list>
 
       </ion-card>
@@ -54,11 +71,28 @@
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow } from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
+import dinamico from '@components/dinamico.vue'
+import { App, ref } from 'vue';
 
 export default  {
   name: 'registroCargo',
   components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow },
-  methods: {
+methods: {
+    seleccionProf: ()=>{
+      console.log("se seleccionó profesor")
+    },
+    seleccionAlum: ()=>{
+      console.log("se seleccionó alumno")
+    },
+    seleccionPrec: ()=>{
+      console.log("se seleccionó preceptor")
+    },
+    seleccionPanol: ()=>{
+      console.log("se seleccionó pañol")
+    },
   }
+
+  
+
 }
 </script>
