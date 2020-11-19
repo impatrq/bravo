@@ -15,7 +15,7 @@ const routes: Array<RouteRecordRaw> = [
         path: '',
         redirect: 'tab1'
       },      
-      {
+      /*{
         path: 'tab1',
         component: () => import('@/views/Tab1.vue')
       },
@@ -26,7 +26,7 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'tab3',
         component: () => import('@/views/Tab3.vue')
-      }
+      }*/
     ]
   },
   {
