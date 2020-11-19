@@ -14,7 +14,23 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: '',
         redirect: 'tab1'
-      },      
+      },
+      {
+        path: 'home',
+        component: () => import('@/views/appProf/home.vue')
+      },
+      {
+        path: 'searchbar',
+        component: () => import('@/views/appProf/searchbar.vue')
+      },
+      {
+        path: 'search',
+        component: () => import('@/views/appProf/search.vue')
+      },
+      {
+        path: 'maletin',
+        component: () => import('@/views/appProf/maletin.vue')
+      },  
       /*{
         path: 'tab1',
         component: () => import('@/views/Tab1.vue')
@@ -26,7 +42,19 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'tab3',
         component: () => import('@/views/Tab3.vue')
-      }*/
+      },*/
+      {
+        path: 'searchProfBas',
+        component: () => import('@/views/appProf/searchProfBas.vue')
+      },
+      {
+        path: 'searchProfAvio',
+        component: () => import('@/views/appProf/searchProfAvio.vue')
+      },
+      {
+        path: 'searchProfAero',
+        component: () => import('@/views/appProf/searchProfAero.vue')
+      }
     ]
   },
   {
