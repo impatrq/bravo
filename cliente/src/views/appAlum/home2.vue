@@ -32,28 +32,28 @@
                             </ion-list-header>
                             <ion-card>
                                 <ion-card-header class="background-grey">                      
-                                    <ion-card-title class="ion-text-capitalize ion-text-start">Profesor</ion-card-title>
+                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Profesor</ion-card-title>
                                 </ion-card-header>
                             </ion-card>
                             <ion-card>
                                 <ion-card-header class="background-grey">                      
-                                    <ion-card-title class="ion-text-capitalize ion-text-start">Alumno</ion-card-title>
+                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Alumno</ion-card-title>
                                 <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
                                 </ion-card-header>
                             </ion-card>
                             <ion-card>
                                 <ion-card-header class="background-grey">                      
-                                    <ion-card-title class="ion-text-capitalize ion-text-start">Pañol</ion-card-title>
+                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Pañol</ion-card-title>
                                 </ion-card-header>
                             </ion-card>
                             <ion-card>
                                 <ion-card-header class="background-grey">                      
-                                    <ion-card-title class="ion-text-capitalize ion-text-start">Preceptor</ion-card-title>
+                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Preceptor</ion-card-title>
                                 </ion-card-header>
                             </ion-card>
                             <ion-card>
                                 <ion-card-header class="background-grey">                      
-                                    <ion-card-title class="ion-text-capitalize ion-text-start">Alumno</ion-card-title>
+                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Alumno</ion-card-title>
                                     <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
                                 </ion-card-header>
                             </ion-card>
@@ -63,26 +63,26 @@
                                 <ion-list class="fullwidth ion-margin">
                                 <ion-list-header>
                                     <ion-text class="ion-margin-left"><h4>Día: Lunes</h4></ion-text>
-                                    <ion-card-subtitle class="ion-text-end">Curso:</ion-card-subtitle>
+                                    <ion-card-subtitle class="left-move">Curso:</ion-card-subtitle>
                                 </ion-list-header>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>      
                                 </ion-list>                
@@ -91,26 +91,26 @@
                                 <ion-list class="fullwidth ion-margin">
                                 <ion-list-header>
                                     <ion-text class="ion-margin-left"><h4>Día: Martes</h4></ion-text>
-                                    <ion-card-subtitle class="ion-text-end">Curso:</ion-card-subtitle>
+                                    <ion-card-subtitle class="left-move">Curso:</ion-card-subtitle>
                                 </ion-list-header>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>           
                                 </ion-list>                
@@ -120,26 +120,26 @@
                                 <ion-list class="fullwidth ion-margin">
                                 <ion-list-header>
                                     <ion-text class="ion-margin-left"><h4>Día: Miercoles</h4></ion-text>
-                                    <ion-card-subtitle class="ion-text-end">Curso:</ion-card-subtitle>
+                                    <ion-card-subtitle class="left-move">Curso:</ion-card-subtitle>
                                 </ion-list-header>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>           
                                 </ion-list>                
@@ -149,26 +149,26 @@
                                 <ion-list class="fullwidth ion-margin">
                                 <ion-list-header>
                                     <ion-text class="ion-margin-left"><h4>Día: Jueves</h4></ion-text>
-                                    <ion-card-subtitle class="ion-text-end">Curso:</ion-card-subtitle>
+                                    <ion-card-subtitle class="left-move">Curso:</ion-card-subtitle>
                                 </ion-list-header>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>           
                                 </ion-list>                
@@ -178,26 +178,26 @@
                                 <ion-list class="fullwidth ion-margin">
                                 <ion-list-header>
                                     <ion-text class="ion-margin-left"><h4>Día: Viernes</h4></ion-text>
-                                    <ion-card-subtitle class="ion-text-end">Curso:</ion-card-subtitle>
+                                    <ion-card-subtitle class="left-move">Curso:</ion-card-subtitle>
                                 </ion-list-header>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>
                                 <ion-card>
                                     <ion-card-header class="background-grey">                      
-                                        <ion-card-title class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
                                     </ion-card-header>
                                 </ion-card>           
                                 </ion-list>                
