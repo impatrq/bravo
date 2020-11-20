@@ -13,6 +13,8 @@
 <h3 class="ion-text-capitalize ion-text-start">Curso</h3>
 </ion-card-header> 
 </ion-card>
+<ion-card>
+
 <ion-card-header>
   <ion-row>
   <ion-col>
@@ -39,6 +41,8 @@
 </router-link>  
 </ion-card>           
 </ion-list>
+
+</ion-card>
 <ion-card-header>
   <ion-row>
   <ion-col>
