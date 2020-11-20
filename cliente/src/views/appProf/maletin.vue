@@ -23,11 +23,26 @@
   </ion-col>
   </ion-row>                
 </ion-card-header>      
-          </ion-card-header>
+<ion-list class="list">
+<ion-card class="background-grey">
+<router-link to="#" class="no-deco">                     
+  <ion-card-header>                      
+  <ion-card-title class="ion-text-capitalize ion-text-start">Actividad 1</ion-card-title>
+  </ion-card-header>
+</router-link>  
+</ion-card> 
+<ion-card class="background-grey">
+<router-link to="#" class="no-deco">                     
+  <ion-card-header>                      
+  <ion-card-title class="ion-text-capitalize ion-text-start">Actividad 2</ion-card-title>
+  </ion-card-header>
 </ion-card-header>      
-</ion-card-header> 
-</ion-card>
+  </ion-card-header>
+</router-link>  
+</ion-card>           
+</ion-list>
         </ion-list>             
+</ion-list>
     <ion-list class="width-95per">
       <ion-card>
         <ion-card-header class="background-white2">
