@@ -30,7 +30,11 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'maletin',
         component: () => import('@/views/appProf/maletin.vue')
-      },  
+      },
+      {
+        path: 'maletin2',
+        component: () => import('@/views/appAlum/maletin2.vue')
+      },
       /*{
         path: 'tab1',
         component: () => import('@/views/Tab1.vue')
