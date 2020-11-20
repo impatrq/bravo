@@ -163,21 +163,19 @@
 </style>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow, IonSlide} from '@ionic/vue';
+import { IonPage, IonContent, IonCol, IonRow, IonSlides, IonSlide } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import ExploreContainerVue from '../../components/ExploreContainer.vue';
-import{add}from 'ionicons/icons';
+import{ addCircleOutline, chatbubbles }from 'ionicons/icons';
 export default defineComponent({
-  components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow, IonSlide },
+
+  components: { IonPage, IonContent, IonCol, IonRow, IonSlides, IonSlide },
   setup() {
-    
     const slideOpts = {
       initialSlide: 1,
       speed: 400
     };
-    return { slideOpts, add } 
-    
-    //FALTA LÓGICA DEL INFINITE SCROLL
+    return { slideOpts, addCircleOutline, chatbubbles } 
   }
 });
 </script>
