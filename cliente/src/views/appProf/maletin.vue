@@ -5,8 +5,9 @@
 </ion-header>
 <ion-content :fullscreen="true">
 
-  <ion-row class="ion-justify-content-center fullheight">
-    <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
+<ion-row class="ion-justify-content-center fullheight">
+<ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
+
 <ion-card>
 <ion-card-header>
 <h2 class="ion-text-capitalize ion-text-start">Nombre de Materia</h2>
@@ -148,8 +149,12 @@
 </ion-slide>
 
 </ion-slides>
-    </ion-content>
-  </ion-page>
+
+  </ion-col>
+  </ion-row>
+
+</ion-content>
+</ion-page>
 </template>
 
 <style>
