@@ -7,12 +7,14 @@
 
   <ion-row class="ion-justify-content-center fullheight">
     <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
-        <ion-list class="width-95per">
-          <ion-card-header class="background-white2">
-            <ion-card-title class="ion-text-capitalize ion-text-start"> Materia: </ion-card-title>
-              <br>
-            <ion-card-subtitle color="Tint" class="ion-text-capitalize ion-text-start">Curso:</ion-card-subtitle>
+<ion-card>
+<ion-card-header>
+<h2 class="ion-text-capitalize ion-text-start">Nombre de Materia</h2>
+<h3 class="ion-text-capitalize ion-text-start">Curso</h3>
+</ion-card-header> 
           </ion-card-header>
+</ion-card-header> 
+</ion-card>
         </ion-list>             
     <ion-list class="width-95per">
       <ion-card>
