@@ -13,6 +13,11 @@
 <h3 class="ion-text-capitalize ion-text-start">Curso</h3>
 </ion-card-header> 
 </ion-card>
+
+<ion-slides pager="true" :options="slideOpts">
+  
+<ion-slide class="margin-bottom-65px">
+<ion-list class="list-card">
 <ion-card>
 
 <ion-card-header>
@@ -43,6 +48,7 @@
 </ion-list>
 
 </ion-card>
+<ion-card>
 <ion-card-header>
   <ion-row>
   <ion-col>
@@ -73,10 +79,11 @@
 </ion-card>
 
 </ion-list>
+</ion-card>
+</ion-list>
         </ion-list>             
 </ion-list>
-    <ion-list class="width-95per">
-      <ion-card>
+</ion-slide>
         <ion-card-header class="background-white2">
           <ion-card-title class="ion-text-capitalize ion-text-start"> Actividades: </ion-card-title>
           <ion-tab-button>
