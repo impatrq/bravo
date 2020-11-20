@@ -115,8 +115,6 @@
 </ion-card-header>
 </router-link>  
 </ion-card> 
-                </ion-card>
-</ion-card> 
 <ion-card class="background-grey">
 <router-link to="#" class="no-deco">
 <ion-card-header>                      
