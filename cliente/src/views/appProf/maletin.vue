@@ -1,12 +1,10 @@
 <template>
-  <ion-page>
-    <ion-header>
-      <!--<ion-toolbar><img src="@/components/img/headerLogo.png" class="ion-padding"></ion-toolbar>-->
-    </ion-header>
+<ion-page>
+<ion-header>
+  <ion-toolbar><img src="@/components/img/headerLogo.png" class="ion-padding"></ion-toolbar>
+</ion-header>
 <ion-content :fullscreen="true">
-  <ion-header collapse="condense">
-    <ion-toolbar><ion-title size="large">maletin</ion-title></ion-toolbar>
-  </ion-header>
+
   <ion-row class="ion-justify-content-center fullheight">
     <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
         <ion-list class="width-95per">
