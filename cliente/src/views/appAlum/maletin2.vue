@@ -16,41 +16,89 @@
 								</ion-card-header>
 							</ion-list>             
 					<ion-list class="width-95per">
-						<ion-card>
-							<ion-card-header class="background-white2">
-								<ion-card-title class="ion-text-capitalize ion-text-start"> Actividades: </ion-card-title>
-								<ion-tab-button>
-									<ion-icon :icon="add" class="left-move"></ion-icon>
-									<ion-label class="left-move">Agregar tareas</ion-label>
-								</ion-tab-button>
-								<br><br>
-									<ion-slide class="margin-buttom-60">
-										<ion-list class="width-95per">
-											<ion-card>
-												<ion-card-header class="background-white3">                      
-													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 1</ion-card-title>
-												</ion-card-header>
-											</ion-card>
-											<ion-card>
-												<ion-card-header class="background-white3">                      
-													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 2</ion-card-title>
-												</ion-card-header>
-											</ion-card>
-											<ion-card>
-												<ion-card-header class="background-white3">                      
-													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 3</ion-card-title>
-												</ion-card-header>
-											</ion-card>
-											<ion-card>
-												<ion-card-header class="background-white3">                      
-													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 4</ion-card-title>
-												</ion-card-header>
-											</ion-card> 
-										</ion-list>
-									</ion-slide>
+								<ion-card-header class="background-white2">
+								<ion-list-header>
+									<ion-text><h4>Actividades/materia</h4></ion-text>
+								</ion-list-header>
+								<ion-card>
+									<ion-card-header class="background-grey">                      
+										<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 1</ion-card-title>
+										<ion-card-subtitle class="ion-text-end">Materia:</ion-card-subtitle>
+									</ion-card-header>
+								</ion-card>
+								<ion-card>
+									<ion-card-header class="background-grey">                      
+										<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 2</ion-card-title>
+										<ion-card-subtitle class="ion-text-end">Materia:</ion-card-subtitle>
+									</ion-card-header>
+								</ion-card>
+								<ion-card>
+									<ion-card-header class="background-grey">                      
+										<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 3</ion-card-title>
+										<ion-card-subtitle class="ion-text-end">Materia:</ion-card-subtitle>
+									</ion-card-header>
+								</ion-card><br>
 								</ion-card-header>
-							</ion-card>
+							</ion-list>
+							</ion-slide>
+							<ion-slide>               
+								<ion-list class="width-95per">
+								<ion-card-header class="background-white2">
+								<ion-list-header>
+									<ion-text><h4>Comunicados:</h4></ion-text>
+								</ion-list-header>
+								<ion-card>
+									<ion-card-header class="background-grey">                      
+										<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Comunicado 1</ion-card-title>
+										<ion-card-subtitle class="ion-text-end">De:</ion-card-subtitle>
+									</ion-card-header>
+								</ion-card>
+								<ion-card>
+									<ion-card-header class="background-grey">                      
+										<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Comunicado 2</ion-card-title>
+										<ion-card-subtitle class="ion-text-end">De:</ion-card-subtitle>
+									</ion-card-header>
+								</ion-card>
+											</ion-card> 
+								</ion-card>
+								<ion-card>
+									<ion-card-header class="background-grey">                      
+										<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Comunicado 2</ion-card-title>
+										<ion-card-subtitle class="ion-text-end"> De:</ion-card-subtitle>
+									</ion-card-header>
+								</ion-card>
+								</ion-card-header>
+							</ion-list>
+							</ion-slide>
+							</ion-slides>
+							<br>
+							<ion-list class="ion-margin margin-buttom-50">
+								<ion-card-header class="background-white2">
+								<ion-list-header>
+									<ion-text><h4>Evaluaciones</h4></ion-text>
+								</ion-list-header>
+								<ion-card>
+									<ion-card-header class="background-grey">                      
+										<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Evaluacion 1</ion-card-title>
+										<ion-card-subtitle class="ion-text-end">Día:</ion-card-subtitle>
+									</ion-card-header>
+								</ion-card>
+								<ion-card>
+									<ion-card-header class="background-grey">                      
+										<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Evaluacion 2</ion-card-title>
+										<ion-card-subtitle class="ion-text-end">Día:</ion-card-subtitle>
+									</ion-card-header>
+								</ion-card>
+								<ion-card>
+									<ion-card-header class="background-grey">                      
+										<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Evaluacion 2</ion-card-title>
+										<ion-card-subtitle class="ion-text-end">Día:</ion-card-subtitle>
+									</ion-card-header>
+								</ion-card>
+								</ion-card-header>
+							</ion-list>
 						</ion-list>            
+							</ion-list>
 									<!-- TIENE QUE IR EL INFINITE SCROLL-->     
 					</ion-col>
 				</ion-row>
