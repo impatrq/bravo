@@ -128,6 +128,9 @@
                   <ion-card-header class="background-white3">                      
                     <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 4</ion-card-title>
                   </ion-card-header>
+            <ion-col> 
+              <h4 class="ion-text-capitalize ion-text-start">Alumno 1</h4>
+            </ion-col>
             <ion-col size="2" class="ion-align-self-center">             
               <router-link to="#" class="no-deco">
                 <ion-icon :icon="chatbubbles" class="icon"></ion-icon>
