@@ -133,6 +133,9 @@
                 <ion-icon :icon="chatbubbles" class="icon"></ion-icon>
               </router-link>
             </ion-col>
+            <ion-col size="2" class="ion-align-self-center">             
+              <ion-checkbox color="light"></ion-checkbox>
+            </ion-col>
                 </ion-card> 
               </ion-list>
             </ion-slide>
