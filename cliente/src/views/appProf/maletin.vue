@@ -94,21 +94,39 @@
             <ion-slide class="margin-buttom-60">
               <ion-list class="width-95per">
                 <ion-card>
-                  <ion-card-header class="background-white3">                      
-                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 1</ion-card-title>
-                  </ion-card-header>
+<ion-card-header>
+<ion-row>
+<ion-col>
+ <ion-card-title class="ion-text-start"><h3>Comunicados</h3></ion-card-title>
+</ion-col>
+<ion-col size="2" class="ion-align-self-center">
+<router-link to="#" class="no-deco">
+  <ion-icon :icon="addCircleOutline" class="icon"></ion-icon>
+</router-link>
+</ion-col>
+</ion-row>                
+</ion-card-header>
+      
+<ion-list class="list">
+<ion-card class="background-grey">
+<router-link to="#" class="no-deco">
+<ion-card-header>                      
+  <ion-card-title class="ion-text-capitalize ion-text-start">Comunicado 1</ion-card-title>
+</ion-card-header>
+</router-link>  
+</ion-card> 
                 </ion-card>
-                <ion-card>
-                  <ion-card-header class="background-white3">                      
-                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 2</ion-card-title>
-                  </ion-card-header>
-                </ion-card>
-                <ion-card>
-                  <ion-card-header class="background-white3">                      
-                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 3</ion-card-title>
-                  </ion-card-header>
-                </ion-card>
-                <ion-card>
+</ion-card> 
+<ion-card class="background-grey">
+<router-link to="#" class="no-deco">
+<ion-card-header>                      
+  <ion-card-title class="ion-text-capitalize ion-text-start">Comunicado 2</ion-card-title>
+</ion-card-header>
+</router-link>  
+</ion-card>
+</ion-list>
+
+</ion-card>
                   <ion-card-header class="background-white3">                      
                     <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 4</ion-card-title>
                   </ion-card-header>
