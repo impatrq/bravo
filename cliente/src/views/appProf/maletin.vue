@@ -39,6 +39,17 @@
 </router-link>  
 </ion-card>           
 </ion-list>
+<ion-card-header>
+  <ion-row>
+  <ion-col>
+    <ion-card-title class="ion-text-start"><h3>Evaluaciones</h3></ion-card-title>
+  </ion-col>
+  <ion-col size="2" class="ion-align-self-center">
+  <router-link to="#" class="no-deco">
+    <ion-icon :icon="addCircleOutline" class="icon"></ion-icon>
+  </router-link>
+  </ion-col>
+  </ion-row>                
 </ion-card-header>      
   </ion-card-header>
 </router-link>  
