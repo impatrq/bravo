@@ -125,9 +125,16 @@
 </ion-list>
 
 </ion-card>
-                  <ion-card-header class="background-white3">                      
-                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 4</ion-card-title>
-                  </ion-card-header>
+<ion-card>
+
+        <ion-card-header>
+          <ion-card-title class="ion-text-start"><h3>Alumnos</h3></ion-card-title>
+        </ion-card-header>
+              
+        <ion-list class="list">
+
+          <ion-card class="background-grey ion-padding">                                       
+            <ion-row>
             <ion-col> 
               <h4 class="ion-text-capitalize ion-text-start">Alumno 1</h4>
             </ion-col>
@@ -139,12 +146,15 @@
             <ion-col size="2" class="ion-align-self-center">             
               <ion-checkbox color="light"></ion-checkbox>
             </ion-col>
-                </ion-card> 
-              </ion-list>
-            </ion-slide>
-        </ion-card-header>
-      </ion-card>
+            </ion-row> 
+          </ion-card> 
+          
+        </ion-list>
+
+</ion-card>
+</ion-list>
     </ion-list>            
+</ion-list>
   <!-- TIENE QUE IR EL INFINITE SCROLL-->     
         </ion-col>
       </ion-row>
