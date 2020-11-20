@@ -14,8 +14,10 @@
 									<ion-card-title class="ion-text-capitalize ion-text-start"> Curso: </ion-card-title>
 										<br>
 								</ion-card-header>
-							</ion-list>             
-					<ion-list class="width-95per">
+							</ion-list><br>
+							<ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">
+								<ion-slide class="margin-buttom-50">             
+							<ion-list class="width-95per">
 								<ion-card-header class="background-white2">
 								<ion-list-header>
 									<ion-text><h4>Actividades/materia</h4></ion-text>
