@@ -84,16 +84,10 @@
         </ion-list>             
 </ion-list>
 </ion-slide>
-        <ion-card-header class="background-white2">
-          <ion-card-title class="ion-text-capitalize ion-text-start"> Actividades: </ion-card-title>
-          <ion-tab-button>
-            <ion-icon :icon="add" class="left-move"></ion-icon>
-            <ion-label class="left-move">Agregar tareas</ion-label>
-          </ion-tab-button>
-          <br><br>
-            <ion-slide class="margin-buttom-60">
-              <ion-list class="width-95per">
-                <ion-card>
+
+<ion-slide class="margin-bottom-65px">
+<ion-list class="list-card">
+<ion-card>
 <ion-card-header>
 <ion-row>
 <ion-col>
@@ -153,11 +147,9 @@
 
 </ion-card>
 </ion-list>
-    </ion-list>            
-</ion-list>
-  <!-- TIENE QUE IR EL INFINITE SCROLL-->     
-        </ion-col>
-      </ion-row>
+</ion-slide>
+
+</ion-slides>
     </ion-content>
   </ion-page>
 </template>
