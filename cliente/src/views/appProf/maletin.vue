@@ -12,6 +12,7 @@
 <h2 class="ion-text-capitalize ion-text-start">Nombre de Materia</h2>
 <h3 class="ion-text-capitalize ion-text-start">Curso</h3>
 </ion-card-header> 
+</ion-card>
           </ion-card-header>
 </ion-card-header> 
 </ion-card>
