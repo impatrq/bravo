@@ -36,6 +36,9 @@
   <ion-card-header>                      
   <ion-card-title class="ion-text-capitalize ion-text-start">Actividad 2</ion-card-title>
   </ion-card-header>
+</router-link>  
+</ion-card>           
+</ion-list>
 </ion-card-header>      
   </ion-card-header>
 </router-link>  
