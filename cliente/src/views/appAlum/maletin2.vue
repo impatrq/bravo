@@ -17,8 +17,6 @@
 								</ion-list><br>
 								<ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">
 									<ion-slide class="margin-buttom-50">             
-								<ion-slide class="margin-buttom-50">             
-									<ion-slide class="margin-buttom-50">             
 										<ion-list class="width-95per">
 											<ion-card-header class="background-white2">
 												<ion-list-header>
@@ -26,23 +24,17 @@
 												</ion-list-header>
 												<ion-card>
 													<ion-card-header class="background-grey">                      
-									<ion-card-header class="background-grey">                      
-													<ion-card-header class="background-grey">                      
 														<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 1</ion-card-title>
 														<ion-card-subtitle class="ion-text-end">Materia:</ion-card-subtitle>
 													</ion-card-header>
 												</ion-card>
 												<ion-card>
 													<ion-card-header class="background-grey">                      
-									<ion-card-header class="background-grey">                      
-													<ion-card-header class="background-grey">                      
 														<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 2</ion-card-title>
 														<ion-card-subtitle class="ion-text-end">Materia:</ion-card-subtitle>
 													</ion-card-header>
 												</ion-card>
 												<ion-card>
-													<ion-card-header class="background-grey">                      
-									<ion-card-header class="background-grey">                      
 													<ion-card-header class="background-grey">                      
 														<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 3</ion-card-title>
 														<ion-card-subtitle class="ion-text-end">Materia:</ion-card-subtitle>
@@ -52,8 +44,6 @@
 										</ion-list>
 									</ion-slide>
 								<ion-slide>               
-							<ion-slide>               
-								<ion-slide>               
 									<ion-list class="width-95per">
 										<ion-card-header class="background-white2">
 											<ion-list-header>
@@ -61,23 +51,17 @@
 											</ion-list-header>
 											<ion-card>
 												<ion-card-header class="background-grey">                      
-									<ion-card-header class="background-grey">                      
-												<ion-card-header class="background-grey">                      
 													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Comunicado 1</ion-card-title>
 													<ion-card-subtitle class="ion-text-end">De:</ion-card-subtitle>
 												</ion-card-header>
 											</ion-card>
 											<ion-card>
 												<ion-card-header class="background-grey">                      
-									<ion-card-header class="background-grey">                      
-												<ion-card-header class="background-grey">                      
 													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Comunicado 2</ion-card-title>
 													<ion-card-subtitle class="ion-text-end">De:</ion-card-subtitle>
 												</ion-card-header>
 											</ion-card>
 											<ion-card>
-												<ion-card-header class="background-grey">                      
-									<ion-card-header class="background-grey">                      
 												<ion-card-header class="background-grey">                      
 													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Comunicado 2</ion-card-title>
 													<ion-card-subtitle class="ion-text-end"> De:</ion-card-subtitle>
@@ -95,23 +79,17 @@
 										</ion-list-header>
 											<ion-card>
 												<ion-card-header class="background-grey">                      
-									<ion-card-header class="background-grey">                      
-												<ion-card-header class="background-grey">                      
 													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Evaluacion 1</ion-card-title>
 													<ion-card-subtitle class="ion-text-end">Día:</ion-card-subtitle>
 												</ion-card-header>
 											</ion-card>
 											<ion-card>
 												<ion-card-header class="background-grey">                      
-									<ion-card-header class="background-grey">                      
-												<ion-card-header class="background-grey">                      
 													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Evaluacion 2</ion-card-title>
 													<ion-card-subtitle class="ion-text-end">Día:</ion-card-subtitle>
 												</ion-card-header>
 											</ion-card>
 											<ion-card>
-												<ion-card-header class="background-grey">                      
-									<ion-card-header class="background-grey">                      
 												<ion-card-header class="background-grey">                      
 													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Evaluacion 2</ion-card-title>
 													<ion-card-subtitle class="ion-text-end">Día:</ion-card-subtitle>
@@ -119,8 +97,6 @@
 											</ion-card>
 									</ion-card-header>
 								</ion-list>
-										<!-- TIENE QUE IR EL INFINITE SCROLL-->     
-									<!-- TIENE QUE IR EL INFINITE SCROLL-->     
 										<!-- TIENE QUE IR EL INFINITE SCROLL-->     
 						</ion-col>
 					</ion-row>
