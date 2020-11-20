@@ -55,9 +55,23 @@
   </ion-col>
   </ion-row>                
 </ion-card-header>      
+<ion-list class="list">
+
+<ion-card class="background-grey">
+<router-link to="#" class="no-deco">
+  <ion-card-header>                      
+  <ion-card-title class="ion-text-capitalize ion-text-start">Evaluación 1</ion-card-title>
   </ion-card-header>
 </router-link>  
-</ion-card>           
+</ion-card> 
+<ion-card class="background-grey">
+<router-link to="#" class="no-deco">
+  <ion-card-header>                      
+  <ion-card-title class="ion-text-capitalize ion-text-start">Evaluación 2</ion-card-title>
+  </ion-card-header>
+</router-link>  
+</ion-card>
+
 </ion-list>
         </ion-list>             
 </ion-list>
