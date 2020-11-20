@@ -81,8 +81,6 @@
 </ion-list>
 </ion-card>
 </ion-list>
-        </ion-list>             
-</ion-list>
 </ion-slide>
 
 <ion-slide class="margin-bottom-65px">
