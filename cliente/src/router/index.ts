@@ -137,6 +137,10 @@ const routes: Array<RouteRecordRaw> = [
         path: 'maletin2',
         component: () => import('@/views/appAlum/maletin2.vue')
       },
+      {
+        path: 'maletin3',
+        component: () => import('@/views/appPrecep/maletin3.vue')
+      },
     ]
   }
 ]
