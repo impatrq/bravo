@@ -11,7 +11,7 @@
 						<ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
 								<ion-list class="width-95per">
 									<ion-card-header class="background-white2">
-										<ion-card-title class="ion-text-capitalize ion-text-start"> Curso: </ion-card-title>
+										<ion-card-title class="ion-text-capitalize ion-text-start"> Diviciones encargadas: </ion-card-title>
 										<br>
 									</ion-card-header>
 								</ion-list><br>
@@ -20,24 +20,24 @@
 										<ion-list class="width-95per">
 											<ion-card-header class="background-white2">
 												<ion-list-header>
-													<ion-text><h4>Actividades/materia</h4></ion-text>
+													<ion-text><h4>Lista de cursos:</h4></ion-text>
 												</ion-list-header>
 												<ion-card>
 													<ion-card-header class="background-grey">                      
-														<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 1</ion-card-title>
-														<ion-card-subtitle class="ion-text-end">Materia:</ion-card-subtitle>
+														<ion-card-title color="light" class="ion-text-capitalize ion-text-start">curso 1</ion-card-title>
+														<ion-card-subtitle class="ion-text-end"> Nº.Alumnos:</ion-card-subtitle>
 													</ion-card-header>
 												</ion-card>
 												<ion-card>
 													<ion-card-header class="background-grey">                      
-														<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 2</ion-card-title>
-														<ion-card-subtitle class="ion-text-end">Materia:</ion-card-subtitle>
+														<ion-card-title color="light" class="ion-text-capitalize ion-text-start">curso 2</ion-card-title>
+														<ion-card-subtitle class="ion-text-end">Nº.Alumnos:</ion-card-subtitle>
 													</ion-card-header>
 												</ion-card>
 												<ion-card>
 													<ion-card-header class="background-grey">                      
-														<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 3</ion-card-title>
-														<ion-card-subtitle class="ion-text-end">Materia:</ion-card-subtitle>
+														<ion-card-title color="light" class="ion-text-capitalize ion-text-start">curso 3</ion-card-title>
+														<ion-card-subtitle class="ion-text-end">Nº.Alumnos:</ion-card-subtitle>
 													</ion-card-header>
 												</ion-card><br>
 											</ion-card-header>
