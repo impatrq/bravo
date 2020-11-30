@@ -75,24 +75,24 @@
 								<ion-list class="ion-margin margin-buttom-50">
 									<ion-card-header class="background-white2">
 										<ion-list-header>
-											<ion-text><h4>Evaluaciones</h4></ion-text>
+											<ion-text><h4>Alumnos casos particulares:</h4></ion-text>
 										</ion-list-header>
 											<ion-card>
 												<ion-card-header class="background-grey">                      
-													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Evaluacion 1</ion-card-title>
-													<ion-card-subtitle class="ion-text-end">Día:</ion-card-subtitle>
+													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Alumno 1</ion-card-title>
+													<ion-card-subtitle class="ion-text-end">curso:</ion-card-subtitle>
 												</ion-card-header>
 											</ion-card>
 											<ion-card>
 												<ion-card-header class="background-grey">                      
-													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Evaluacion 2</ion-card-title>
-													<ion-card-subtitle class="ion-text-end">Día:</ion-card-subtitle>
+													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Alumno 2</ion-card-title>
+													<ion-card-subtitle class="ion-text-end">curso:</ion-card-subtitle>
 												</ion-card-header>
 											</ion-card>
 											<ion-card>
 												<ion-card-header class="background-grey">                      
-													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Evaluacion 2</ion-card-title>
-													<ion-card-subtitle class="ion-text-end">Día:</ion-card-subtitle>
+													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Alumno 2</ion-card-title>
+													<ion-card-subtitle class="ion-text-end">curso:</ion-card-subtitle>
 												</ion-card-header>
 											</ion-card>
 									</ion-card-header>
