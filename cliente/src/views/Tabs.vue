@@ -2,19 +2,16 @@
   <ion-page>
     <ion-tabs>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="Home" href="/home">
+        <ion-tab-button tab="Home" href="/prof/home">
           <ion-icon :icon="home" />
-          <ion-label>Inicio</ion-label>
         </ion-tab-button>
           
         <ion-tab-button tab="search" href="/search">
           <ion-icon :icon="search" />
-          <ion-label>Buscar</ion-label>
         </ion-tab-button>
         
-        <ion-tab-button tab="briefcase" href="/maletin">
+        <ion-tab-button tab="briefcase" href="/prof/maletin">
           <ion-icon :icon="briefcase" />
-          <ion-label>Tareas</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
