@@ -102,7 +102,7 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/search/searchProfAero.vue')
       }
     ]
-  }
+  },
 ]
 
 const router = createRouter({
