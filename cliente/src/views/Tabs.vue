@@ -19,20 +19,17 @@
 </template>
 
 <script lang="ts">
-import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage } from '@ionic/vue';
-import { home, ellipse, square, triangle, search, briefcase } from 'ionicons/icons';
+import { IonTabBar, IonTabButton, IonTabs,  IonIcon, IonPage } from '@ionic/vue';
+import { home, search, briefcase } from 'ionicons/icons';
 
 export default {
   name: 'Tabs',
-  components: { IonLabel, IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage },
+  components: { IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage },
   setup() {
     return {
       home,
       search,
       briefcase,
-      ellipse, 
-      square, 
-      triangle,
     }
   }
 }
