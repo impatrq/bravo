@@ -81,6 +81,26 @@ const routes: Array<RouteRecordRaw> = [
         path: 'maletin3',
         component: () => import('@/views/appPrecep/maletin3.vue')
       },
+      {
+        path: 'search',
+        component: () => import('@/views/search/search.vue')
+      },
+      {
+        path: 'sBar',
+        component: () => import('@/views/search/searchbar.vue')
+      },      
+      {
+        path: 'sProfBas',
+        component: () => import('@/views/search/searchProfBas.vue')
+      },
+      {
+        path: 'sProfAv',
+        component: () => import('@/views/search/searchProfAvio.vue')
+      },
+      {
+        path: 'sProfAer',
+        component: () => import('@/views/search/searchProfAero.vue')
+      }
     ]
   }
 ]
