@@ -30,60 +30,44 @@ const routes: Array<RouteRecordRaw> = [
     component: Tabs,
     children: [
       {
-        path: '',
-        redirect: 'login'
-      },
-      {
         path: 'login',
-        component: () => import('@/views/login.vue')
+        component: () => import('@/views/loginReg/login.vue')
       },
       {
         path: 'cargosReg',
-        component: () => import('@/views/registroCargo.vue')
-      },
-      {
-        path: 'precReg',
-        component: () => import('@/views/registroPreceptor.vue')
+        component: () => import('@/views/loginReg/registroCargo.vue')
       },
       {
         path: 'profReg',
-        component: () => import('@/views/registroProfesor.vue')
-      },
-      {
-        path: 'panolReg',
-        component: () => import('@/views/registroPanol.vue')
+        component: () => import('@/views/loginReg/registroProfesor.vue')
       },
       {
         path: 'alumReg',
-        component: () => import('@/views/registroAlumno.vue')
+        component: () => import('@/views/loginReg/registroAlumno.vue')
       },
       {
         path: 'valEmail',
-        component: () => import('@/views/valEmail.vue')
+        component: () => import('@/views/loginReg/valEmail.vue')
       },
       {
         path: 'valEmailSi',
-        component: () => import('@/views/valEmail2Si.vue')
+        component: () => import('@/views/loginReg/valEmail2Si.vue')
       },
       {
         path: 'valEmailNo',
-        component: () => import('@/views/valEmail2No.vue')
+        component: () => import('@/views/loginReg/valEmail2No.vue')
       },
       {
         path: 'nCont',
-        component: () => import('@/views/nuContrasena.vue')
+        component: () => import('@/views/loginReg/nuContrasena.vue')
       },
       {
         path: 'oCont',
-        component: () => import('@/views/olContrasena.vue')
+        component: () => import('@/views/loginReg/olContrasena.vue')
       },
       {
         path: 'valCont',
-        component: () => import('@/views/valContra.vue')
-      },
-      {
-        path: 'home',
-        component: () => import('@/views/appProf/home.vue')
+        component: () => import('@/views/loginReg/valContra.vue')
       },
       {
         path: 'home2',
