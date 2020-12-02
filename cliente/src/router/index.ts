@@ -86,6 +86,9 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/appPrecep/maletin3.vue')
       },
       {
+        path: 'tareas',
+        component: () => import('@/views/appProf/materias.vue')
+      },
         path: 'search',
         component: () => import('@/views/search/search.vue')
       },
