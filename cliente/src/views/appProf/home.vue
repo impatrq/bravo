@@ -200,8 +200,6 @@
                     <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
                   </ion-card-header>
                 </ion-card>        
-          </ion-card>
-                </ion-card>        
               </ion-list>                
         </ion-list>                
               </ion-list>                
