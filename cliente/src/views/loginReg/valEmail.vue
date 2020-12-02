@@ -19,19 +19,18 @@
       <ion-list>
         <div class="ion-no-padding">
           <ion-list-header class="text-size-20 ion-no-padding">Registro</ion-list-header>
-          <ion-label>Paso 1: Ingrese su D.N.I.</ion-label>
+          <ion-label>Paso 2: Confirme su identidad</ion-label>
         </div>
-        <ion-item class="ion-no-padding">
-          <ion-label position="floating">D.N.I.</ion-label>
-          <ion-input></ion-input>
-        </ion-item> 
         <br>
-        <ion-row class="ion-justify-content-center">
-        <ion-button size="small" href="tabs/cargosReg" fill="outline" >Atrás</ion-button>
-        <ion-button size="small" href="tabs/valEmail" fill="outline" >Continuar</ion-button>           
-        </ion-row>
-        <br>        
-        <ion-router-link href="tabs/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</ion-router-link>
+        <ion-label>Su direccion de correo es "al***ma**@gmail.com?</ion-label>
+        <br>
+        <ion-row class="ion-justify-content-center padding-top-20">
+        <ion-button size="small" color="success" routerLink="/valEmailSi" fill="outline" >Si</ion-button>
+        <ion-button size="small" color="danger" routerLink="/valEmailNo" fill="outline" >No</ion-button>            
+        </ion-row>   
+        <br>
+        <router-link to="/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</router-link>            
+        
       </ion-list>
 
       </ion-card>
@@ -44,12 +43,16 @@
 <style>
 .text-size-12{
   font-size:12px;
+  text-decoration: none;
 }
 .text-size-20{
   font-size:20px;
 }
 .fullheight{
   height: 100%; 
+}
+.padding-top-20{
+  padding-top: 20px;
 }
 </style>
 
@@ -58,7 +61,7 @@ import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonLis
 import ExploreContainer from '@/components/ExploreContainer.vue';
 
 export default  {
-  name: 'profReg',
+  name: 'valEmail',
   components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow },
   methods: {
   }

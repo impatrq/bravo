@@ -1,10 +1,6 @@
 <template>
   <ion-page>
-    <!--ion-header>
-      <ion-toolbar>
-        <ion-title>Login</ion-title>
-      </ion-toolbar>
-    </ion-header-->
+   
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
@@ -19,16 +15,19 @@
       <ion-list>
         <div class="ion-no-padding">
           <ion-list-header class="text-size-20 ion-no-padding">Registro</ion-list-header>
-          <ion-label>Paso 2: Confirme su identidad</ion-label>
+          <ion-label>Paso 1: Ingrese su matrícula</ion-label>
         </div>
+        <ion-item class="ion-no-padding">
+          <ion-label position="floating">Matrícula</ion-label>
+          <ion-input></ion-input>
+        </ion-item> 
         <br>
-        <ion-label>Le enviamos un Email para que confirme su identidad</ion-label>
+        <ion-row class="ion-justify-content-center">
+        <ion-button size="small" routerLink="/cargosReg" fill="outline" >Atrás</ion-button>
+        <ion-button size="small" routerLink="/valEmail" fill="outline" >Continuar</ion-button>            
+        </ion-row>   
         <br>
-        <ion-label>Si no recibio el Email, aprete "Reenviar Email"</ion-label>
-        <br>
-        <ion-row class="ion-justify-content-center padding-top-20">
-        <ion-button expand="block" fill="outline" href="#">Reenviar Email</ion-button>         
-        </ion-row>          
+        <router-link to="/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</router-link>            
         
       </ion-list>
 
@@ -42,15 +41,13 @@
 <style>
 .text-size-12{
   font-size:12px;
+  text-decoration: none;
 }
 .text-size-20{
   font-size:20px;
 }
 .fullheight{
   height: 100%; 
-}
-.padding-top-20{
-  padding-top: 20px;
 }
 </style>
 
@@ -59,7 +56,7 @@ import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonLis
 import ExploreContainer from '@/components/ExploreContainer.vue';
 
 export default  {
-  name: 'valEmailSi',
+  name: 'alumReg',
   components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow },
   methods: {
   }

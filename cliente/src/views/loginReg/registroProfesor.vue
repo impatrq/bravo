@@ -27,11 +27,11 @@
         </ion-item> 
         <br>
         <ion-row class="ion-justify-content-center">
-        <ion-button size="small" href="tabs/cargosReg" fill="outline" >Atrás</ion-button>
-        <ion-button size="small" href="tabs/valEmail" fill="outline" >Continuar</ion-button>           
+        <ion-button size="small" routerLink="/cargosReg" fill="outline" >Atrás</ion-button>
+        <ion-button size="small" routerLink="/valEmail" fill="outline" >Continuar</ion-button>           
         </ion-row>
         <br>        
-        <ion-router-link href="tabs/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</ion-router-link>
+        <router-link to="/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</router-link>
       </ion-list>
 
       </ion-card>
@@ -44,6 +44,7 @@
 <style>
 .text-size-12{
   font-size:12px;
+  text-decoration: none;
 }
 .text-size-20{
   font-size:20px;
@@ -58,7 +59,7 @@ import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonLis
 import ExploreContainer from '@/components/ExploreContainer.vue';
 
 export default  {
-  name: 'panolReg',
+  name: 'profReg',
   components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow },
   methods: {
   }
