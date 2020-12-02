@@ -22,14 +22,13 @@
           <ion-label>Paso 2: Confirme su identidad</ion-label>
         </div>
         <br>
-        <ion-label>Su direccion de correo es "al***ma**@gmail.com?</ion-label>
+        <ion-label>Le enviamos un Email para que confirme su identidad</ion-label>
+        <br>
+        <ion-label>Si no recibio el Email, aprete "Reenviar Email"</ion-label>
         <br>
         <ion-row class="ion-justify-content-center padding-top-20">
-        <ion-button size="small" color="success" href="/tabs/valEmailSi" fill="outline" >Si</ion-button>
-        <ion-button size="small" color="danger" href="/tabs/valEmailNo" fill="outline" >No</ion-button>            
-        </ion-row>   
-        <br>
-        <ion-router-link href="tabs/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</ion-router-link>            
+        <ion-button expand="block" fill="outline" routerLink="#">Reenviar Email</ion-button>         
+        </ion-row>          
         
       </ion-list>
 
@@ -60,7 +59,7 @@ import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonLis
 import ExploreContainer from '@/components/ExploreContainer.vue';
 
 export default  {
-  name: 'valEmail',
+  name: 'valEmailSi',
   components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow },
   methods: {
   }

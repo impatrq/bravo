@@ -8,60 +8,20 @@ const routes: Array<RouteRecordRaw> = [
     redirect: '/login'
   },
   {
-    path: '/tabs/',
+    path: '/prof/',
     component: Tabs,
     children: [
       {
-        path: '',
-        redirect: 'tab1'
+        path: '/prof/',
+        redirect: 'home'
       },
       {
         path: 'home',
         component: () => import('@/views/appProf/home.vue')
       },
       {
-        path: 'searchbar',
-        component: () => import('@/views/appProf/searchbar.vue')
-      },
-      {
-        path: 'search',
-        component: () => import('@/views/appProf/search.vue')
-      },
-      {
         path: 'maletin',
         component: () => import('@/views/appProf/maletin.vue')
-      },
-      {
-        path: 'maletin2',
-        component: () => import('@/views/appAlum/maletin2.vue')
-      },
-      {
-        path: 'maletin3',
-        component: () => import('@/views/appPrecep/maletin3.vue')
-      },
-      /*{
-        path: 'tab1',
-        component: () => import('@/views/Tab1.vue')
-      },
-      {
-        path: 'tab2',
-        component: () => import('@/views/Tab2.vue')
-      },
-      {
-        path: 'tab3',
-        component: () => import('@/views/Tab3.vue')
-      },*/
-      {
-        path: 'searchProfBas',
-        component: () => import('@/views/appProf/searchProfBas.vue')
-      },
-      {
-        path: 'searchProfAvio',
-        component: () => import('@/views/appProf/searchProfAvio.vue')
-      },
-      {
-        path: 'searchProfAero',
-        component: () => import('@/views/appProf/searchProfAero.vue')
       }
     ]
   },
@@ -70,56 +30,44 @@ const routes: Array<RouteRecordRaw> = [
     component: Tabs,
     children: [
       {
-        path: '',
-        redirect: 'login'
-      },
-      {
         path: 'login',
-        component: () => import('@/views/login.vue')
+        component: () => import('@/views/loginReg/login.vue')
       },
       {
         path: 'cargosReg',
-        component: () => import('@/views/registroCargo.vue')
-      },
-      {
-        path: 'precReg',
-        component: () => import('@/views/registroPreceptor.vue')
+        component: () => import('@/views/loginReg/registroCargo.vue')
       },
       {
         path: 'profReg',
-        component: () => import('@/views/registroProfesor.vue')
-      },
-      {
-        path: 'panolReg',
-        component: () => import('@/views/registroPanol.vue')
+        component: () => import('@/views/loginReg/registroProfesor.vue')
       },
       {
         path: 'alumReg',
-        component: () => import('@/views/registroAlumno.vue')
+        component: () => import('@/views/loginReg/registroAlumno.vue')
       },
       {
         path: 'valEmail',
-        component: () => import('@/views/valEmail.vue')
+        component: () => import('@/views/loginReg/valEmail.vue')
       },
       {
         path: 'valEmailSi',
-        component: () => import('@/views/valEmail2Si.vue')
+        component: () => import('@/views/loginReg/valEmail2Si.vue')
       },
       {
         path: 'valEmailNo',
-        component: () => import('@/views/valEmail2No.vue')
+        component: () => import('@/views/loginReg/valEmail2No.vue')
       },
       {
         path: 'nCont',
-        component: () => import('@/views/nuContrasena.vue')
+        component: () => import('@/views/loginReg/nuContrasena.vue')
       },
       {
         path: 'oCont',
-        component: () => import('@/views/olContrasena.vue')
+        component: () => import('@/views/loginReg/olContrasena.vue')
       },
       {
         path: 'valCont',
-        component: () => import('@/views/valContra.vue')
+        component: () => import('@/views/loginReg/valContra.vue')
       },
       {
         path: 'home',
@@ -128,10 +76,6 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'home2',
         component: () => import('@/views/appAlum/home2.vue')
-      },
-      {
-        path: 'maletin',
-        component: () => import('@/views/appProf/maletin.vue')
       },
       {
         path: 'maletin2',
@@ -145,8 +89,27 @@ const routes: Array<RouteRecordRaw> = [
         path: 'tareas',
         component: () => import('@/views/appProf/materias.vue')
       },
+        path: 'search',
+        component: () => import('@/views/search/search.vue')
+      },
+      {
+        path: 'sBar',
+        component: () => import('@/views/search/searchbar.vue')
+      },      
+      {
+        path: 'sProfBas',
+        component: () => import('@/views/search/searchProfBas.vue')
+      },
+      {
+        path: 'sProfAv',
+        component: () => import('@/views/search/searchProfAvio.vue')
+      },
+      {
+        path: 'sProfAer',
+        component: () => import('@/views/search/searchProfAero.vue')
+      }
     ]
-  }
+  },
 ]
 
 const router = createRouter({

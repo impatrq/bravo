@@ -37,9 +37,9 @@
           <span v-if="!contra">Repita contraseña</span>
           <span v-if="altocontra" color="red"> Formato incorrecto </span>
         <br>
-        <ion-button expand="block" href="#" fill="outline" >Confirmar</ion-button>
+        <ion-button expand="block" routerLink="#" fill="outline" >Confirmar</ion-button>
         <br>
-        <ion-router-link href="tabs/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</ion-router-link>            
+        <router-link to="/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</router-link>            
         
       </ion-list>
 
@@ -53,6 +53,7 @@
 <style>
 .text-size-12{
   font-size:12px;
+  text-decoration: none;
 }
 .text-size-20{
   font-size:20px;
