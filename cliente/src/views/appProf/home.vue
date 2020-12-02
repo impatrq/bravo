@@ -248,15 +248,12 @@
           </ion-card>
                 </ion-card>        
               </ion-list>                
-        </ion-list>                
-              </ion-list>                
             </ion-slide>
-
-  </ion-col>
-  </ion-row>
-
-</ion-content>
-</ion-page>
+          </ion-slides>
+        </ion-col>
+      </ion-row>
+    </ion-content>
+  </ion-page>
 </template>
 
 <style>
