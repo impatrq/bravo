@@ -1,77 +1,84 @@
 <template>
-<ion-page>
-
-<ion-header>
-  <ion-toolbar><img src="@/components/img/headerLogo.png" class="ion-padding"></ion-toolbar>
-</ion-header>
-
-<ion-content :fullscreen="true">
-
-  <ion-row class="ion-justify-content-center fullheight">
-  <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
-
+  <ion-page>
+    <ion-header>
+      <ion-toolbar><img src="@/components/img/headerLogo.png" class="ion-padding"></ion-toolbar>
+    </ion-header>
+    <ion-content :fullscreen="true">
+      <ion-row class="ion-justify-content-center fullheight">
+        <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
+          <ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">  
     <ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">  
-
-      <ion-slide>
-        <ion-card class="ion-padding-top margin-buttom-50">
-          <ion-item class="img"><img src="@/components/img/not1.png"></ion-item>
-          <ion-card-content> Titulo de Noticia 1 </ion-card-content>
-        </ion-card>
+          <ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">  
+            <ion-slide>
+              <ion-card class="ion-padding-top margin-buttom-50">
+                <ion-item class="img"><img src="@/components/img/not1.png"></ion-item>
+                <ion-card-content> Titulo de Noticia 1 </ion-card-content>
+              </ion-card>
+            </ion-slide>            
       </ion-slide>            
-      <ion-slide>
-        <ion-card class="ion-padding-top margin-buttom-50">
-          <ion-item class="img"><img src="@/components/img/not2.png"></ion-item>
-          <ion-card-content> Titulo de Noticia 2 </ion-card-content>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card class="ion-padding-top margin-buttom-50">
-          <ion-item class="img"><img src="@/components/img/not3.png" ></ion-item>
-          <ion-card-content> Titulo de Noticia 3 </ion-card-content>
-        </ion-card>
-      </ion-slide>
-
+            </ion-slide>            
+            <ion-slide>
+              <ion-card class="ion-padding-top margin-buttom-50">
+                <ion-item class="img"><img src="@/components/img/not2.png"></ion-item>
+                <ion-card-content> Titulo de Noticia 2 </ion-card-content>
+              </ion-card>
+            </ion-slide>
+            <ion-slide>
+              <ion-card class="ion-padding-top margin-buttom-50">
+                <ion-item class="img"><img src="@/components/img/not3.png" ></ion-item>
+                <ion-card-content> Titulo de Noticia 3 </ion-card-content>
+              </ion-card>
+            </ion-slide>
+          </ion-slides>         
     </ion-slides>
-                    
-    <ion-list class="ion-margin margin-buttom-50">
-
-      <ion-list-header>
-        <ion-text><h4>Chat reciente</h4></ion-text>
-      </ion-list-header>
-
-      <ion-card>
+          </ion-slides>         
+          <ion-list class="ion-margin margin-buttom-50">
+            <ion-list-header>
+              <ion-text><h4>Chat reciente</h4></ion-text>
+            </ion-list-header>
+            <ion-card>
+              <ion-card-header class="background-grey">                      
         <ion-card-header class="background-grey">                      
-          <ion-card-title class="ion-text-capitalize ion-text-start">Profesor</ion-card-title>
-        </ion-card-header>
-      </ion-card>
-      <ion-card>
+              <ion-card-header class="background-grey">                      
+                <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Profesor</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+            <ion-card>
+              <ion-card-header class="background-grey">                      
         <ion-card-header class="background-grey">                      
-          <ion-card-title class="ion-text-capitalize ion-text-start">Alumno</ion-card-title>
-          <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
-        </ion-card-header>
-      </ion-card>
-      <ion-card>
+              <ion-card-header class="background-grey">                      
+                <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Alumno</ion-card-title>
+                <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+            <ion-card>
+              <ion-card-header class="background-grey">                      
         <ion-card-header class="background-grey">                      
-          <ion-card-title class="ion-text-capitalize ion-text-start">Pañol</ion-card-title>
-        </ion-card-header>
-      </ion-card>
-      <ion-card>
+              <ion-card-header class="background-grey">                      
+                <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Pañol</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+            <ion-card>
+              <ion-card-header class="background-grey">                      
         <ion-card-header class="background-grey">                      
-          <ion-card-title class="ion-text-capitalize ion-text-start">Preceptor</ion-card-title>
-        </ion-card-header>
-      </ion-card>
-      <ion-card>
+              <ion-card-header class="background-grey">                      
+                <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Preceptor</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+            <ion-card>
+              <ion-card-header class="background-grey">                      
         <ion-card-header class="background-grey">                      
-          <ion-card-title class="ion-text-capitalize ion-text-start">Alumno</ion-card-title>
-          <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
-        </ion-card-header>
-      </ion-card>
-
-    </ion-list>
-
+              <ion-card-header class="background-grey">                      
+                <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Alumno</ion-card-title>
+                <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-list>
+          <ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">    
     <ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">    
-      <ion-slide class="margin-buttom-50">
-        <ion-list class="fullwidth ion-margin">
+          <ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">    
+            <ion-slide class="margin-buttom-50">
+              <ion-list class="fullwidth ion-margin">
                 <ion-list-header>
                   <ion-text class="ion-margin-left"><h4>Día: Lunes</h4></ion-text>
                 </ion-list-header>
