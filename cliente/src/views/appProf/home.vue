@@ -228,6 +228,9 @@
 .fullheight{
   height: 100%; 
 }
+.left-move{
+    padding-left: 200px;
+}
 .fullwidth{
   width: 100%; 
 }
