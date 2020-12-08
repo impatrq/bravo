@@ -89,6 +89,7 @@ const routes: Array<RouteRecordRaw> = [
         path: 'tareas',
         component: () => import('@/views/appProf/materias.vue')
       },
+      {
         path: 'search',
         component: () => import('@/views/search/search.vue')
       },
