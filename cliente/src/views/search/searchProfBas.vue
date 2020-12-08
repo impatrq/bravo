@@ -4,7 +4,7 @@
     <ion-header translucent>
        <ion-toolbar>
         <ion-buttons slot="start">
-          <ion-button href="/tabs/search">
+          <ion-button href="/search">
             Atrás
           </ion-button>
         </ion-buttons>

@@ -3,15 +3,15 @@
     <ion-tabs>
       <ion-tab-bar slot="bottom">
         <ion-tab-button tab="Home" href="/prof/home">
-          <ion-icon :icon="home" />
+          <ion-icon :icon="homeSharp" />
         </ion-tab-button>
           
         <ion-tab-button tab="search" href="/search">
-          <ion-icon :icon="search" />
+          <ion-icon :icon="searchSharp" />
         </ion-tab-button>
         
         <ion-tab-button tab="briefcase" href="/prof/maletin">
-          <ion-icon :icon="briefcase" />
+          <ion-icon :icon="briefcaseSharp" />
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
@@ -20,16 +20,16 @@
 
 <script lang="ts">
 import { IonTabBar, IonTabButton, IonTabs,  IonIcon, IonPage } from '@ionic/vue';
-import { home, search, briefcase } from 'ionicons/icons';
+import { homeSharp, searchSharp, briefcaseSharp } from 'ionicons/icons';
 
 export default {
   name: 'Tabs',
   components: { IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage },
   setup() {
     return {
-      home,
-      search,
-      briefcase,
+      homeSharp,
+      searchSharp,
+      briefcaseSharp,
     }
   }
 }
