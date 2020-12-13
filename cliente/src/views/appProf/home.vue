@@ -1,8 +1,12 @@
 <template>
   <ion-page>
     <ion-header>
-      <ion-toolbar><img src="@/components/img/headerLogo2.png" class="ion-padding"></ion-toolbar>
-    </ion-header>
+        <ion-toolbar>
+           <ion-item class="logo">
+             <img src="@/components/img/headerLogo2.png" class="ion-padding">
+           </ion-item>
+        </ion-toolbar>
+     </ion-header>
     <ion-content :fullscreen="true">
       <ion-row class="ion-justify-content-center fullheight">
         <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
