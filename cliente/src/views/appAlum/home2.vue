@@ -1,7 +1,11 @@
 <template>
     <ion-page>
         <ion-header>
-            <ion-toolbar><img src="@/components/img/headerLogo2.png" class="ion-padding"></ion-toolbar>
+            <ion-toolbar>
+                <ion-item class="logo">
+                 <img src="@/components/img/headerLogo2.png" class="ion-padding">
+                </ion-item>
+            </ion-toolbar>
         </ion-header>
             <ion-content :fullscreen="true">
                 <ion-row class="ion-justify-content-center fullheight">
@@ -229,6 +233,11 @@
   width: 100%;
   height: 23vh;
 }
+.logo {
+   display: block;
+   margin: auto;
+   width: 40%;
+  }
 </style>
 
 <script lang="ts">
