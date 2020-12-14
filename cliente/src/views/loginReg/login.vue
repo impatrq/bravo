@@ -18,7 +18,7 @@
         </div>
         <br>
         <ion-item class="ion-no-padding">
-          <ion-label position="floating">Correo Electronico</ion-label>
+          <ion-label position="floating">Correo Electrónico</ion-label>
           <ion-input type="text" id="email" v-model="email" ionBlur="validaremail()"></ion-input>
         </ion-item>
         <div class="text-size-12">
