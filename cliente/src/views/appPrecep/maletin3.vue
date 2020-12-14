@@ -136,6 +136,11 @@ background-color: #808289 ;
 .background-white2{
   background-color: #d7d8da ;
 }
+.logo {
+   display: block;
+   margin: auto;
+   width: 40%;
+  }
 
 </style>
 

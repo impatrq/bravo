@@ -169,6 +169,11 @@
 .list-card{ width: 100%; background-color: transparent; }
 .no-deco{ text-decoration: none; color: white;}
 .margin-bottom-65px{ margin-bottom: 65px; }
+.logo {
+   display: block;
+   margin: auto;
+   width: 40%;
+  }
 </style>
 
 <script lang="ts">
