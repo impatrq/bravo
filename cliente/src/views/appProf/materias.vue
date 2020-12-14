@@ -73,6 +73,11 @@
 .background-grey{ background-color: rgb(50, 50, 50); }
 .icon{ color: white; font-size: 32px; }
 .no-deco{ text-decoration: none; color: white;}
+.logo {
+   display: block;
+   margin: auto;
+   width: 40%;
+  }
 </style>
 
 <script lang="ts">
