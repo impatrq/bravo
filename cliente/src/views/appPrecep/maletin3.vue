@@ -141,7 +141,6 @@ background-color: #808289 ;
    margin: auto;
    width: 40%;
   }
-
 </style>
 
 <script lang="ts">
