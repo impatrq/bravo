@@ -230,6 +230,11 @@
   width: 100%;
   height: 23vh;
 }
+.logo {
+   display: block;
+   margin: auto;
+   width: 40%;
+  }
 </style>
 
 <script lang="ts">
