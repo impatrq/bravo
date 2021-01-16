@@ -51,30 +51,31 @@
   </ion-card-header>
 </router-link>  
 </ion-card>
+
 <ion-card class="background-grey">
-<router-link to="#" class="no-deco">                     
+<router-link to="materia" class="no-deco">                     
   <ion-card-header>                      
   <ion-card-title class="ion-text-capitalize ion-text-start">Materia</ion-card-title>
   <ion-card-subtitle class="ion-text-capitalize ion-text-end">Curso</ion-card-subtitle>
   </ion-card-header>
 </router-link>  
-</ion-card> 
+</ion-card>
 <ion-card class="background-grey">
-<router-link to="#" class="no-deco">                     
+<router-link to="materia" class="no-deco">                     
   <ion-card-header>                      
   <ion-card-title class="ion-text-capitalize ion-text-start">Materia</ion-card-title>
   <ion-card-subtitle class="ion-text-capitalize ion-text-end">Curso</ion-card-subtitle>
   </ion-card-header>
 </router-link>  
-</ion-card> 
+</ion-card>
 <ion-card class="background-grey">
-<router-link to="#" class="no-deco">                     
+<router-link to="materia" class="no-deco">                     
   <ion-card-header>                      
   <ion-card-title class="ion-text-capitalize ion-text-start">Materia</ion-card-title>
   <ion-card-subtitle class="ion-text-capitalize ion-text-end">Curso</ion-card-subtitle>
   </ion-card-header>
 </router-link>  
-</ion-card>  
+</ion-card>
 
 </ion-list>
 </ion-card>
