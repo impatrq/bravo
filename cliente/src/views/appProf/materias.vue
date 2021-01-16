@@ -77,11 +77,12 @@
 </router-link>  
 </ion-card>
 
-</ion-list>
 </ion-card>
 
+</ion-card>
 </ion-col>
 </ion-row>
+
 </ion-content>
 </ion-page>
 </template>
