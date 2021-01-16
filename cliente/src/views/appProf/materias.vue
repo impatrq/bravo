@@ -88,6 +88,8 @@
 
 <style>
 .fullheight{ height: 100%; }
+.blockList{ height: 70vh; }
+.list{ overflow: scroll; height: 65vh; margin-bottom: 5px; }
 .background-grey{ background-color: rgb(50, 50, 50); }
 .icon{ color: white; font-size: 32px; }
 .no-deco{ text-decoration: none; color: white;}
