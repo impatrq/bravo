@@ -20,8 +20,9 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/appProf/home.vue')
       },
       {
-        path: 'maletin',
-        component: () => import('@/views/appProf/maletin.vue')
+        path: 'materias',
+        component: () => import('@/views/appProf/materias.vue')
+      },
       }
     ]
   },
