@@ -10,7 +10,7 @@
           <ion-icon :icon="searchSharp" />
         </ion-tab-button>
         
-        <ion-tab-button tab="briefcase" href="/prof/maletin">
+        <ion-tab-button tab="briefcase" href="/prof/materias">
           <ion-icon :icon="briefcaseSharp" />
         </ion-tab-button>
       </ion-tab-bar>
