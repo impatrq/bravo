@@ -24,7 +24,8 @@
   </ion-col>
   </ion-row>                
 </ion-card-header>
-<ion-list>
+
+<ion-card class="list">
 
 <ion-card class="background-grey">
 <router-link to="maletin" class="no-deco">                     
