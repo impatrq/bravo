@@ -12,8 +12,8 @@
 <ion-content :fullscreen="true">
 <ion-row class="ion-justify-content-center fullheight">
 <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
+<ion-card class="blockList">
 
-<ion-card>
 <ion-card-header>
   <ion-row>
   <ion-col>
