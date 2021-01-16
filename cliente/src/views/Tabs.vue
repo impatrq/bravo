@@ -3,15 +3,16 @@
     <ion-tabs>
       <ion-tab-bar slot="bottom">
         <ion-tab-button tab="Home" href="/prof/home">
-          <ion-icon :icon="homeSharp" />
+          <ion-icon color="secondary" :icon="homeSharp" />
         </ion-tab-button>
           
         <ion-tab-button tab="search" href="/search">
-          <ion-icon :icon="searchSharp" />
+          <ion-icon color="secondary" :icon="searchSharp" />
         </ion-tab-button>
         
-        <ion-tab-button tab="briefcase" href="/prof/materias">
-          <ion-icon :icon="briefcaseSharp" />
+        <ion-tab-button tab="briefcase" href="/prof/maletin">
+          <ion-icon color="secondary" :icon="briefcaseSharp" />
+          
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>

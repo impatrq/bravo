@@ -3,131 +3,113 @@
 
 <ion-header translucent>
       <ion-toolbar>
-        <ion-searchbar></ion-searchbar>
+        <ion-searchbar color="primary"></ion-searchbar>
       </ion-toolbar>
     </ion-header>
 
 <ion-content :fullscreen="true">
 
-  <ion-row>
-    <ion-col>
+  <ion-row class="ion-justify-content-center fullheight">
+    <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
 
-          <ion-list>
-            <ion-list-header>
+        <ion-card color="primary">
+            <ion-card-header color="primary">
               <ion-text><h4>Ciclo Básico</h4></ion-text>
-            </ion-list-header>
+            </ion-card-header>
           <ion-slides options="slideOpts">
             <ion-slide>
-              <ion-card href="/sProfBas">
-               <ion-card-header class="background-grey">                      
+              <ion-card class="fullwidth ion-margin" href="/sProfBas">
+               <ion-card-header>                      
                   <ion-card-title class="ion-text-capitalize ion-text-center">Profesor</ion-card-title>
                 </ion-card-header>
               </ion-card>
             </ion-slide>
             <ion-slide>
-              <ion-card>
-                <ion-card-header class="background-grey">                      
+              <ion-card class="fullwidth ion-margin">
+                <ion-card-header>                      
                  <ion-card-title class="ion-text-capitalize ion-text-center">Alumno</ion-card-title>
                 </ion-card-header>
              </ion-card>
             </ion-slide>
             <ion-slide>
-              <ion-card>
-               <ion-card-header class="background-grey">                      
+              <ion-card class="fullwidth ion-margin">
+               <ion-card-header>                      
                  <ion-card-title class="ion-text-capitalize ion-text-center">Preceptor</ion-card-title>
                 </ion-card-header>
               </ion-card>
             </ion-slide>
           </ion-slides>
-          </ion-list>
-
-
-        
-    </ion-col>
-  </ion-row>
-
-  <ion-row>
-    <ion-col>
-
-          <ion-list>
-            <ion-list-header>
+          </ion-card>
+          <ion-card color="primary">
+            <ion-card-header color="primary">
               <ion-text><h4>Ciclo Superior Aeronáutica</h4></ion-text>
-            </ion-list-header>
+            </ion-card-header>
           <ion-slides options="slideOpts">
             <ion-slide>
-              <ion-card href="/sProfAer">
-               <ion-card-header class="background-grey">                      
+              <ion-card class="fullwidth ion-margin" href="/sProfAer">
+               <ion-card-header>                      
                   <ion-card-title class="ion-text-capitalize ion-text-center">Profesor</ion-card-title>
                 </ion-card-header>
               </ion-card>
             </ion-slide>
             <ion-slide>
-              <ion-card>
-                <ion-card-header class="background-grey">                      
+              <ion-card class="fullwidth ion-margin">
+                <ion-card-header>                      
                  <ion-card-title class="ion-text-capitalize ion-text-center">Alumno</ion-card-title>
                 </ion-card-header>
              </ion-card>
             </ion-slide>
             <ion-slide>
-              <ion-card>
-                <ion-card-header class="background-grey">                      
+              <ion-card class="fullwidth ion-margin">
+                <ion-card-header>                      
                   <ion-card-title class="ion-text-capitalize ion-text-center">Pañol</ion-card-title>
                </ion-card-header>
             </ion-card>
             </ion-slide>
             <ion-slide>
-              <ion-card>
-               <ion-card-header class="background-grey">                      
+              <ion-card class="fullwidth ion-margin">
+               <ion-card-header>                      
                  <ion-card-title class="ion-text-capitalize ion-text-center">Preceptor</ion-card-title>
                 </ion-card-header>
               </ion-card>
             </ion-slide>
           </ion-slides>
-          </ion-list>
-
-
-        
-    </ion-col>
-  </ion-row>
-
-  <ion-row>
-    <ion-col>
-
-          <ion-list>
-            <ion-list-header>
+          </ion-card>
+           <ion-card color="primary">
+            <ion-card-header color="primary">
               <ion-text><h4>Ciclo Superior Aviónica</h4></ion-text>
-            </ion-list-header>
+            </ion-card-header>
           <ion-slides options="slideOpts">
             <ion-slide>
-              <ion-card href="/sProfAv">
-               <ion-card-header class="background-grey">                      
+              <ion-card class="fullwidth ion-margin" href="/sProfAv">
+               <ion-card-header>                      
                   <ion-card-title class="ion-text-capitalize ion-text-center">Profesor</ion-card-title>
                 </ion-card-header>
               </ion-card>
             </ion-slide>
             <ion-slide>
-              <ion-card>
-                <ion-card-header class="background-grey">                      
+              <ion-card class="fullwidth ion-margin">
+                <ion-card-header>                      
                  <ion-card-title class="ion-text-capitalize ion-text-center">Alumno</ion-card-title>
                 </ion-card-header>
              </ion-card>
             </ion-slide>
             <ion-slide>
-              <ion-card>
-                <ion-card-header class="background-grey">                      
+              <ion-card class="fullwidth ion-margin">
+                <ion-card-header>                      
                   <ion-card-title class="ion-text-capitalize ion-text-center">Pañol</ion-card-title>
                </ion-card-header>
             </ion-card>
             </ion-slide>
             <ion-slide>
-              <ion-card>
-               <ion-card-header class="background-grey">                      
+              <ion-card class="fullwidth ion-margin">
+               <ion-card-header>                      
                  <ion-card-title class="ion-text-capitalize ion-text-center">Preceptor</ion-card-title>
                 </ion-card-header>
               </ion-card>
             </ion-slide>
           </ion-slides>
-          </ion-list>
+          </ion-card>
 
 
         
@@ -140,13 +122,10 @@
 
 <style>
 
-ion-card{
-  width: 100%;
+.fullwidth{
+  width: 100%; 
 }
 
-.background-grey{
-  background-color: rgb(50, 50, 50);
-}
 </style>
 
 <script lang="ts">

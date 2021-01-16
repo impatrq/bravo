@@ -1,8 +1,8 @@
 <template>
   <ion-page>
         <ion-header>
-            <ion-toolbar>
-                <ion-item class="logo">
+            <ion-toolbar color="primary">
+                <ion-item color="primary" class="logo">
                  <img src="@/components/img/headerLogo2.png" class="ion-padding">
                 </ion-item>
             </ion-toolbar>
