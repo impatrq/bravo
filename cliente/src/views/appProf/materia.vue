@@ -1,21 +1,22 @@
 <template>
 <ion-page>
-  <ion-header>
-        <ion-toolbar>
-            <ion-item class="logo">
-             <img src="@/components/img/headerLogo2.png" class="ion-padding">
-            </ion-item>
-        </ion-toolbar>
-    </ion-header>
-<ion-content :fullscreen="true">
 
+<ion-header>
+  <ion-toolbar>
+  <ion-item class="logo">
+    <img src="@/components/img/headerLogo2.png" class="ion-padding">
+  </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content :fullscreen="true">
 <ion-row class="ion-justify-content-center fullheight">
 <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
 
 <ion-card>
 <ion-card-header>
-<h2 class="ion-text-capitalize ion-text-start">Nombre de Materia</h2>
-<h3 class="ion-text-capitalize ion-text-start">Curso</h3>
+  <h2 class="ion-text-capitalize ion-text-start">Nombre de Materia</h2>
+  <h3 class="ion-text-capitalize ion-text-start">Curso</h3>
 </ion-card-header> 
 </ion-card>
 
@@ -33,23 +34,23 @@
   <ion-col size="2" class="ion-align-self-center">
     <router-link to="#" class="no-deco"><ion-icon :icon="addCircleOutline" class="icon"></ion-icon></router-link>
   </ion-col>
-  </ion-row>                
-</ion-card-header>      
+  </ion-row>
+</ion-card-header> 
+     
 <ion-list class="list">
+
 <ion-card class="background-grey">
 <router-link to="#" class="no-deco">                     
-  <ion-card-header>                      
-  <ion-card-title class="ion-text-capitalize ion-text-start">Actividad 1</ion-card-title>
-  </ion-card-header>
+  <ion-card-header><ion-card-title class="ion-text-capitalize ion-text-start">Actividad 1</ion-card-title></ion-card-header>
+</router-link>  
+</ion-card>
+
+<ion-card class="background-grey">
+<router-link to="#" class="no-deco">                     
+  <ion-card-header><ion-card-title class="ion-text-capitalize ion-text-start">Actividad 2</ion-card-title></ion-card-header>
 </router-link>  
 </ion-card> 
-<ion-card class="background-grey">
-<router-link to="#" class="no-deco">                     
-  <ion-card-header>                      
-  <ion-card-title class="ion-text-capitalize ion-text-start">Actividad 2</ion-card-title>
-  </ion-card-header>
-</router-link>  
-</ion-card>           
+
 </ion-list>
 
 </ion-card>

@@ -12,8 +12,8 @@
 <ion-content :fullscreen="true">
 <ion-row class="ion-justify-content-center fullheight">
 <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
+<ion-card class="blockList">
 
-<ion-card>
 <ion-card-header>
   <ion-row>
   <ion-col>
@@ -24,10 +24,11 @@
   </ion-col>
   </ion-row>                
 </ion-card-header>
-<ion-list>
+
+<ion-card class="list">
 
 <ion-card class="background-grey">
-<router-link to="maletin" class="no-deco">                     
+<router-link to="materia" class="no-deco">                     
   <ion-card-header>                      
   <ion-card-title class="ion-text-capitalize ion-text-start">Materia</ion-card-title>
   <ion-card-subtitle class="ion-text-capitalize ion-text-end">Curso</ion-card-subtitle>
@@ -35,49 +36,65 @@
 </router-link>  
 </ion-card>
 <ion-card class="background-grey">
-<router-link to="#" class="no-deco">                     
+<router-link to="materia" class="no-deco">                     
   <ion-card-header>                      
   <ion-card-title class="ion-text-capitalize ion-text-start">Materia</ion-card-title>
   <ion-card-subtitle class="ion-text-capitalize ion-text-end">Curso</ion-card-subtitle>
   </ion-card-header>
 </router-link>  
-</ion-card> 
+</ion-card>
 <ion-card class="background-grey">
-<router-link to="#" class="no-deco">                     
+<router-link to="materia" class="no-deco">                     
   <ion-card-header>                      
   <ion-card-title class="ion-text-capitalize ion-text-start">Materia</ion-card-title>
   <ion-card-subtitle class="ion-text-capitalize ion-text-end">Curso</ion-card-subtitle>
   </ion-card-header>
 </router-link>  
-</ion-card> 
-<ion-card class="background-grey">
-<router-link to="#" class="no-deco">                     
-  <ion-card-header>                      
-  <ion-card-title class="ion-text-capitalize ion-text-start">Materia</ion-card-title>
-  <ion-card-subtitle class="ion-text-capitalize ion-text-end">Curso</ion-card-subtitle>
-  </ion-card-header>
-</router-link>  
-</ion-card>  
-
-</ion-list>
 </ion-card>
 
+<ion-card class="background-grey">
+<router-link to="materia" class="no-deco">                     
+  <ion-card-header>                      
+  <ion-card-title class="ion-text-capitalize ion-text-start">Materia</ion-card-title>
+  <ion-card-subtitle class="ion-text-capitalize ion-text-end">Curso</ion-card-subtitle>
+  </ion-card-header>
+</router-link>  
+</ion-card>
+<ion-card class="background-grey">
+<router-link to="materia" class="no-deco">                     
+  <ion-card-header>                      
+  <ion-card-title class="ion-text-capitalize ion-text-start">Materia</ion-card-title>
+  <ion-card-subtitle class="ion-text-capitalize ion-text-end">Curso</ion-card-subtitle>
+  </ion-card-header>
+</router-link>  
+</ion-card>
+<ion-card class="background-grey">
+<router-link to="materia" class="no-deco">                     
+  <ion-card-header>                      
+  <ion-card-title class="ion-text-capitalize ion-text-start">Materia</ion-card-title>
+  <ion-card-subtitle class="ion-text-capitalize ion-text-end">Curso</ion-card-subtitle>
+  </ion-card-header>
+</router-link>  
+</ion-card>
+
+</ion-card>
+
+</ion-card>
 </ion-col>
 </ion-row>
+
 </ion-content>
 </ion-page>
 </template>
 
 <style>
 .fullheight{ height: 100%; }
+.blockList{ height: 70vh; }
+.list{ overflow: scroll; height: 65vh; margin-bottom: 5px; }
 .background-grey{ background-color: rgb(50, 50, 50); }
 .icon{ color: white; font-size: 32px; }
 .no-deco{ text-decoration: none; color: white;}
-.logo {
-   display: block;
-   margin: auto;
-   width: 40%;
-  }
+.logo { display: block; margin: auto; width: 40%; }
 </style>
 
 <script lang="ts">

@@ -12,6 +12,7 @@
         
         <ion-tab-button tab="briefcase" href="/prof/maletin">
           <ion-icon color="secondary" :icon="briefcaseSharp" />
+          
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>

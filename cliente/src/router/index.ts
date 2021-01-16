@@ -20,8 +20,12 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/appProf/home.vue')
       },
       {
-        path: 'maletin',
-        component: () => import('@/views/appProf/maletin.vue')
+        path: 'materias',
+        component: () => import('@/views/appProf/materias.vue')
+      },
+      {
+        path: 'materia',
+        component: () => import('@/views/appProf/materia.vue')
       }
     ]
   },
@@ -84,10 +88,6 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'maletin3',
         component: () => import('@/views/appPrecep/maletin3.vue')
-      },
-      {
-        path: 'tareas',
-        component: () => import('@/views/appProf/materias.vue')
       },
       {
         path: 'search',
