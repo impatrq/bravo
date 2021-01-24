@@ -12,6 +12,9 @@
   <ion-col size-xl="6" size-sm="10" class="ion-align-self-center">
 
     <ion-card class="ion-padding">
+      <ion-item class="logo">
+        <img src="@/components/img/headerLogo2.png" class="ion-padding">
+        </ion-item>
       <ion-list>
         <div class="ion-text-uppercase ion-no-padding">
           <ion-list-header class="text-size-20 ion-text-justify">Iniciar sesión</ion-list-header>
@@ -19,19 +22,18 @@
         <br>
         <ion-item class="ion-no-padding">
           <ion-label position="floating">Correo Electrónico</ion-label>
-          <ion-input type="text" id="email" v-model="email" ionBlur="validaremail()"></ion-input>
+          <ion-input placeholder="minombre@gmail.com" type="text" id="email" v-model="email" ionBlur="validaremail()"></ion-input>
         </ion-item>
         <div class="text-size-12">
           <span v-if="altoemail" color="red"> Formato incorrecto </span>
-          <span v-if="!email">Ej.: minombre@gmail.com</span>
         </div>
         <br>
         <ion-item class="ion-no-padding">
           <ion-label position="floating">Contraseña</ion-label>
-          <ion-input type="password" id="contra" v-model="contra" ionBlur="validarcontra()"></ion-input>
+          <ion-input placeholder="Contraseña123" type="password" id="contra" v-model="contra" ionBlur="validarcontra()"></ion-input>
         </ion-item>
         <div class="text-size-12">
-          <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
+          <span v-if="!contra">(Requiere un mínimo de una mayúscula y un número)</span>
           <span v-if="altocontra" color="red"> Formato incorrecto </span>
         </div>
         <br>
@@ -60,6 +62,15 @@
 }
 .fullheight{
   height: 100%; 
+}
+.logo {
+   display: block;
+   margin: auto;
+   width: 60%;
+  }
+  .img{
+  width: 100%;
+  height: 23vh;
 }
 </style>
 

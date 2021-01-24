@@ -3,7 +3,7 @@
 
     <ion-header translucent>
       <ion-toolbar>
-        <ion-searchbar></ion-searchbar>
+        <ion-searchbar color="primary"></ion-searchbar>
       </ion-toolbar>
     </ion-header>
     <ion-content fullscreen>

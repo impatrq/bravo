@@ -108,6 +108,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'sProfAer',
         component: () => import('@/views/search/searchProfAero.vue')
+      },
+      {
+        path: 'chat1',
+        component: () => import('@/views/chats/chat.vue')
       }
     ]
   },

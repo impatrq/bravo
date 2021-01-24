@@ -1,5 +1,5 @@
 <template>
-  <ion-page>
+    <ion-page>
         <ion-header>
             <ion-toolbar color="primary">
                 <ion-item color="primary" class="logo">
@@ -7,159 +7,135 @@
                 </ion-item>
             </ion-toolbar>
         </ion-header>
-			<ion-content :fullscreen="true">
-				<ion-header collapse="condense">
-					<ion-toolbar><ion-title size="large">maletin</ion-title></ion-toolbar>
-				</ion-header>
-					<ion-row class="ion-justify-content-center fullheight">
-						<ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
-								<ion-list class="width-95per">
+            <ion-content :fullscreen="true">
+                <ion-row class="ion-justify-content-center fullheight">
+                    <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
+								<ion-card class="width-95per">
 									<ion-card-header class="background-white2">
 										<ion-card-title class="ion-text-capitalize ion-text-start"> Curso: </ion-card-title>
 										<br>
+										<ion-card-subtitle class="ion-text-capitalize ion-text-start"> Materia: </ion-card-subtitle>
 									</ion-card-header>
-								</ion-list><br>
-								<ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">
-									<ion-slide class="margin-buttom-50">             
-										<ion-list class="width-95per">
-											<ion-card-header class="background-white2">
-												<ion-list-header>
-													<ion-text><h4>Actividades/materia</h4></ion-text>
-												</ion-list-header>
-												<ion-card>
-													<ion-card-header class="background-grey">                      
-														<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 1</ion-card-title>
-														<ion-card-subtitle class="ion-text-end">Materia:</ion-card-subtitle>
-													</ion-card-header>
-												</ion-card>
-												<ion-card>
-													<ion-card-header class="background-grey">                      
-														<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 2</ion-card-title>
-														<ion-card-subtitle class="ion-text-end">Materia:</ion-card-subtitle>
-													</ion-card-header>
-												</ion-card>
-												<ion-card>
-													<ion-card-header class="background-grey">                      
-														<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 3</ion-card-title>
-														<ion-card-subtitle class="ion-text-end">Materia:</ion-card-subtitle>
-													</ion-card-header>
-												</ion-card><br>
-											</ion-card-header>
-										</ion-list>
-									</ion-slide>
-								<ion-slide>               
-									<ion-list class="width-95per">
-										<ion-card-header class="background-white2">
-											<ion-list-header>
-												<ion-text><h4>Comunicados:</h4></ion-text>
-											</ion-list-header>
-											<ion-card>
-												<ion-card-header class="background-grey">                      
-													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Comunicado 1</ion-card-title>
-													<ion-card-subtitle class="ion-text-end">De:</ion-card-subtitle>
-												</ion-card-header>
-											</ion-card>
-											<ion-card>
-												<ion-card-header class="background-grey">                      
-													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Comunicado 2</ion-card-title>
-													<ion-card-subtitle class="ion-text-end">De:</ion-card-subtitle>
-												</ion-card-header>
-											</ion-card>
-											<ion-card>
-												<ion-card-header class="background-grey">                      
-													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Comunicado 2</ion-card-title>
-													<ion-card-subtitle class="ion-text-end"> De:</ion-card-subtitle>
-												</ion-card-header>
-											</ion-card>
-										</ion-card-header>
-									</ion-list>
-								</ion-slide>
-								</ion-slides>
-								<br>
-								<ion-list class="ion-margin margin-buttom-50">
-									<ion-card-header class="background-white2">
-										<ion-list-header>
-											<ion-text><h4>Evaluaciones</h4></ion-text>
-										</ion-list-header>
-											<ion-card>
-												<ion-card-header class="background-grey">                      
-													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Evaluacion 1</ion-card-title>
-													<ion-card-subtitle class="ion-text-end">Día:</ion-card-subtitle>
-												</ion-card-header>
-											</ion-card>
-											<ion-card>
-												<ion-card-header class="background-grey">                      
-													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Evaluacion 2</ion-card-title>
-													<ion-card-subtitle class="ion-text-end">Día:</ion-card-subtitle>
-												</ion-card-header>
-											</ion-card>
-											<ion-card>
-												<ion-card-header class="background-grey">                      
-													<ion-card-title color="light" class="ion-text-capitalize ion-text-start">Evaluacion 2</ion-card-title>
-													<ion-card-subtitle class="ion-text-end">Día:</ion-card-subtitle>
-												</ion-card-header>
-											</ion-card>
-									</ion-card-header>
-								</ion-list>
-										<!-- TIENE QUE IR EL INFINITE SCROLL-->     
-						</ion-col>
-					</ion-row>
-			</ion-content>
-  </ion-page>
+								</ion-card><br>          
+                            <ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">    
+                            <ion-slide class="margin-buttom-50">
+                            <ion-card color="primary" class="fullwidth ion-margin">
+                            <ion-card-header color="primary">
+                                <ion-text color="light" class="ion-text-capitalize ion-text-start"><h4>Actividades/Materias:</h4></ion-text>
+                            </ion-card-header>
+                            <ion-card>
+                                <ion-card-header>                      
+                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 1</ion-card-title>
+                                <ion-card-subtitle class="ion-text-end">Materia:</ion-card-subtitle>
+                                </ion-card-header>
+                            </ion-card>
+                            <ion-card>
+                                <ion-card-header>                      
+                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 2</ion-card-title>
+                                <ion-card-subtitle class="ion-text-end">Materia:</ion-card-subtitle>
+                                </ion-card-header>
+                            </ion-card>
+                            <ion-card>
+                                <ion-card-header>                      
+                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Actividad 3</ion-card-title>
+                                <ion-card-subtitle class="ion-text-end">Materia:</ion-card-subtitle>
+                                </ion-card-header>
+                            </ion-card>
+                            </ion-card>                          
+                            </ion-slide>
+                            <ion-slide class="margin-buttom-50">                
+                            <ion-card color="primary" class="fullwidth ion-margin">
+                            <ion-card-header color="primary">
+                                <ion-text color="light" class="ion-text-capitalize ion-text-start"><h4>Comunicados:</h4></ion-text>
+                            </ion-card-header>
+                            <ion-card>
+                                <ion-card-header>                      
+                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Comunicado 1</ion-card-title>
+                                <ion-card-subtitle class="ion-text-end">De:</ion-card-subtitle>
+                                </ion-card-header>
+                            </ion-card>
+                            <ion-card>
+                                <ion-card-header>                      
+                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Comunicado 2</ion-card-title>
+                                <ion-card-subtitle class="ion-text-end">De:</ion-card-subtitle>
+                                </ion-card-header>
+                            </ion-card>
+                            <ion-card>
+                                <ion-card-header>                      
+                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Comunicado 3</ion-card-title>
+                                <ion-card-subtitle class="ion-text-end">De:</ion-card-subtitle>
+                                </ion-card-header>
+                            </ion-card>
+                            </ion-card>              
+                            </ion-slide>
+							</ion-slides>
+                            <ion-card color="primary" class="ion-margin margin-buttom-50">
+                            <ion-card-header color="primary">
+                                <ion-text color="light"><h4>Evaluaciones:</h4></ion-text>
+                            </ion-card-header>
+                            <ion-card>
+                                <ion-card-header>                      
+                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Evaluación 1</ion-card-title>
+                                <ion-card-subtitle class="ion-text-end">Día:</ion-card-subtitle>
+                                </ion-card-header>
+                            </ion-card>
+                            <ion-card>
+                                <ion-card-header>                      
+                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Evaluación 2</ion-card-title>
+                                <ion-card-subtitle class="ion-text-end">Día:</ion-card-subtitle>
+                                </ion-card-header>
+                            </ion-card>
+                            <ion-card>
+                                <ion-card-header>                      
+                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Evaluación 3</ion-card-title>
+                                <ion-card-subtitle class="ion-text-end">Día:</ion-card-subtitle>
+                                </ion-card-header>
+                            </ion-card>
+                            </ion-card><br>
+                        </ion-col>
+                </ion-row>
+            </ion-content>
+    </ion-page>
 </template>
 
 <style>
-.margin-buttom-60{
-  margin-bottom: 60px;
+.margin-buttom-50{
+  margin-bottom: 50px;
 }
 .fullheight{
   height: 100%; 
 }
-.width-95per{
-  width: 95%; 
-}
 .left-move{
-  padding-left: 250px;
+    padding-left: 200px;
 }
-.background-grey{
-  background-color: rgb(50, 50, 50);
+.fullwidth{
+  width: 100%; 
 }
-.background-white{
-background-color: #808289 ;
-}
-.background-white2{
-  background-color: #92949c ;
-}
-.background-white3{
-  background-color: #383a3e ;
-}
-.background-white2{
-  background-color: #d7d8da ;
+.img{
+  width: 100%;
+  height: 23vh;
 }
 .logo {
    display: block;
    margin: auto;
    width: 40%;
   }
-
 </style>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow, IonSlide} from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonSlides, IonSlide} from '@ionic/vue';
 import { defineComponent } from 'vue';
 import ExploreContainerVue from '../../components/ExploreContainer.vue';
-import{add}from 'ionicons/icons';
+
 export default defineComponent({
-  components: { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCol, IonRow, IonSlide },
+  components: { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonSlides, IonSlide },
   setup() {
     
     const slideOpts = {
       initialSlide: 1,
       speed: 400
     };
-    return { slideOpts, add } 
-    
-    //FALTA LÓGICA DEL INFINITE SCROLL
+    return { slideOpts } 
   }
 });
 </script>
