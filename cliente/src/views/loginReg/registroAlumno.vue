@@ -17,14 +17,15 @@
           <ion-list-header class="text-size-20 ion-no-padding">Registro</ion-list-header>
           <ion-label>Paso 1: Ingrese su matrícula</ion-label>
         </div>
+        <br>
         <ion-item class="ion-no-padding">
           <ion-label position="floating">Matrícula</ion-label>
-          <ion-input></ion-input>
+          <ion-input placeholder="0000"></ion-input>
         </ion-item> 
         <br>
         <ion-row class="ion-justify-content-center">
-        <ion-button size="small" routerLink="/cargosReg" fill="outline" >Atrás</ion-button>
-        <ion-button size="small" routerLink="/valEmail" fill="outline" >Continuar</ion-button>            
+        <ion-button size="small" routerLink="/cargosReg" fill="solid" >Atrás</ion-button>
+        <ion-button size="small" routerLink="/valEmail" fill="solid" >Continuar</ion-button>            
         </ion-row>   
         <br>
         <router-link to="/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</router-link>            
@@ -53,7 +54,6 @@
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
 
 export default  {
   name: 'alumReg',
