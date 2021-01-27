@@ -27,7 +27,7 @@
         <ion-label>Si no recibio el Email, aprete "Reenviar Email"</ion-label>
         <br>
         <ion-row class="ion-justify-content-center padding-top-20">
-        <ion-button expand="block" fill="outline" routerLink="#">Reenviar Email</ion-button>         
+        <ion-button expand="block" fill="solid" routerLink="#">Reenviar Email</ion-button>         
         </ion-row>          
         
       </ion-list>
@@ -56,7 +56,6 @@
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
 
 export default  {
   name: 'valEmailSi',
