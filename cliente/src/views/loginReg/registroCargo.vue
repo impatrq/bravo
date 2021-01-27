@@ -21,13 +21,13 @@
           <ion-list-header class="text-size-20 ion-text-justify">Seleccione su cargo</ion-list-header>
         </div>
         <br>
-        <ion-button  @click="seleccionPrec()" expand="block" routerLink="profReg" fill="outline">Preceptor o Directivo</ion-button> 
+        <ion-button  @click="seleccionPrec()" expand="block" routerLink="profReg" fill="solid">Preceptor o Directivo</ion-button> 
         <br>    
-        <ion-button  @click="seleccionProf()"  expand="block" routerLink="profReg" fill="outline" >Profesor</ion-button>
+        <ion-button  @click="seleccionProf()"  expand="block" routerLink="profReg" fill="solid">Profesor</ion-button>
         <br>
-        <ion-button  @click="seleccionPanol()"  expand="block" routerLink="profReg" fill="outline" >Personal de pañol</ion-button>  
+        <ion-button  @click="seleccionPanol()"  expand="block" routerLink="profReg" fill="solid">Personal de pañol</ion-button>  
         <br>
-        <ion-button  @click="seleccionAlum()" expand="block" routerLink="AlumReg" fill="outline" >Alumno</ion-button>
+        <ion-button  @click="seleccionAlum()" expand="block" routerLink="AlumReg" fill="solid">Alumno</ion-button>
         
         <!--
         <router-link to="1">
@@ -70,8 +70,6 @@
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
-import dinamico from '@components/dinamico.vue'
 import { App, ref } from 'vue';
 
 export default  {

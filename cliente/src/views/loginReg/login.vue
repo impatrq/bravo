@@ -37,11 +37,11 @@
           <span v-if="altocontra" color="red"> Formato incorrecto </span>
         </div>
         <br>
-        <ion-button expand="block" fill="outline">INICIAR SESIÓN</ion-button>
+        <ion-button expand="block" fill="solid">INICIAR SESIÓN</ion-button>
         <br>
-        <router-link to="/oCont" class="text-size-12">¿Olvidó su contraseña?</router-link>
+        <router-link color="primary" to="/oCont" class="text-size-12">¿Olvidó su contraseña?</router-link>
         <br>
-        <router-link to="/cargosReg" class="text-size-12">¿No tiene cuenta? Registrese aquí.</router-link>
+        <router-link color="primary" to="/cargosReg" class="text-size-12">¿No tiene cuenta? Registrese aquí.</router-link>
       </ion-list>
     </ion-card>
 

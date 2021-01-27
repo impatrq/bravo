@@ -1,40 +1,61 @@
 <template>
-<ion-page>
-
-<ion-header translucent>
+  <ion-page>
+    <ion-header translucent>
       <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
         <ion-title class="ion-text-center" color="light">Chat</ion-title>
       </ion-toolbar>
     </ion-header>
 
-<ion-content :fullscreen="true">
+    <ion-content :fullscreen="true">
+      <ion-row class="ion-justify-content-center fullheight">
+        <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
+          <ion-searchbar placeholder="Buscar"></ion-searchbar>
+          <ion-list>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="@/components/img/person-circle-sharp.svg" color="light">
+              </ion-avatar>
+              <ion-label>Profesor</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="@/components/img/person-circle-sharp.svg" color="light">
+              </ion-avatar>
+              <ion-label>Alumno</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="@/components/img/person-circle-sharp.svg" color="light">
+              </ion-avatar>
+              <ion-label>Preceptor</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="@/components/img/person-circle-sharp.svg" color="light">
+              </ion-avatar>
+              <ion-label>Alumno</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="@/components/img/person-circle-sharp.svg" color="light">
+              </ion-avatar>
+              <ion-label>Alumno</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="@/components/img/person-circle-sharp.svg" color="light">
+              </ion-avatar>
+              <ion-label>Profesor</ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
 
-  <ion-row class="ion-justify-content-center fullheight">
-    <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
-
-        <ion-card color="primary">
-            <ion-card-header color="primary">
-              <ion-text><h4>Ciclo Básico</h4></ion-text>
-            </ion-card-header>
-          </ion-card>
-          <ion-card color="primary">
-            <ion-card-header color="primary">
-              <ion-text><h4>Ciclo Superior Aeronáutica</h4></ion-text>
-            </ion-card-header>
-          </ion-card>
-           <ion-card color="primary">
-            <ion-card-header color="primary">
-              <ion-text><h4>Ciclo Superior Aviónica</h4></ion-text>
-            </ion-card-header>
-          </ion-card>
-
-
-        
-    </ion-col>
-    </ion-row>
-
-</ion-content>
-</ion-page>
+    </ion-content>
+  </ion-page>
 </template>
 
 <style>
@@ -46,11 +67,11 @@
 </style>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow} from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonButtons, IonBackButton} from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  components: { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow},
+  components: { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonButtons, IonBackButton},
   
 
 });

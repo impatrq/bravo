@@ -25,8 +25,8 @@
         <ion-label>Su direccion de correo es "al***ma**@gmail.com?</ion-label>
         <br>
         <ion-row class="ion-justify-content-center padding-top-20">
-        <ion-button size="small" color="success" routerLink="/valEmailSi" fill="outline" >Si</ion-button>
-        <ion-button size="small" color="danger" routerLink="/valEmailNo" fill="outline" >No</ion-button>            
+        <ion-button size="small" color="success" routerLink="/valEmailSi" fill="solid" >Si</ion-button>
+        <ion-button size="small" color="danger" routerLink="/valEmailNo" fill="solid" >No</ion-button>            
         </ion-row>   
         <br>
         <router-link to="/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</router-link>            
@@ -58,7 +58,6 @@
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
 
 export default  {
   name: 'valEmail',
