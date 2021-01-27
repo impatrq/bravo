@@ -19,14 +19,13 @@
       <br>
       <ion-item class="ion-no-padding">
         <ion-label position="floating">Email</ion-label>
-        <ion-input type="text" id="email" v-model="email" ionBlur="validaremail()"></ion-input>
+        <ion-input placeholder="minombre@gmail.com" type="text" id="email" v-model="email" ionBlur="validaremail()"></ion-input>
       </ion-item>
       <div class="text-size-12">
         <span v-if="altoemail" color="red"> Formato incorrecto </span>
-        <span v-if="!email">Ej.: minombre@gmail.com</span>
       </div>
       <br>
-      <ion-button expand="block" routerLink="ncont" fill="outline" >Enviar Email</ion-button>
+      <ion-button expand="block" routerLink="ncont" fill="solid" >Enviar Email</ion-button>
     </ion-list>
 
   </ion-card>
