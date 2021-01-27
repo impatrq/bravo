@@ -24,20 +24,20 @@
         <br>        
         <ion-item class="ion-no-padding">
           <ion-label position="floating">Nueva contraseña</ion-label>
-          <ion-input type="password" id="contra" v-model="contra" ionBlur="validarcontra()"></ion-input>
+          <ion-input placeholder="Contraseña123" type="password" id="contra" v-model="contra" ionBlur="validarcontra()"></ion-input>
         </ion-item>
         <div class="text-size-12">
           <span v-if="!contra">(La contraseña requiere un mínimo de una mayúscula y un número)</span>
           <span v-if="altocontra" color="red"> Formato incorrecto </span>
         </div>
+        <br>
         <ion-item class="ion-no-padding">
           <ion-label position="floating">Repita su contraseña</ion-label>
-          <ion-input type="password" id="contra" v-model="contra" ionBlur="validarcontra()"></ion-input>
+          <ion-input placeholder="Contraseña123" type="password" id="contra" v-model="contra" ionBlur="validarcontra()"></ion-input>
         </ion-item>
-          <span v-if="!contra">Repita contraseña</span>
           <span v-if="altocontra" color="red"> Formato incorrecto </span>
         <br>
-        <ion-button expand="block" routerLink="#" fill="outline" >Confirmar</ion-button>
+        <ion-button expand="block" routerLink="#" fill="solid" >Confirmar</ion-button>
         <br>
         <router-link to="/login" class="text-size-12">¿Ya tiene una cuenta? Inicie sesión aquí.</router-link>            
         
@@ -68,7 +68,6 @@
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonListHeader, IonCol, IonRow } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
 import { App, ref } from 'vue';
 
 export default  {
