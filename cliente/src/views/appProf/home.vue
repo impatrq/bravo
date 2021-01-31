@@ -235,7 +235,7 @@
 }
 .logo {
    display: block;
-   margin: auto;
+   margin: left;
    width: 40%;
   }
 </style>
