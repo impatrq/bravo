@@ -112,6 +112,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'chat1',
         component: () => import('@/views/chats/chat.vue')
+      },
+      {
+        path: 'noticia1',
+        component: () => import('@/views/noticias/noticia1.vue')
       }
     ]
   },
