@@ -2,9 +2,7 @@
   <ion-page>
     <ion-header translucent>
       <ion-toolbar color="primary">
-        <ion-buttons slot="start">
-          <ion-back-button></ion-back-button>
-        </ion-buttons>
+        <router-link to="/home2" slot="start"><ion-icon :icon="arrowBackOutline" class="icon"></ion-icon></router-link>
         <ion-title color="light">Chat</ion-title>
       </ion-toolbar>
     </ion-header>
@@ -15,7 +13,7 @@
           <ion-searchbar placeholder="Buscar"></ion-searchbar>
       <ion-list>
         <ion-list-header>
-          Conversaciones Recientes
+          Conversaciones recientes
         </ion-list-header>
 
         <ion-item>
@@ -65,7 +63,7 @@
 
       <ion-list>
         <ion-list-header>
-          En Línea
+          En línea
         </ion-list-header>
 
         <ion-item>
@@ -124,16 +122,25 @@
 .fullwidth{
   width: 100%; 
 }
+.icon{ 
+   color: white; 
+   font-size: 25px;
+   margin-inline-start: 16px; 
+}
 
 </style>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonButtons, IonBackButton} from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import{ arrowBackOutline }from 'ionicons/icons';
 
 export default defineComponent({
-  components: { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonButtons, IonBackButton},
-  
+  components: { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow },
+    setup() {
+
+    return { arrowBackOutline } 
+  }
 
 });
 </script>

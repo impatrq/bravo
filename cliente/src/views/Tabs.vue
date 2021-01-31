@@ -2,7 +2,7 @@
   <ion-page>
     <ion-tabs>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="Home" href="/prof/home">
+        <ion-tab-button tab="Home" href="/home2">
           <ion-icon color="secondary" :icon="homeSharp" />
         </ion-tab-button>
           
