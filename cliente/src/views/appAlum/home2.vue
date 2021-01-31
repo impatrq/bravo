@@ -11,37 +11,41 @@
             <ion-content :fullscreen="true">
                 <ion-row class="ion-justify-content-center fullheight">
                     <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
-                        <ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">  
+                        <ion-card color="primary" class="ion-padding-top margin-buttom-45">
+                        <ion-slides pager="true" :options="slideOpts">  
                             <ion-slide>
-                                <ion-card color="primary" class="ion-padding-top margin-buttom-25">
-                                    <ion-item color="primary" class="img"><img src="@/components/img/not1.png"></ion-item>
+                                <ion-card color="secondary" class="ion-padding-top margin-buttom-45">
+                                    <ion-item color="secondary" class="img"><img src="@/components/img/not1.png"></ion-item>
                                     <ion-card-content> Titulo de Noticia 1 </ion-card-content>
                                 </ion-card>
                             </ion-slide>            
                             <ion-slide>
-                                <ion-card color="primary" class="ion-padding-top margin-buttom-25">
-                                    <ion-item color="primary" class="img"><img src="@/components/img/not2.png"></ion-item>
+                                <ion-card color="secondary" class="ion-padding-top margin-buttom-45">
+                                    <ion-item color="secondary" class="img"><img src="@/components/img/not2.png"></ion-item>
                                     <ion-card-content> Titulo de Noticia 2 </ion-card-content>
                                 </ion-card>
                             </ion-slide>
                             <ion-slide>
-                                <ion-card color="primary" class="ion-padding-top margin-buttom-25">
-                                    <ion-item color="primary" class="img"><img src="@/components/img/not3.png" ></ion-item>
+                                <ion-card color="secondary" class="ion-padding-top margin-buttom-45">
+                                    <ion-item color="secondary" class="img"><img src="@/components/img/not3.png" ></ion-item>
                                     <ion-card-content> Titulo de Noticia 3 </ion-card-content>
                                 </ion-card>
                             </ion-slide>
                             </ion-slides>
+                            <router-link to="/noticia1">
                             <ion-item color="primary">
                                  <ion-icon :icon="caretForwardOutline" slot="end"></ion-icon>
                                      <ion-label>
                                       Ver todas las noticias.
                                      </ion-label>
                             </ion-item>
+                            </router-link>
+                            </ion-card>
                             <br>
                             <br> 
                             <ion-card color="primary" class="ion-margin margin-buttom-50">
                             <ion-card-header color="primary">
-                                <ion-text color="light"><h4>Chat reciente:</h4></ion-text>
+                                <ion-text color="light"><h4>Tareas pendientes:</h4></ion-text>
                             </ion-card-header>
                             <ion-card>
                                 <ion-card-header>                      
@@ -223,12 +227,16 @@
 </template>
 
 <style>
-.slider-pager { background: #000; }
+
+.swiper-pagination-bullet-active {
+background: white;
+opacity: 1;
+}
 .margin-buttom-50{
   margin-bottom: 50px;
 }
 .margin-buttom-45{
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 .fullheight{
   height: 100%; 
