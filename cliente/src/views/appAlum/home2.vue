@@ -5,6 +5,7 @@
                 <ion-item color="primary" class="logo">
                  <img src="@/components/img/headerLogo2.png" class="ion-padding">
                 </ion-item>
+                <router-link to="/chat1" slot="end"><ion-icon :icon="chatbubbleEllipses" slot="end" class="icon"></ion-icon></router-link>
             </ion-toolbar>
         </ion-header>
             <ion-content :fullscreen="true">
@@ -12,24 +13,32 @@
                     <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
                         <ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">  
                             <ion-slide>
-                                <ion-card color="primary" class="ion-padding-top margin-buttom-50">
+                                <ion-card color="primary" class="ion-padding-top margin-buttom-25">
                                     <ion-item color="primary" class="img"><img src="@/components/img/not1.png"></ion-item>
                                     <ion-card-content> Titulo de Noticia 1 </ion-card-content>
                                 </ion-card>
                             </ion-slide>            
                             <ion-slide>
-                                <ion-card color="primary" class="ion-padding-top margin-buttom-50">
+                                <ion-card color="primary" class="ion-padding-top margin-buttom-25">
                                     <ion-item color="primary" class="img"><img src="@/components/img/not2.png"></ion-item>
                                     <ion-card-content> Titulo de Noticia 2 </ion-card-content>
                                 </ion-card>
                             </ion-slide>
                             <ion-slide>
-                                <ion-card color="primary" class="ion-padding-top margin-buttom-50">
+                                <ion-card color="primary" class="ion-padding-top margin-buttom-25">
                                     <ion-item color="primary" class="img"><img src="@/components/img/not3.png" ></ion-item>
                                     <ion-card-content> Titulo de Noticia 3 </ion-card-content>
                                 </ion-card>
                             </ion-slide>
-                            </ion-slides>           
+                            </ion-slides>
+                            <ion-item color="primary">
+                                 <ion-icon :icon="caretForwardOutline" slot="end"></ion-icon>
+                                     <ion-label>
+                                      Ver todas las noticias.
+                                     </ion-label>
+                            </ion-item>
+                            <br>
+                            <br> 
                             <ion-card color="primary" class="ion-margin margin-buttom-50">
                             <ion-card-header color="primary">
                                 <ion-text color="light"><h4>Chat reciente:</h4></ion-text>
@@ -66,8 +75,8 @@
                             <ion-slide class="margin-buttom-50">
                                 <ion-card color="primary" class="fullwidth ion-margin">
                                 <ion-card-header color="primary">
-                                    <ion-text color="light" class="ion-margin-left"><h4>Día: Lunes</h4></ion-text>
-                                    <ion-card-subtitle color="light" class="left-move">Curso:</ion-card-subtitle>
+                                    <ion-text color="light" class="ion-text-left"><h4>Día: Lunes</h4></ion-text>
+                                    <ion-card-subtitle color="light" class="ion-text-left">Curso:</ion-card-subtitle>
                                 </ion-card-header>
                                 <ion-card>
                                     <ion-card-header>                      
@@ -94,8 +103,8 @@
                             <ion-slide class="margin-buttom-50">                
                                 <ion-card color="primary" class="fullwidth ion-margin">
                                 <ion-card-header color="primary">
-                                    <ion-text color="light" class="ion-margin-left"><h4>Día: Martes</h4></ion-text>
-                                    <ion-card-subtitle color="light" class="left-move">Curso:</ion-card-subtitle>
+                                    <ion-text color="light" class="ion-text-left"><h4>Día: Martes</h4></ion-text>
+                                    <ion-card-subtitle color="light" class="ion-text-left">Curso:</ion-card-subtitle>
                                 </ion-card-header>
                                 <ion-card>
                                     <ion-card-header>                      
@@ -123,8 +132,8 @@
                             <ion-slide class="margin-buttom-50">                
                                 <ion-card color="primary" class="fullwidth ion-margin">
                                 <ion-card-header color="primary">
-                                    <ion-text color="light" class="ion-margin-left"><h4>Día: Miercoles</h4></ion-text>
-                                    <ion-card-subtitle color="light" class="left-move">Curso:</ion-card-subtitle>
+                                    <ion-text color="light" class="ion-text-left"><h4>Día: Miercoles</h4></ion-text>
+                                    <ion-card-subtitle color="light" class="ion-text-left">Curso:</ion-card-subtitle>
                                 </ion-card-header>
                                 <ion-card>
                                     <ion-card-header>                      
@@ -152,8 +161,8 @@
                             <ion-slide class="margin-buttom-50">                
                                 <ion-card color="primary" class="fullwidth ion-margin">
                                 <ion-card-header color="primary">
-                                    <ion-text color="light" class="ion-margin-left"><h4>Día: Jueves</h4></ion-text>
-                                    <ion-card-subtitle color="light" class="left-move">Curso:</ion-card-subtitle>
+                                    <ion-text color="light" class="ion-text-left"><h4>Día: Jueves</h4></ion-text>
+                                    <ion-card-subtitle color="light" class="ion-text-left">Curso:</ion-card-subtitle>
                                 </ion-card-header>
                                 <ion-card>
                                     <ion-card-header>                      
@@ -181,8 +190,8 @@
                             <ion-slide class="margin-buttom-50">                
                                 <ion-card color="primary" class="fullwidth ion-margin">
                                 <ion-card-header color="primary">
-                                    <ion-text color="light" class="ion-margin-left"><h4>Día: Viernes</h4></ion-text>
-                                    <ion-card-subtitle color="light" class="left-move">Curso:</ion-card-subtitle>
+                                    <ion-text color="light" class="ion-text-left"><h4>Día: Viernes</h4></ion-text>
+                                    <ion-card-subtitle color="light" class="ion-text-left">Curso:</ion-card-subtitle>
                                 </ion-card-header>
                                 <ion-card>
                                     <ion-card-header>                      
@@ -214,8 +223,12 @@
 </template>
 
 <style>
+.slider-pager { background: #000; }
 .margin-buttom-50{
   margin-bottom: 50px;
+}
+.margin-buttom-45{
+  margin-bottom: 25px;
 }
 .fullheight{
   height: 100%; 
@@ -226,23 +239,26 @@
 .fullwidth{
   width: 100%; 
 }
-.background-grey{
-  background-color: rgb(50, 50, 50);
-}
 .img{
   width: 100%;
   height: 23vh;
 }
 .logo {
    display: block;
-   margin: auto;
+   margin: 0;
    width: 40%;
   }
+.icon{ 
+   color: white; 
+   font-size: 25px;
+   margin-inline-end: 16px; 
+}
 </style>
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonSlides, IonSlide} from '@ionic/vue';
 import { defineComponent } from 'vue';
+import{ caretForwardOutline, chatbubbleEllipses }from 'ionicons/icons';
 import ExploreContainerVue from '../../components/ExploreContainer.vue';
 
 export default defineComponent({
@@ -253,7 +269,7 @@ export default defineComponent({
       initialSlide: 1,
       speed: 400
     };
-    return { slideOpts } 
+    return { slideOpts, caretForwardOutline, chatbubbleEllipses } 
   }
 });
 </script>
