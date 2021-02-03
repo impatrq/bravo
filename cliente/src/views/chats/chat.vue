@@ -61,7 +61,7 @@
         </ion-item>
       </ion-list>
 
-      <ion-list>
+      <ion-list class="margin-buttom-50">
         <ion-list-header>
           En línea
         </ion-list-header>
@@ -118,7 +118,9 @@
 </template>
 
 <style>
-
+.margin-buttom-50{
+  margin-bottom: 50px;
+}
 .fullwidth{
   width: 100%; 
 }

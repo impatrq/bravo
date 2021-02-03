@@ -2,21 +2,19 @@
     <ion-page>
         <ion-header>
             <ion-toolbar color="primary">
-                <ion-item color="primary" class="logo">
-                 <img src="@/components/img/headerLogo2.png" class="ion-padding">
-                </ion-item>
+                 <ion-title class="ion-padding-start">Mirko S.</ion-title>
+                <router-link to="/pfalum" slot="end"><ion-icon :icon="personCircleOutline" slot="end" class="perfil"></ion-icon></router-link>
             </ion-toolbar>
         </ion-header>
             <ion-content :fullscreen="true">
                 <ion-row class="ion-justify-content-center fullheight">
                     <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
-								<ion-card class="width-95per">
+								<ion-card class="width-95per margin-buttom-50">
 									<ion-card-header class="background-white2">
 										<ion-card-title class="ion-text-capitalize ion-text-start"> Curso: </ion-card-title>
-										<br>
 										<ion-card-subtitle class="ion-text-capitalize ion-text-start"> Materia: </ion-card-subtitle>
 									</ion-card-header>
-								</ion-card><br>          
+								</ion-card>
                             <ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">    
                             <ion-slide class="margin-buttom-50">
                             <ion-card color="primary" class="fullwidth ion-margin">
@@ -69,7 +67,7 @@
                             </ion-card>              
                             </ion-slide>
 							</ion-slides>
-                            <ion-card color="primary" class="ion-margin margin-buttom-50">
+                            <ion-card color="primary" class="ion-margin margin-buttom-60">
                             <ion-card-header color="primary">
                                 <ion-text color="light"><h4>Evaluaciones:</h4></ion-text>
                             </ion-card-header>
@@ -91,7 +89,7 @@
                                 <ion-card-subtitle class="ion-text-end">Día:</ion-card-subtitle>
                                 </ion-card-header>
                             </ion-card>
-                            </ion-card><br>
+                            </ion-card>
                         </ion-col>
                 </ion-row>
             </ion-content>
@@ -101,6 +99,9 @@
 <style>
 .margin-buttom-50{
   margin-bottom: 50px;
+}
+.margin-buttom-60{
+  margin-bottom: 60px;
 }
 .fullheight{
   height: 100%; 
@@ -117,15 +118,25 @@
 }
 .logo {
    display: block;
-   margin: auto;
+   margin: 0;
    width: 40%;
   }
+.icon{ 
+   color: white; 
+   font-size: 25px;
+   margin-inline-end: 16px; 
+}
+.perfil{ 
+   color: white; 
+   font-size: 35px;
+   margin-inline-end: 16px; 
+}
 </style>
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonSlides, IonSlide} from '@ionic/vue';
 import { defineComponent } from 'vue';
-import ExploreContainerVue from '../../components/ExploreContainer.vue';
+import{ personCircleOutline }from 'ionicons/icons';
 
 export default defineComponent({
   components: { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonSlides, IonSlide },
@@ -135,7 +146,7 @@ export default defineComponent({
       initialSlide: 1,
       speed: 400
     };
-    return { slideOpts } 
+    return { slideOpts, personCircleOutline } 
   }
 });
 </script>

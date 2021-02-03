@@ -11,22 +11,22 @@
             <ion-content :fullscreen="true">
                 <ion-row class="ion-justify-content-center fullheight">
                     <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
-                        <ion-card color="primary" class="ion-padding-top margin-buttom-45">
+                        <ion-card color="primary" class="ion-padding-top margin-buttom-35">
                         <ion-slides pager="true" :options="slideOpts">  
                             <ion-slide>
-                                <ion-card color="secondary" class="ion-padding-top margin-buttom-45">
+                                <ion-card color="secondary" class="ion-padding-top margin-buttom-35">
                                     <ion-item color="secondary" class="img"><img src="@/components/img/not1.png"></ion-item>
                                     <ion-card-content> Titulo de Noticia 1 </ion-card-content>
                                 </ion-card>
                             </ion-slide>            
                             <ion-slide>
-                                <ion-card color="secondary" class="ion-padding-top margin-buttom-45">
+                                <ion-card color="secondary" class="ion-padding-top margin-buttom-35">
                                     <ion-item color="secondary" class="img"><img src="@/components/img/not2.png"></ion-item>
                                     <ion-card-content> Titulo de Noticia 2 </ion-card-content>
                                 </ion-card>
                             </ion-slide>
                             <ion-slide>
-                                <ion-card color="secondary" class="ion-padding-top margin-buttom-45">
+                                <ion-card color="secondary" class="ion-padding-top margin-buttom-35">
                                     <ion-item color="secondary" class="img"><img src="@/components/img/not3.png" ></ion-item>
                                     <ion-card-content> Titulo de Noticia 3 </ion-card-content>
                                 </ion-card>
@@ -41,8 +41,6 @@
                             </ion-item>
                             </router-link>
                             </ion-card>
-                            <br>
-                            <br> 
                             <ion-card color="primary" class="ion-margin margin-buttom-50">
                             <ion-card-header color="primary">
                                 <ion-text color="light"><h4>Tareas pendientes:</h4></ion-text>
@@ -235,7 +233,7 @@ opacity: 1;
 .margin-buttom-50{
   margin-bottom: 50px;
 }
-.margin-buttom-45{
+.margin-buttom-35{
   margin-bottom: 35px;
 }
 .fullheight{
@@ -267,7 +265,6 @@ opacity: 1;
 import { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonSlides, IonSlide} from '@ionic/vue';
 import { defineComponent } from 'vue';
 import{ caretForwardOutline, chatbubbleEllipses }from 'ionicons/icons';
-import ExploreContainerVue from '../../components/ExploreContainer.vue';
 
 export default defineComponent({
   components: { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonSlides, IonSlide },
