@@ -8,42 +8,52 @@
     </ion-header>
 
     <ion-content :fullscreen="true">
-      <ion-row class="ion-justify-content-center fullheight">
-        <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
-        <ion-list>
-            <ion-text class="gris">
-                <h7>29 de diciembre de 2020</h7>
+        <ion-list class="ion-padding-top">
+            <ion-text>
+                <h7 class="fecha margen">29 de diciembre de 2020</h7>
             </ion-text>
-            <ion-text color="primary">
-                <h1>Fin del ciclo lectivo 2020</h1>
+            <ion-text color="primary" class="ion-padding-buttom">
+              <h1 class="titulos margen">Fin del ciclo lectivo 2020</h1>
             </ion-text>
-            <br>
             <ion-text class="ion-text-start">
-                <h5>Sres. Padres:</h5>
+                <h5 class="informe margen">Sres. Padres:</h5>
             </ion-text>
-            <br>
-            <ion-text color="light">
-                <h5>Se les informa que se podrán hacer consultas a preceptores y profesores hasta el día 30/12/2020. A partir del día 17/02/2021, los alumnos podrán ponerse en contacto con los docentes a fin de enviarles trabajados adeudados (alumnos con trayectoria educativa TEP/TED)
-                    Así también, se adjunta el cronograma de las mesas de exámenes previos que se realizarán de forma virtual en la semana del lunes 22/02/2021 al viernes 26/02/2021.</h5>
+            <ion-text class="ion-padding-top">
+                <h5 class="informe margen ion-padding-buttom">Se les informa que se podrán hacer consultas a preceptores y profesores hasta el día 30/12/2020. A partir del día 17/02/2021, los alumnos podrán ponerse en contacto con los docentes a fin de enviarles trabajados adeudados (alumnos con trayectoria educativa TEP/TED)</h5>
+                <h5 class="informe margen margin-buttom-50">Así también, se adjunta el cronograma de las mesas de exámenes previos que se realizarán de forma virtual en la semana del lunes 22/02/2021 al viernes 26/02/2021.</h5>
             </ion-text>
-            <br>
-            <ion-button color="danger" expand="block">Previas Febrero 2021.pdf</ion-button>
-            <br>
-            <br>
+            <ion-button class="margen margin-buttom-50" color="danger" expand="block">Previas Febrero 2021.pdf</ion-button>
         </ion-list>
-        </ion-col>
-      </ion-row>
 
     </ion-content>
   </ion-page>
 </template>
 
 <style>
+.margin-buttom-50{
+  margin-bottom: 50px;
+}
+.margen{
+  margin-inline-start: 15px;
+  margin-inline-end: 15px;
+}
+.fecha{
+    color:grey;
+}
+.titulos{
+    font-size: 31px;
+    font-weight: 600;
+    }
+.informe{
+  font-size: 15px;
+  color: white;
+}
+.saludos{
+  font-size: 23px;
+  color: white;
+}
 .fullheight{
   height: 100%; 
-}
-.gris{
-    color:grey;
 }
 .fullwidth{
   width: 100%; 
@@ -57,12 +67,12 @@
 </style>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow } from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonContent } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import{ arrowBackOutline }from 'ionicons/icons';
 
 export default defineComponent({
-  components: { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow },
+  components: { IonPage, IonHeader, IonToolbar, IonContent },
     setup() {
 
     return { arrowBackOutline } 
