@@ -124,9 +124,6 @@
 .margin-buttom-35{
   margin-bottom: 35px;
 }
-.margin-buttom-35{
-  margin-bottom: 35px;
-}
 .fullwidth{
   width: 100%; 
 }
