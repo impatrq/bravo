@@ -83,7 +83,7 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'maletin2',
-        component: () => import('@/views/appAlum/maletin2.vue')
+        component: () => import('@/views/appAlum/maletin/maletin2.vue')
       },
       {
         path: 'maletin3',
@@ -128,6 +128,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'noticia13',
         component: () => import('@/views/noticias/noticia13.vue')
+      },
+      {
+        path: 'pfalum',
+        component: () => import('@/views/appAlum/maletin/perfilalumno.vue')
       }
     ]
   },
