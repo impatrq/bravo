@@ -16,23 +16,23 @@
             <ion-card-header color="primary">
               <ion-text><h4>Ciclo Básico</h4></ion-text>
             </ion-card-header>
-          <ion-slides options="slideOpts">
+          <ion-slides options="slideOpts" pager="true">
             <ion-slide>
-              <ion-card class="fullwidth ion-margin" href="/sProfBas">
+              <ion-card class="fullwidth margin-buttom-35" href="/sProfBas">
                <ion-card-header>                      
                   <ion-card-title class="ion-text-capitalize ion-text-center">Profesor</ion-card-title>
                 </ion-card-header>
               </ion-card>
             </ion-slide>
             <ion-slide>
-              <ion-card class="fullwidth ion-margin">
+              <ion-card class="fullwidth">
                 <ion-card-header>                      
                  <ion-card-title class="ion-text-capitalize ion-text-center">Alumno</ion-card-title>
                 </ion-card-header>
              </ion-card>
             </ion-slide>
             <ion-slide>
-              <ion-card class="fullwidth ion-margin">
+              <ion-card class="fullwidth">
                <ion-card-header>                      
                  <ion-card-title class="ion-text-capitalize ion-text-center">Preceptor</ion-card-title>
                 </ion-card-header>
@@ -44,30 +44,30 @@
             <ion-card-header color="primary">
               <ion-text><h4>Ciclo Superior Aeronáutica</h4></ion-text>
             </ion-card-header>
-          <ion-slides options="slideOpts">
+          <ion-slides options="slideOpts" pager="true">
             <ion-slide>
-              <ion-card class="fullwidth ion-margin" href="/sProfAer">
+              <ion-card class="fullwidth margin-buttom-35" href="/sProfAer">
                <ion-card-header>                      
                   <ion-card-title class="ion-text-capitalize ion-text-center">Profesor</ion-card-title>
                 </ion-card-header>
               </ion-card>
             </ion-slide>
             <ion-slide>
-              <ion-card class="fullwidth ion-margin">
+              <ion-card class="fullwidth">
                 <ion-card-header>                      
                  <ion-card-title class="ion-text-capitalize ion-text-center">Alumno</ion-card-title>
                 </ion-card-header>
              </ion-card>
             </ion-slide>
             <ion-slide>
-              <ion-card class="fullwidth ion-margin">
+              <ion-card class="fullwidth">
                 <ion-card-header>                      
                   <ion-card-title class="ion-text-capitalize ion-text-center">Pañol</ion-card-title>
                </ion-card-header>
             </ion-card>
             </ion-slide>
             <ion-slide>
-              <ion-card class="fullwidth ion-margin">
+              <ion-card class="fullwidth">
                <ion-card-header>                      
                  <ion-card-title class="ion-text-capitalize ion-text-center">Preceptor</ion-card-title>
                 </ion-card-header>
@@ -75,34 +75,34 @@
             </ion-slide>
           </ion-slides>
           </ion-card>
-           <ion-card color="primary">
+           <ion-card color="primary" class="margin-buttom-35">
             <ion-card-header color="primary">
               <ion-text><h4>Ciclo Superior Aviónica</h4></ion-text>
             </ion-card-header>
-          <ion-slides options="slideOpts">
+          <ion-slides options="slideOpts" pager="true">
             <ion-slide>
-              <ion-card class="fullwidth ion-margin" href="/sProfAv">
+              <ion-card class="fullwidth" href="/sProfAv">
                <ion-card-header>                      
                   <ion-card-title class="ion-text-capitalize ion-text-center">Profesor</ion-card-title>
                 </ion-card-header>
               </ion-card>
             </ion-slide>
             <ion-slide>
-              <ion-card class="fullwidth ion-margin">
+              <ion-card class="fullwidth margin-buttom-35">
                 <ion-card-header>                      
                  <ion-card-title class="ion-text-capitalize ion-text-center">Alumno</ion-card-title>
                 </ion-card-header>
              </ion-card>
             </ion-slide>
             <ion-slide>
-              <ion-card class="fullwidth ion-margin">
+              <ion-card class="fullwidth">
                 <ion-card-header>                      
                   <ion-card-title class="ion-text-capitalize ion-text-center">Pañol</ion-card-title>
                </ion-card-header>
             </ion-card>
             </ion-slide>
             <ion-slide>
-              <ion-card class="fullwidth ion-margin">
+              <ion-card class="fullwidth">
                <ion-card-header>                      
                  <ion-card-title class="ion-text-capitalize ion-text-center">Preceptor</ion-card-title>
                 </ion-card-header>
@@ -121,9 +121,18 @@
 </template>
 
 <style>
-
+.margin-buttom-35{
+  margin-bottom: 35px;
+}
+.margin-buttom-35{
+  margin-bottom: 35px;
+}
 .fullwidth{
   width: 100%; 
+}
+.swiper-pagination-bullet-active {
+background: white;
+opacity: 1;
 }
 
 </style>
