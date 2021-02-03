@@ -2,7 +2,7 @@
     <ion-page>
         <ion-header>
             <ion-toolbar color="primary">
-                <ion-item color="primary" class="logo">
+                <ion-item lines="none" color="primary" class="logo">
                  <img src="@/components/img/headerLogo2.png" class="ion-padding">
                 </ion-item>
                 <router-link to="/chat1" slot="end"><ion-icon :icon="chatbubbleEllipses" slot="end" class="icon"></ion-icon></router-link>
@@ -12,24 +12,57 @@
                 <ion-row class="ion-justify-content-center fullheight">
                     <ion-col size-xl="4" size-sm="10" class="ion-align-self-center">
                         <ion-card color="primary" class="ion-padding-top margin-buttom-35">
-                        <ion-slides pager="true" :options="slideOpts">  
+                        <ion-slides class="c" pager="true" :options="slideOpts">  
                             <ion-slide>
-                                <ion-card color="secondary" class="ion-padding-top margin-buttom-35">
-                                    <ion-item color="secondary" class="img"><img src="@/components/img/not1.png"></ion-item>
-                                    <ion-card-content> Titulo de Noticia 1 </ion-card-content>
-                                </ion-card>
+                                <ion-card class="margin-buttom-35">
+                                <ion-item lines="none" color="primary">
+                                    <ion-icon :icon="newspaper" slot="start"></ion-icon>
+                                    <ion-icon :icon="ellipsisVertical" slot="end"></ion-icon>
+                                </ion-item>
+                                <router-link to="/nothome1">
+                                <ion-item lines="none" color="primary">
+                                    <ion-card-header>
+                                        <ion-card-subtitle>29 de diciembre de 2020</ion-card-subtitle>
+                                        <ion-card-title>Información para padres y alumnos de 7° Año</ion-card-title>
+                                    </ion-card-header>
+                                    <ion-icon :icon="chevronForwardOutline" slot="end"></ion-icon>
+                                </ion-item>
+                                </router-link>
+                            </ion-card>
                             </ion-slide>            
                             <ion-slide>
-                                <ion-card color="secondary" class="ion-padding-top margin-buttom-35">
-                                    <ion-item color="secondary" class="img"><img src="@/components/img/not2.png"></ion-item>
-                                    <ion-card-content> Titulo de Noticia 2 </ion-card-content>
-                                </ion-card>
+                                <ion-card class="margin-buttom-35">
+                                <ion-item lines="none" color="primary">
+                                    <ion-icon :icon="newspaper" slot="start"></ion-icon>
+                                    <ion-icon :icon="ellipsisVertical" slot="end"></ion-icon>
+                                </ion-item>
+                                <router-link to="/nothome2">
+                                <ion-item lines="none" color="primary">
+                                    <ion-card-header>
+                                        <ion-card-subtitle>29 de diciembre de 2020</ion-card-subtitle>
+                                        <ion-card-title>Fin del ciclo lectivo 2020</ion-card-title>
+                                    </ion-card-header>
+                                    <ion-icon :icon="chevronForwardOutline" slot="end"></ion-icon>
+                                </ion-item>
+                                </router-link>
+                            </ion-card>
                             </ion-slide>
                             <ion-slide>
-                                <ion-card color="secondary" class="ion-padding-top margin-buttom-35">
-                                    <ion-item color="secondary" class="img"><img src="@/components/img/not3.png" ></ion-item>
-                                    <ion-card-content> Titulo de Noticia 3 </ion-card-content>
-                                </ion-card>
+                                <ion-card class="margin-buttom-35">
+                                <ion-item lines="none" color="primary">
+                                    <ion-icon :icon="newspaper" slot="start"></ion-icon>
+                                    <ion-icon :icon="ellipsisVertical" slot="end"></ion-icon>
+                                </ion-item>
+                                <router-link to="/nothome3">
+                                <ion-item lines="none" color="primary">
+                                    <ion-card-header>
+                                        <ion-card-subtitle>29 de diciembre de 2020</ion-card-subtitle>
+                                        <ion-card-title>SALUDO A LAS FAMILIAS</ion-card-title>
+                                    </ion-card-header>
+                                    <ion-icon :icon="chevronForwardOutline" slot="end"></ion-icon>
+                                </ion-item>
+                                </router-link>
+                            </ion-card>
                             </ion-slide>
                             </ion-slides>
                             <router-link to="/noticia1">
@@ -225,7 +258,9 @@
 </template>
 
 <style>
-
+.c{
+    display: grid;
+}
 .swiper-pagination-bullet-active {
 background: white;
 opacity: 1;
@@ -264,7 +299,7 @@ opacity: 1;
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonSlides, IonSlide} from '@ionic/vue';
 import { defineComponent } from 'vue';
-import{ caretForwardOutline, chatbubbleEllipses }from 'ionicons/icons';
+import{ caretForwardOutline, chatbubbleEllipses, newspaper, ellipsisVertical, chevronForwardOutline }from 'ionicons/icons';
 
 export default defineComponent({
   components: { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow, IonSlides, IonSlide },
@@ -274,7 +309,7 @@ export default defineComponent({
       initialSlide: 1,
       speed: 400
     };
-    return { slideOpts, caretForwardOutline, chatbubbleEllipses } 
+    return { slideOpts, caretForwardOutline, chatbubbleEllipses, newspaper, ellipsisVertical, chevronForwardOutline } 
   }
 });
 </script>

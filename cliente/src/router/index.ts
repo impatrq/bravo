@@ -132,6 +132,18 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'pfalum',
         component: () => import('@/views/appAlum/maletin/perfilalumno.vue')
+      },
+      {
+        path: 'nothome1',
+        component: () => import('@/views/noticias/nothome1.vue')
+      },
+      {
+        path: 'nothome2',
+        component: () => import('@/views/noticias/nothome2.vue')
+      },
+      {
+        path: 'nothome3',
+        component: () => import('@/views/noticias/nothome3.vue')
       }
     ]
   },
