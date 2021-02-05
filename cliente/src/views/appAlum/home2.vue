@@ -15,12 +15,12 @@
                         <ion-slides class="c" pager="true" :options="slideOpts">  
                             <ion-slide>
                                 <ion-card class="margin-buttom-35">
-                                <ion-item lines="none" color="primary">
+                                <ion-item lines="none" color="secondary">
                                     <ion-icon :icon="newspaper" slot="start"></ion-icon>
                                     <ion-icon :icon="ellipsisVertical" slot="end"></ion-icon>
                                 </ion-item>
                                 <router-link to="/nothome1">
-                                <ion-item lines="none" color="primary">
+                                <ion-item lines="none" color="secondary">
                                     <ion-card-header>
                                         <ion-card-subtitle>29 de diciembre de 2020</ion-card-subtitle>
                                         <ion-card-title>Información para padres y alumnos de 7° Año</ion-card-title>
@@ -32,12 +32,12 @@
                             </ion-slide>            
                             <ion-slide>
                                 <ion-card class="margin-buttom-35">
-                                <ion-item lines="none" color="primary">
+                                <ion-item lines="none" color="secondary">
                                     <ion-icon :icon="newspaper" slot="start"></ion-icon>
                                     <ion-icon :icon="ellipsisVertical" slot="end"></ion-icon>
                                 </ion-item>
                                 <router-link to="/nothome2">
-                                <ion-item lines="none" color="primary">
+                                <ion-item lines="none" color="secondary">
                                     <ion-card-header>
                                         <ion-card-subtitle>29 de diciembre de 2020</ion-card-subtitle>
                                         <ion-card-title>Fin del ciclo lectivo 2020</ion-card-title>
@@ -49,14 +49,14 @@
                             </ion-slide>
                             <ion-slide>
                                 <ion-card class="margin-buttom-35">
-                                <ion-item lines="none" color="primary">
+                                <ion-item lines="none" color="secondary">
                                     <ion-icon :icon="newspaper" slot="start"></ion-icon>
                                     <ion-icon :icon="ellipsisVertical" slot="end"></ion-icon>
                                 </ion-item>
                                 <router-link to="/nothome3">
-                                <ion-item lines="none" color="primary">
+                                <ion-item lines="none" color="secondary">
                                     <ion-card-header>
-                                        <ion-card-subtitle>29 de diciembre de 2020</ion-card-subtitle>
+                                        <ion-card-subtitle>23 de diciembre de 2020</ion-card-subtitle>
                                         <ion-card-title>SALUDO A LAS FAMILIAS</ion-card-title>
                                     </ion-card-header>
                                     <ion-icon :icon="chevronForwardOutline" slot="end"></ion-icon>
@@ -261,9 +261,8 @@
 .c{
     display: grid;
 }
-.swiper-pagination-bullet-active {
+.swiper-pagination-bullet{
 background: white;
-opacity: 1;
 }
 .margin-buttom-50{
   margin-bottom: 50px;
