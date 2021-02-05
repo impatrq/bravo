@@ -3,7 +3,7 @@
     <ion-header translucent class="margin-buttom-40">
       <ion-toolbar color="primary">
         <router-link to="/maletin2" slot="start"><ion-icon :icon="arrowBackOutline" class="icon"></ion-icon></router-link>
-        <ion-title color="light">Volver a Maletin</ion-title>
+        <ion-title color="light">Perfil</ion-title>
       </ion-toolbar>
     </ion-header>
             <ion-content :fullscreen="true">
@@ -16,7 +16,7 @@
                          <ion-item color="primary">
                            <ion-label>
                               <h4 class="gris">Nombre:</h4>
-                              <h2>Mirko</h2>
+                              <h2>Mirko Nicolas</h2>
                             </ion-label>
                          </ion-item >
                          <ion-item color="primary">
@@ -95,7 +95,7 @@
 .icon{ 
    color: white; 
    font-size: 25px;
-   margin-inline-end: 16px; 
+   margin-inline-start: 16px; 
 }
 </style>
 
