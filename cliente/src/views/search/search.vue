@@ -75,7 +75,7 @@
             </ion-slide>
           </ion-slides>
           </ion-card>
-           <ion-card color="primary" class="margin-buttom-35">
+           <ion-card color="primary" class="margin-buttom-60">
             <ion-card-header color="primary">
               <ion-text><h4>Ciclo Superior Aviónica</h4></ion-text>
             </ion-card-header>
@@ -121,6 +121,9 @@
 </template>
 
 <style>
+.margin-buttom-60{
+  margin-bottom: 60px;
+}
 .margin-buttom-35{
   margin-bottom: 35px;
 }
