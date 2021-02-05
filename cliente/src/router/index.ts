@@ -83,7 +83,7 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'maletin2',
-        component: () => import('@/views/appAlum/maletin/maletin2.vue')
+        component: () => import('@/views/appAlum/maletin2.vue')
       },
       {
         path: 'maletin3',
@@ -131,7 +131,31 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'pfalum',
-        component: () => import('@/views/appAlum/maletin/perfilalumno.vue')
+        component: () => import('@/views/maletinalum/perfilalumno.vue')
+      },
+      {
+        path: 'listmat',
+        component: () => import('@/views/maletinalum/listadematerias.vue')
+      },
+      {
+        path: 'mat1',
+        component: () => import('@/views/maletinalum/materia1.vue')
+      },
+      {
+        path: 'tps',
+        component: () => import('@/views/maletinalum/materia/tps.vue')
+      },
+      {
+        path: 'comunicados',
+        component: () => import('@/views/maletinalum/materia/comunicados.vue')
+      },
+      {
+        path: 'evaluaciones',
+        component: () => import('@/views/maletinalum/materia/evaluaciones.vue')
+      },
+      {
+        path: 'material',
+        component: () => import('@/views/maletinalum/materia/material.vue')
       },
       {
         path: 'nothome1',
