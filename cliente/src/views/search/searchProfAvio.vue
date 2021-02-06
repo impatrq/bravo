@@ -2,15 +2,10 @@
 <ion-page>
 
     <ion-header translucent>
-       <ion-toolbar>
-        <ion-buttons slot="start">
-          <ion-button href="/tabs/search">
-            Atrás
-          </ion-button>
-        </ion-buttons>
-
-        <ion-title>Ciclo Superior Aviónica</ion-title>
-      </ion-toolbar>
+        <ion-toolbar color="primary">
+            <router-link to="/search" slot="start"><ion-icon :icon="arrowBackOutline" class="icon"></ion-icon></router-link>
+            <ion-title color="light">Ciclo Superior Aviónica</ion-title>
+        </ion-toolbar>
     </ion-header>
 
     <ion-content fullscreen>
@@ -30,16 +25,23 @@
 
 <style>
 
-
+.icon{ 
+   color: white; 
+   font-size: 25px;
+   margin-inline-start: 16px; 
+}
 
 </style>
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonContent} from '@ionic/vue';
 import { defineComponent } from 'vue';
+import{ arrowBackOutline }from 'ionicons/icons';
 
 export default defineComponent({
   components: { IonPage, IonHeader, IonToolbar, IonContent},
-  
+  setup() {
+    return { arrowBackOutline } 
+  }
 });
 </script>

@@ -109,6 +109,17 @@
             <p>Tarea entregada y aprobada...</p>
           </ion-label>
         </ion-item>
+
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="@/components/img/teacher2.png">
+          </ion-avatar>
+          <ion-label>
+            <h2>Profesora 1</h2>
+            <h3>Materia:</h3>
+            <p>Adeuda tarea...</p>
+          </ion-label>
+        </ion-item>
       </ion-list>
         </ion-col>
       </ion-row>
