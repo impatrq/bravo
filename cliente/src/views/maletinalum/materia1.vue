@@ -53,6 +53,17 @@
                         </ion-item>
                   </ion-card>
                   </router-link>
+                  <router-link to="/comunicados">
+                  <ion-card color="primary" class="margin-buttom-50">
+                    <ion-item lines="none" color="primary">
+                        <ion-icon :icon="peopleOutline" slot="start" class="icon2"></ion-icon>
+                        <ion-title slot="start" class="titulo" color="light">Personas</ion-title>
+                   </ion-item>
+                      <ion-item color="primary">
+                            <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
+                        </ion-item>
+                  </ion-card>
+                  </router-link>
                     </ion-col>
                 </ion-row>
             </ion-content>
@@ -113,7 +124,7 @@
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow } from '@ionic/vue';
 import { defineComponent } from 'vue';
-import{ fileTrayFullOutline, chevronForwardOutline, arrowBackOutline, megaphoneOutline, libraryOutline, readerOutline }from 'ionicons/icons';
+import{ fileTrayFullOutline, chevronForwardOutline, arrowBackOutline, megaphoneOutline, libraryOutline, readerOutline, peopleOutline }from 'ionicons/icons';
 
 export default defineComponent({
   components: { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow },
@@ -123,7 +134,7 @@ export default defineComponent({
       initialSlide: 1,
       speed: 400
     };
-    return { slideOpts, fileTrayFullOutline, chevronForwardOutline, arrowBackOutline, megaphoneOutline, libraryOutline, readerOutline } 
+    return { slideOpts, fileTrayFullOutline, chevronForwardOutline, arrowBackOutline, megaphoneOutline, libraryOutline, readerOutline, peopleOutline } 
   }
 });
 </script>
