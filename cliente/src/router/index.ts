@@ -158,6 +158,10 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/maletinalum/materia/material.vue')
       },
       {
+        path: 'personas',
+        component: () => import('@/views/maletinalum/materia/personas.vue')
+      },
+      {
         path: 'nothome1',
         component: () => import('@/views/noticias/nothome1.vue')
       },
