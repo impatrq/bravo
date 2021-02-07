@@ -26,6 +26,10 @@
                         <ion-icon :icon="fileTrayFullOutline" slot="start" class="icon2"></ion-icon>
                         <ion-title slot="start" class="titulo" color="light">Trabajos Prácticos</ion-title>
                    </ion-item>
+                  <ion-item lines="none" color="primary">
+                    <ion-text slot="end" color="success">90%</ion-text>
+                    <ion-progress-bar color="success" value="0.9"></ion-progress-bar>
+                  </ion-item>
                       <ion-item color="primary">
                             <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
                         </ion-item>
@@ -37,6 +41,9 @@
                         <ion-icon :icon="readerOutline" slot="start" class="icon2"></ion-icon>
                         <ion-title slot="start" class="titulo" color="light">Evaluaciones</ion-title>
                    </ion-item>
+                   <ion-item lines="none" color="primary">
+                    <ion-text>Proxima Evaluación: DD/MM/AAAA</ion-text>
+                  </ion-item>
                       <ion-item color="primary">
                             <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
                         </ion-item>
@@ -53,7 +60,7 @@
                         </ion-item>
                   </ion-card>
                   </router-link>
-                  <router-link to="/comunicados">
+                  <router-link to="/personas">
                   <ion-card color="primary" class="margin-buttom-50">
                     <ion-item lines="none" color="primary">
                         <ion-icon :icon="peopleOutline" slot="start" class="icon2"></ion-icon>
