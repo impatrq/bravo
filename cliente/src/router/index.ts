@@ -146,6 +146,18 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/maletinalum/materia/tps.vue')
       },
       {
+        path: 'tp1',
+        component: () => import('@/views/maletinalum/materia/tps/tp1.vue')
+      },
+      {
+        path: 'tp2',
+        component: () => import('@/views/maletinalum/materia/tps/tp2.vue')
+      },
+      {
+        path: 'tp3',
+        component: () => import('@/views/maletinalum/materia/tps/tp3.vue')
+      },
+      {
         path: 'comunicados',
         component: () => import('@/views/maletinalum/materia/comunicados.vue')
       },
@@ -156,6 +168,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'material',
         component: () => import('@/views/maletinalum/materia/material.vue')
+      },
+      {
+        path: 'material1',
+        component: () => import('@/views/maletinalum/materia/material1.vue')
       },
       {
         path: 'personas',
