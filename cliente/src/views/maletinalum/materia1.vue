@@ -1,8 +1,8 @@
 <template>
     <ion-page>
-        <ion-header translucent class="margin-buttom-40">
+        <ion-header translucent>
             <ion-toolbar color="primary">
-                <router-link to="/listmat" slot="start"><ion-icon :icon="arrowBackOutline" class="icon"></ion-icon></router-link>
+                <router-link to="/listmat" slot="start"><ion-icon :icon="arrowBackOutline" class="iconmat"></ion-icon></router-link>
                 <ion-title color="light">Volver a Lista</ion-title>
             </ion-toolbar>
         </ion-header>
@@ -12,34 +12,40 @@
                   <router-link to="/comunicados">
                   <ion-card color="primary">
                     <ion-item lines="none" color="primary">
-                        <ion-icon :icon="megaphoneOutline" slot="start" class="icon2"></ion-icon>
+                        <ion-icon :icon="megaphoneOutline" slot="start" class="icon2mat"></ion-icon>
+                        <ion-label>
                         <ion-title slot="start" class="titulo" color="light">Comunicados</ion-title>
+                        </ion-label>
                    </ion-item>
                       <ion-item color="primary">
-                            <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
+                            <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1mat"></ion-icon>
                         </ion-item>
                   </ion-card>
                   </router-link>
                   <router-link to="/tps">
                   <ion-card color="primary">
                     <ion-item lines="none" color="primary">
-                        <ion-icon :icon="fileTrayFullOutline" slot="start" class="icon2"></ion-icon>
+                        <ion-icon :icon="fileTrayFullOutline" slot="start" class="icon2mat"></ion-icon>
+                        <ion-label>
                         <ion-title slot="start" class="titulo" color="light">Trabajos Prácticos</ion-title>
+                        </ion-label>
                    </ion-item>
                   <ion-item lines="none" color="primary">
                     <ion-text slot="end" color="success">90%</ion-text>
                     <ion-progress-bar color="success" value="0.9"></ion-progress-bar>
                   </ion-item>
                       <ion-item color="primary">
-                            <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
+                            <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1mat"></ion-icon>
                         </ion-item>
                   </ion-card>
                   </router-link>
                   <router-link to="/evaluaciones">
                   <ion-card color="primary">
                     <ion-item lines="none" color="primary">
-                        <ion-icon :icon="readerOutline" slot="start" class="icon2"></ion-icon>
+                        <ion-icon :icon="readerOutline" slot="start" class="icon2mat"></ion-icon>
+                        <ion-label>
                         <ion-title slot="start" class="titulo" color="light">Evaluaciones</ion-title>
+                        </ion-label>
                    </ion-item>
                    <ion-item lines="none" color="primary">
                     <ion-text>Proxima Evaluación: DD/MM/AAAA</ion-text>
@@ -52,22 +58,26 @@
                   <router-link to="/material">
                   <ion-card color="primary">
                     <ion-item lines="none" color="primary">
-                        <ion-icon :icon="libraryOutline" slot="start" class="icon2"></ion-icon>
+                        <ion-icon :icon="libraryOutline" slot="start" class="icon2mat"></ion-icon>
+                        <ion-label>
                         <ion-title slot="start" class="titulo" color="light">Material</ion-title>
+                        </ion-label>
                    </ion-item>
                       <ion-item color="primary">
-                            <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
+                            <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1mat"></ion-icon>
                         </ion-item>
                   </ion-card>
                   </router-link>
                   <router-link to="/personas">
                   <ion-card color="primary" class="margin-buttom-50">
                     <ion-item lines="none" color="primary">
-                        <ion-icon :icon="peopleOutline" slot="start" class="icon2"></ion-icon>
+                        <ion-icon :icon="peopleOutline" slot="start" class="icon2mat"></ion-icon>
+                        <ion-label>
                         <ion-title slot="start" class="titulo" color="light">Personas</ion-title>
+                        </ion-label>
                    </ion-item>
                       <ion-item color="primary">
-                            <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
+                            <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1mat"></ion-icon>
                         </ion-item>
                   </ion-card>
                   </router-link>
@@ -103,18 +113,18 @@
    margin: 0;
    width: 40%;
   }
-.icon{ 
+.iconmat{ 
    color: white; 
    font-size: 25px;
    margin-inline-start: 16px; 
 }
-.icon1{ 
+.icon1mat{ 
     color: white; 
     font-size: 25px;
     margin-left: unset;
     margin-inline-start: 0px;
 }
-.icon2{ 
+.icon2mat{ 
     color: white;
     margin-right: 0px; 
 }
