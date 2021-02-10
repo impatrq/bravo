@@ -1,15 +1,93 @@
 <template>
   <ion-page>
-    <ion-header translucent class="margin-buttom-40">
+    <ion-header translucent>
       <ion-toolbar color="primary">
-        <router-link to="/mat1" slot="start"><ion-icon :icon="arrowBackOutline" class="icon"></ion-icon></router-link>
-        <ion-title color="light">Volver a "Materia"</ion-title>
+        <router-link to="/mat1" slot="start"><ion-icon :icon="arrowBackOutline" class="iconn"></ion-icon></router-link>
+        <ion-title color="light">Volver a "Materia1"</ion-title>
       </ion-toolbar>
     </ion-header>
             <ion-content :fullscreen="true">
                 <ion-row class="ion-justify-content-center fullheight">
                     <ion-col size-xl="4" size-sm="10">
-                      
+                          <router-link to="/material1">
+                          <ion-card color="primary">
+                            <ion-item lines="none" color="primary">
+                              <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
+                              <ion-label>
+                              <ion-title slot="start" class="titulomatl" color="light">Material: TPN° 1</ion-title>
+                              </ion-label>
+                            </ion-item>
+                              <ion-item lines="none" color="primary">
+                                <ion-icon :icon="chevronForwardOutline" slot="end" class="iconmaterial1"></ion-icon>
+                              </ion-item>
+                          </ion-card>
+                          </router-link>
+                          <ion-card color="primary">
+                            <ion-item lines="none" color="primary">
+                              <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
+                              <ion-label>
+                              <ion-title slot="start" class="titulomatl" color="light">Material: TPN° 2</ion-title>
+                              </ion-label>
+                            </ion-item>
+                              <ion-item lines="none" color="primary">
+                                <ion-icon :icon="chevronForwardOutline" slot="end" class="iconmaterial1"></ion-icon>
+                              </ion-item>
+                          </ion-card>
+                          <ion-card color="primary">
+                            <ion-item lines="none" color="primary">
+                              <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
+                              <ion-label>
+                              <ion-title slot="start" class="titulomatl" color="light">Material: TPN° 3</ion-title>
+                              </ion-label>
+                            </ion-item>
+                              <ion-item lines="none" color="primary">
+                                <ion-icon :icon="chevronForwardOutline" slot="end" class="iconmaterial1"></ion-icon>
+                              </ion-item>
+                          </ion-card>
+                          <ion-card color="primary">
+                            <ion-item lines="none" color="primary">
+                              <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
+                              <ion-label>
+                              <ion-title slot="start" class="titulomatl" color="light">Material: TPN° 4</ion-title>
+                              </ion-label>
+                            </ion-item>
+                              <ion-item lines="none" color="primary">
+                                <ion-icon :icon="chevronForwardOutline" slot="end" class="iconmaterial1"></ion-icon>
+                              </ion-item>
+                          </ion-card>
+                          <ion-card color="primary">
+                            <ion-item lines="none" color="primary">
+                              <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
+                              <ion-label>
+                              <ion-title slot="start" class="titulomatl" color="light">Material: TPN° 5</ion-title>
+                              </ion-label>
+                            </ion-item>
+                              <ion-item lines="none" color="primary">
+                                <ion-icon :icon="chevronForwardOutline" slot="end" class="iconmaterial1"></ion-icon>
+                              </ion-item>
+                          </ion-card>
+                          <ion-card color="primary">
+                            <ion-item lines="none" color="primary">
+                              <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
+                              <ion-label>
+                              <ion-title slot="start" class="titulomatl" color="light">Material: TPN° 6</ion-title>
+                              </ion-label>
+                            </ion-item>
+                              <ion-item lines="none" color="primary">
+                                <ion-icon :icon="chevronForwardOutline" slot="end" class="iconmaterial1"></ion-icon>
+                              </ion-item>
+                          </ion-card>
+                          <ion-card color="primary" class="margin-buttom-60">
+                            <ion-item lines="none" color="primary">
+                              <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
+                              <ion-label>
+                              <ion-title slot="start" class="titulomatl" color="light">Material: TPN° 7</ion-title>
+                              </ion-label>
+                            </ion-item>
+                              <ion-item lines="none" color="primary">
+                                <ion-icon :icon="chevronForwardOutline" slot="end" class="iconmaterial1"></ion-icon>
+                              </ion-item>
+                          </ion-card>
                       </ion-col>
                     </ion-row>
             </ion-content>
@@ -26,23 +104,35 @@
 .fullwidth{
   width: 100%; 
 }
-.icon{ 
+.iconn{ 
    color: white; 
    font-size: 25px;
    margin-inline-start: 16px; 
+}
+.titulomatl{
+    margin-inline-start: -20px;
+}
+.iconmaterial1{ 
+    color: white; 
+    font-size: 25px;
+    margin-left: unset;
+    margin-inline-start: 0px;
+}
+.iconmaterial{ 
+    color: white;
 }
 </style>
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonContent } from '@ionic/vue';
 import { defineComponent } from 'vue';
-import{ arrowBackOutline }from 'ionicons/icons';
+import{ arrowBackOutline, bookOutline, chevronForwardOutline }from 'ionicons/icons';
 
 export default defineComponent({
   components: { IonPage, IonHeader, IonToolbar, IonContent },
     setup() {
 
-    return { arrowBackOutline } 
+    return { arrowBackOutline, bookOutline, chevronForwardOutline } 
   }
 
 });
