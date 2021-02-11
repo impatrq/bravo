@@ -35,7 +35,7 @@
                           </ion-thumbnail>
                             <ion-label>Trabajo Práctico 3.pdf</ion-label>
                         </ion-button>
-                        <ion-item>
+                        <ion-item lines="none">
                         <ion-text class="margenitem margin-top-20"> 
                             <h3 class="margin-buttom-10 adjunto">Entregar:</h3>
                         </ion-text>
