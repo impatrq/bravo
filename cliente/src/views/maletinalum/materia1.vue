@@ -42,7 +42,7 @@
                   <router-link to="/evaluaciones">
                   <ion-card color="primary">
                     <ion-item lines="none" color="primary">
-                        <ion-icon :icon="readerOutline" slot="start" class="icon2mat"></ion-icon>
+                        <ion-icon :icon="documentsOutline" slot="start" class="icon2mat"></ion-icon>
                         <ion-label>
                         <ion-title slot="start" class="titulo" color="light">Evaluaciones</ion-title>
                         </ion-label>
@@ -141,7 +141,7 @@
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow } from '@ionic/vue';
 import { defineComponent } from 'vue';
-import{ fileTrayFullOutline, chevronForwardOutline, arrowBackOutline, megaphoneOutline, libraryOutline, readerOutline, peopleOutline }from 'ionicons/icons';
+import{ fileTrayFullOutline, chevronForwardOutline, arrowBackOutline, megaphoneOutline, libraryOutline, documentsOutline, peopleOutline }from 'ionicons/icons';
 
 export default defineComponent({
   components: { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow },
@@ -151,7 +151,7 @@ export default defineComponent({
       initialSlide: 1,
       speed: 400
     };
-    return { slideOpts, fileTrayFullOutline, chevronForwardOutline, arrowBackOutline, megaphoneOutline, libraryOutline, readerOutline, peopleOutline } 
+    return { slideOpts, fileTrayFullOutline, chevronForwardOutline, arrowBackOutline, megaphoneOutline, libraryOutline, documentsOutline, peopleOutline } 
   }
 });
 </script>

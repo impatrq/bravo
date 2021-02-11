@@ -2,10 +2,10 @@
   <ion-page>
     <ion-header translucent>
       <ion-toolbar color="primary">
-        <router-link to="/tps" slot="start"><ion-icon :icon="arrowBackOutline" class="icon"></ion-icon></router-link>
+        <router-link to="/material" slot="start"><ion-icon :icon="arrowBackOutline" class="icon"></ion-icon></router-link>
       </ion-toolbar>
     </ion-header>
-            <ion-content :fullscreen="true">
+            <ion-content :fullscreen="true" color="fondo">
                 <ion-list>
                         <ion-item class="margenitem">
                         <ion-text>
@@ -22,7 +22,7 @@
                             <h4 class="adjunto gris">Archivos adjuntos</h4>
                         </ion-text>
                         </ion-item>
-                        <ion-button class="margin-buttom-200" fill="clear" color="light">
+                        <ion-button fill="clear" color="light">
                           <ion-thumbnail slot="start">
                             <img src="@/components/img/pdf-icon.jpg">
                           </ion-thumbnail>
@@ -38,8 +38,8 @@
   max-block-size: 70px;
   margin-bottom: 70px;
 }
-.margin-buttom-200{
-  margin-bottom: 200px;
+.margin-buttom-260{
+  margin-bottom: 260px;
 }
 .margin-buttom-10{
   margin-bottom: 10px;
@@ -77,6 +77,9 @@
 }
 .titulos{
     font-size: 25px;
+}
+.ion-content{
+  --ion-background-color: #383a3e;
 }
 </style>
 

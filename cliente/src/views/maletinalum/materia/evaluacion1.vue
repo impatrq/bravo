@@ -2,38 +2,62 @@
   <ion-page>
     <ion-header translucent>
       <ion-toolbar color="primary">
-        <router-link to="/tps" slot="start"><ion-icon :icon="arrowBackOutline" class="icon"></ion-icon></router-link>
+        <router-link to="/evaluaciones" slot="start"><ion-icon :icon="arrowBackOutline" class="icon"></ion-icon></router-link>
       </ion-toolbar>
     </ion-header>
             <ion-content :fullscreen="true">
                 <ion-list>
                         <ion-text>
-                            <h7 class="letra-15 gris margen">Fecha de entrega: 20 de mayo de 2020 15:00</h7>
+                            <h7 class="letra-15 gris margen">Fecha: 1 de abril de 2020 9:00</h7>
                         </ion-text>
                         <ion-item lines="none" class="margenitem">
                         <ion-text>
-                            <h1 class="titulos margen margin-buttom-10">TRABAJO PRÁCTICO 3</h1>
+                            <h1 class="titulos margen margin-buttom-10">EVALUACIÓN 1</h1>
                         </ion-text>
                         </ion-item>
+                        <ion-item lines="none">
+                            <ion-text slot="start">Estado:</ion-text>
+                            <ion-text slot="start" class="estado" color="success">Aprobado</ion-text>
+                        </ion-item>
                         <ion-item lines="inset">
-                            <ion-text slot="end" color="warning">En Proceso 20%</ion-text>
-                            <ion-progress-bar color="warning" value="0.2"></ion-progress-bar>
+                            <ion-text slot="end" color="success">100/100</ion-text>
+                            <ion-progress-bar color="success" value="1.0"></ion-progress-bar>
                         </ion-item>
-                        <ion-item lines="none" class="margin-top-20">
-                            <ion-text class="comentarioprof">
-                                Adjunto un cuestionario que será el Trabajo Práctico 3, el cual deberan entregar con rótulo y en formato word.
-                            </ion-text>
-                        </ion-item>
+                            <ion-card>
+                                <ion-list>
+                                  <ion-list-header>Temas:</ion-list-header>
+                                    <ion-item>
+                                        <ion-label>
+                                            Material 1
+                                        </ion-label>
+                                    </ion-item>
+                                    <ion-item>
+                                        <ion-label>
+                                            Material 1.1
+                                        </ion-label>
+                                    </ion-item>
+                                    <ion-item>
+                                        <ion-label>
+                                            Material 1.2
+                                        </ion-label>
+                                    </ion-item>
+                                    <ion-item>
+                                        <ion-label>
+                                            Material 1.3
+                                        </ion-label>
+                                    </ion-item>
+                                </ion-list>
+                            </ion-card>
                         <ion-item lines="none" class="margenitem">
                         <ion-text> 
-                            <h4 class="adjunto gris">Archivos adjuntos</h4>
+                            <h4 class="adjunto gris">Archivo adjunto (Disponible el dia de la fecha)</h4>
                         </ion-text>
                         </ion-item>
                         <ion-button fill="clear" color="light">
                           <ion-thumbnail slot="start">
                             <img src="@/components/img/pdf-icon.jpg">
                           </ion-thumbnail>
-                            <ion-label>Trabajo Práctico 3.pdf</ion-label>
+                            <ion-label>Evaluación.pdf</ion-label>
                         </ion-button>
                         <ion-item lines="none">
                         <ion-text class="margenitem margin-top-20"> 
@@ -41,7 +65,7 @@
                         </ion-text>
                         </ion-item>
                         <ion-button fill="solid" color="dark">Seleccionar archivo</ion-button>
-                        <label>archivo.ejem</label>
+                        <label>evaluación.ejem</label>
                         <ion-button class="margin-top-10 margin-buttom-30" expand="full" fill="solid" color="primary">Subir</ion-button>
                 </ion-list>
             </ion-content>

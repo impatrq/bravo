@@ -166,6 +166,10 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/maletinalum/materia/evaluaciones.vue')
       },
       {
+        path: 'evaluacion1',
+        component: () => import('@/views/maletinalum/materia/evaluacion1.vue')
+      },
+      {
         path: 'material',
         component: () => import('@/views/maletinalum/materia/material.vue')
       },

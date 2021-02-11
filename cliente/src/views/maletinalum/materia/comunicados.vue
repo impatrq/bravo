@@ -2,9 +2,9 @@
   <ion-page>
     <ion-header translucent class="margin-buttom-40">
       <ion-toolbar color="primary">
-        <router-link to="/mat1" slot="start"><ion-icon :icon="arrowBackOutline" class="icon"></ion-icon></router-link>
-        <ion-title color="light">Volver a "Materia"</ion-title>
-      </ion-toolbar>
+                <router-link to="/listmat" slot="start"><ion-icon :icon="arrowBackOutline" class="iconmat"></ion-icon></router-link>
+                <ion-title color="light">Volver a "Materia"</ion-title>
+            </ion-toolbar>
     </ion-header>
             <ion-content :fullscreen="true">
                   <ion-row class="ion-justify-content-center fullheight">
@@ -83,10 +83,10 @@
 .fullheight{
   height: 100%; 
 }
-.icon{ 
+.iconmat{ 
   color: white; 
   font-size: 25px;
-  margin-inline-end: 16px; 
+  margin-inline-start: 16px; 
 }
 .gris{
   color: gray;

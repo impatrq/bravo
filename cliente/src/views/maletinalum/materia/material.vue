@@ -12,9 +12,9 @@
                           <router-link to="/material1">
                           <ion-card color="primary">
                             <ion-item lines="none" color="primary">
-                              <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
+                                <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
                               <ion-label>
-                              <ion-title slot="start" class="titulomatl" color="light">Material: TPN° 1</ion-title>
+                                <ion-title slot="start" class="titulo" color="light">Material: TPN° 1</ion-title>
                               </ion-label>
                             </ion-item>
                               <ion-item lines="none" color="primary">
@@ -24,9 +24,9 @@
                           </router-link>
                           <ion-card color="primary">
                             <ion-item lines="none" color="primary">
-                              <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
+                                <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
                               <ion-label>
-                              <ion-title slot="start" class="titulomatl" color="light">Material: TPN° 2</ion-title>
+                                <ion-title slot="start" class="titulo" color="light">Material: TPN° 2</ion-title>
                               </ion-label>
                             </ion-item>
                               <ion-item lines="none" color="primary">
@@ -35,9 +35,9 @@
                           </ion-card>
                           <ion-card color="primary">
                             <ion-item lines="none" color="primary">
-                              <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
+                                <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
                               <ion-label>
-                              <ion-title slot="start" class="titulomatl" color="light">Material: TPN° 3</ion-title>
+                                <ion-title slot="start" class="titulo" color="light">Material: TPN° 3</ion-title>
                               </ion-label>
                             </ion-item>
                               <ion-item lines="none" color="primary">
@@ -46,9 +46,9 @@
                           </ion-card>
                           <ion-card color="primary">
                             <ion-item lines="none" color="primary">
-                              <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
+                                <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
                               <ion-label>
-                              <ion-title slot="start" class="titulomatl" color="light">Material: TPN° 4</ion-title>
+                                <ion-title slot="start" class="titulo" color="light">Material: TPN° 4</ion-title>
                               </ion-label>
                             </ion-item>
                               <ion-item lines="none" color="primary">
@@ -57,9 +57,9 @@
                           </ion-card>
                           <ion-card color="primary">
                             <ion-item lines="none" color="primary">
-                              <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
+                                <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
                               <ion-label>
-                              <ion-title slot="start" class="titulomatl" color="light">Material: TPN° 5</ion-title>
+                                <ion-title slot="start" class="titulo" color="light">Material: TPN° 5</ion-title>
                               </ion-label>
                             </ion-item>
                               <ion-item lines="none" color="primary">
@@ -68,9 +68,9 @@
                           </ion-card>
                           <ion-card color="primary">
                             <ion-item lines="none" color="primary">
-                              <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
+                                <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
                               <ion-label>
-                              <ion-title slot="start" class="titulomatl" color="light">Material: TPN° 6</ion-title>
+                                <ion-title slot="start" class="titulo" color="light">Material: TPN° 6</ion-title>
                               </ion-label>
                             </ion-item>
                               <ion-item lines="none" color="primary">
@@ -79,9 +79,9 @@
                           </ion-card>
                           <ion-card color="primary" class="margin-buttom-60">
                             <ion-item lines="none" color="primary">
-                              <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
+                                <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
                               <ion-label>
-                              <ion-title slot="start" class="titulomatl" color="light">Material: TPN° 7</ion-title>
+                                <ion-title slot="start" class="titulo" color="light">Material: TPN° 7</ion-title>
                               </ion-label>
                             </ion-item>
                               <ion-item lines="none" color="primary">
@@ -109,8 +109,8 @@
    font-size: 25px;
    margin-inline-start: 16px; 
 }
-.titulomatl{
-    margin-inline-start: -20px;
+.titulo{
+    margin-inline-start: -10px;
 }
 .iconmaterial1{ 
     color: white; 
@@ -120,6 +120,7 @@
 }
 .iconmaterial{ 
     color: white;
+    margin-right: 0px; 
 }
 </style>
 
