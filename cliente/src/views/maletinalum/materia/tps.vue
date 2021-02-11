@@ -12,7 +12,7 @@
                           <router-link to="/tp1">
                           <ion-card color="primary">
                             <ion-item lines="none" color="primary">
-                              <ion-icon :icon="documentsOutline" slot="start" class="icon2"></ion-icon>
+                              <ion-icon :icon="readerOutline" slot="start" class="icon2"></ion-icon>
                               <ion-label>
                               <ion-title slot="start" class="titulo" color="light">Trabajo Práctico 1</ion-title>
                               </ion-label>
@@ -29,7 +29,7 @@
                           <router-link to="/tp2">
                           <ion-card color="primary">
                             <ion-item lines="none" color="primary">
-                              <ion-icon :icon="documentsOutline" slot="start" class="icon2"></ion-icon>
+                              <ion-icon :icon="readerOutline" slot="start" class="icon2"></ion-icon>
                               <ion-label>
                               <ion-title slot="start" class="titulo" color="light">Trabajo Práctico 2</ion-title>
                               </ion-label>
@@ -46,7 +46,7 @@
                           <router-link to="/tp3">
                           <ion-card color="primary">
                             <ion-item lines="none" color="primary">
-                              <ion-icon :icon="documentsOutline" slot="start" class="icon2"></ion-icon>
+                              <ion-icon :icon="readerOutline" slot="start" class="icon2"></ion-icon>
                               <ion-label>
                               <ion-title slot="start" class="titulo" color="light">Trabajo Práctico 3</ion-title>
                               </ion-label>
@@ -62,7 +62,7 @@
                           </router-link>
                           <ion-card color="primary">
                             <ion-item lines="none" color="primary">
-                              <ion-icon :icon="documentsOutline" slot="start" class="icon2"></ion-icon>
+                              <ion-icon :icon="readerOutline" slot="start" class="icon2"></ion-icon>
                               <ion-label>
                               <ion-title slot="start" class="titulo" color="light">Trabajo Práctico 4</ion-title>
                               </ion-label>
@@ -77,14 +77,14 @@
                           </ion-card>
                           <ion-card color="primary">
                             <ion-item lines="none" color="primary">
-                              <ion-icon :icon="documentsOutline" slot="start" class="icon2"></ion-icon>
+                              <ion-icon :icon="readerOutline" slot="start" class="icon2"></ion-icon>
                               <ion-label>
                               <ion-title slot="start" class="titulo" color="light">Trabajo Práctico 5</ion-title>
                               </ion-label>
                             </ion-item>
                               <ion-item lines="none" color="primary">
                                 <ion-text slot="start">Estado:</ion-text>
-                                <ion-text slot="start" class="estado" color="success">Entregado - Aprobado</ion-text>
+                                <ion-text slot="start" class="estado" color="success">Entregado</ion-text>
                               </ion-item>
                               <ion-item lines="none" color="primary">
                                 <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
@@ -92,7 +92,7 @@
                           </ion-card>
                           <ion-card color="primary">
                             <ion-item lines="none" color="primary">
-                              <ion-icon :icon="documentsOutline" slot="start" class="icon2"></ion-icon>
+                              <ion-icon :icon="readerOutline" slot="start" class="icon2"></ion-icon>
                               <ion-label>
                               <ion-title slot="start" class="titulo" color="light">Trabajo Práctico 6</ion-title>
                               </ion-label>
@@ -107,7 +107,7 @@
                           </ion-card>
                           <ion-card color="primary" class="margin-buttom-60">
                             <ion-item lines="none" color="primary">
-                              <ion-icon :icon="documentsOutline" slot="start" class="icon2"></ion-icon>
+                              <ion-icon :icon="readerOutline" slot="start" class="icon2"></ion-icon>
                               <ion-label>
                               <ion-title slot="start" class="titulo" color="light">Trabajo Práctico 7</ion-title>
                               </ion-label>
@@ -152,6 +152,9 @@
     margin-inline-start: 15px;
     font-size: 18px;
 }
+.estado{
+    margin-inline-start: -20px;
+}
 .icon1{ 
     color: white; 
     font-size: 25px;
@@ -167,13 +170,13 @@
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonContent } from '@ionic/vue';
 import { defineComponent } from 'vue';
-import{ arrowBackOutline, documentsOutline, chevronForwardOutline }from 'ionicons/icons';
+import{ arrowBackOutline, readerOutline, chevronForwardOutline }from 'ionicons/icons';
 
 export default defineComponent({
   components: { IonPage, IonHeader, IonToolbar, IonContent },
     setup() {
 
-    return { arrowBackOutline, documentsOutline, chevronForwardOutline } 
+    return { arrowBackOutline, readerOutline, chevronForwardOutline } 
   }
 
 });
