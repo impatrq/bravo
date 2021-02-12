@@ -189,10 +189,11 @@ export default defineComponent({
   setup() {
     
     const slideOpts = {
-      initialSlide: 1,
+      initialSlide: 0,
       speed: 400
     };
     return { slideOpts, caretBackOutline, caretForwardOutline } 
+    
   }
 
 });
