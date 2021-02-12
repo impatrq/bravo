@@ -9,17 +9,307 @@
             <ion-content :fullscreen="true">
                 <ion-row class="ion-justify-content-center fullheight">
                     <ion-col size-xl="4" size-sm="10">
-                  <router-link to="/listmat">
-                  <ion-card class="ion-padding-top" color="primary">
-                    <ion-card-header>
-                      <ion-card-title>Lista de Materias</ion-card-title>
-                   </ion-card-header>
-                      <ion-item color="primary">
-                                <ion-icon :icon="albumsOutline" slot="end" class="icon2"></ion-icon>
-                                <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
-                        </ion-item>
-                  </ion-card>
-                  </router-link>
+                      <router-link to="/listmat">
+                        <ion-card class="ion-padding-top margin-buttom-20" color="primary">
+                          <ion-card-header>
+                            <ion-card-title>Lista de Materias</ion-card-title>
+                          </ion-card-header>
+                          <ion-item color="primary">
+                            <ion-icon :icon="albumsOutline" slot="end" class="icon2"></ion-icon>
+                            <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
+                          </ion-item>
+                        </ion-card>
+                      </router-link>
+                      <ion-slides pager="true" :options="slideOpts" class="margin-buttom-20">    
+                            <ion-slide class="margin-buttom-20">
+                                <ion-card color="primary" class="fullwidth ion-margin">
+                                <ion-card-header color="primary">
+                                    <ion-text color="light" class="ion-text-left"><h4>Día: Lunes</h4></ion-text>
+                                    <ion-card-subtitle color="light" class="ion-text-left">Turno: Mañana</ion-card-subtitle>
+                                </ion-card-header>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>      
+                                </ion-card>                
+                            </ion-slide>
+                            <ion-slide class="margin-buttom-20">                
+                                <ion-card color="primary" class="fullwidth ion-margin">
+                                <ion-card-header color="primary">
+                                    <ion-text color="light" class="ion-text-left"><h4>Día: Martes</h4></ion-text>
+                                    <ion-card-subtitle color="light" class="ion-text-left">Turno: Mañana</ion-card-subtitle>
+                                </ion-card-header>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>           
+                                </ion-card>                
+                            </ion-slide>
+                            <!--otro día-->
+                            <ion-slide class="margin-buttom-20">                
+                                <ion-card color="primary" class="fullwidth ion-margin">
+                                <ion-card-header color="primary">
+                                    <ion-text color="light" class="ion-text-left"><h4>Día: Miercoles</h4></ion-text>
+                                    <ion-card-subtitle color="light" class="ion-text-left">Turno: Mañana</ion-card-subtitle>
+                                </ion-card-header>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>           
+                                </ion-card>                
+                            </ion-slide>
+                            <!--otro-->
+                            <ion-slide class="margin-buttom-20">                
+                                <ion-card color="primary" class="fullwidth ion-margin">
+                                <ion-card-header color="primary">
+                                    <ion-text color="light" class="ion-text-left"><h4>Día: Jueves</h4></ion-text>
+                                    <ion-card-subtitle color="light" class="ion-text-left">Turno: Mañana</ion-card-subtitle>
+                                </ion-card-header>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>           
+                                </ion-card>                
+                            </ion-slide>
+                            <!--otro-->
+                            <ion-slide class="margin-buttom-20">                
+                                <ion-card color="primary" class="fullwidth ion-margin">
+                                <ion-card-header color="primary">
+                                    <ion-text color="light" class="ion-text-left"><h4>Día: Viernes</h4></ion-text>
+                                    <ion-card-subtitle color="light" class="ion-text-left">Turno: Mañana</ion-card-subtitle>
+                                </ion-card-header>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>           
+                                </ion-card>                
+                            </ion-slide>
+                            </ion-slides>
+                      <ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">    
+                            <ion-slide class="margin-buttom-20">
+                                <ion-card color="primary" class="fullwidth ion-margin">
+                                <ion-card-header color="primary">
+                                    <ion-text color="light" class="ion-text-left"><h4>Día: Lunes</h4></ion-text>
+                                    <ion-card-subtitle color="light" class="ion-text-left">Turno: Tarde</ion-card-subtitle>
+                                </ion-card-header>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>      
+                                </ion-card>                
+                            </ion-slide>
+                            <ion-slide class="margin-buttom-20">                
+                                <ion-card color="primary" class="fullwidth ion-margin">
+                                <ion-card-header color="primary">
+                                    <ion-text color="light" class="ion-text-left"><h4>Día: Martes</h4></ion-text>
+                                    <ion-card-subtitle color="light" class="ion-text-left">Turno: Tarde</ion-card-subtitle>
+                                </ion-card-header>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>           
+                                </ion-card>                
+                            </ion-slide>
+                            <!--otro día-->
+                            <ion-slide class="margin-buttom-20">                
+                                <ion-card color="primary" class="fullwidth ion-margin">
+                                <ion-card-header color="primary">
+                                    <ion-text color="light" class="ion-text-left"><h4>Día: Miercoles</h4></ion-text>
+                                    <ion-card-subtitle color="light" class="ion-text-left">Turno: Tarde</ion-card-subtitle>
+                                </ion-card-header>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>           
+                                </ion-card>                
+                            </ion-slide>
+                            <!--otro-->
+                            <ion-slide class="margin-buttom-20">                
+                                <ion-card color="primary" class="fullwidth ion-margin">
+                                <ion-card-header color="primary">
+                                    <ion-text color="light" class="ion-text-left"><h4>Día: Jueves</h4></ion-text>
+                                    <ion-card-subtitle color="light" class="ion-text-left">Turno: Tarde</ion-card-subtitle>
+                                </ion-card-header>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>           
+                                </ion-card>                
+                            </ion-slide>
+                            <!--otro-->
+                            <ion-slide class="margin-buttom-20">                
+                                <ion-card color="primary" class="fullwidth ion-margin">
+                                <ion-card-header color="primary">
+                                    <ion-text color="light" class="ion-text-left"><h4>Día: Viernes</h4></ion-text>
+                                    <ion-card-subtitle color="light" class="ion-text-left">Turno: Tarde</ion-card-subtitle>
+                                </ion-card-header>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>
+                                <ion-card>
+                                    <ion-card-header>                      
+                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Taller</ion-card-title>
+                                    </ion-card-header>
+                                </ion-card>           
+                                </ion-card>                
+                            </ion-slide>
+                            </ion-slides>
                     </ion-col>
                 </ion-row>
             </ion-content>
@@ -27,6 +317,12 @@
 </template>
 
 <style>
+.swiper-pagination-bullet{
+background: white;
+}
+.margin-buttom-20{
+  margin-bottom: 20px;
+}
 .margin-buttom-50{
   margin-bottom: 50px;
 }
@@ -79,7 +375,7 @@ export default defineComponent({
   setup() {
     
     const slideOpts = {
-      initialSlide: 1,
+      initialSlide: 0,
       speed: 400
     };
     return { slideOpts, personCircleOutline, albumsOutline, chevronForwardOutline } 
