@@ -74,183 +74,40 @@
                             </ion-item>
                             </router-link>
                             </ion-card>
-                            <ion-card color="primary" class="ion-margin margin-buttom-50">
+                            <ion-card color="primary" class="margin-buttom-50">
                             <ion-card-header color="primary">
-                                <ion-text color="light"><h4>Tareas pendientes:</h4></ion-text>
+                                <ion-text color="light"><h4>Trabajos prácticos:</h4></ion-text>                                
                             </ion-card-header>
                             <ion-card>
-                                <ion-card-header>                      
-                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Profesor</ion-card-title>
-                                </ion-card-header>
+                                <ion-item lines="none">
+                                  <ion-label>
+                                       <ion-title class="titulo" color="light">Trabajo Práctico 1</ion-title>
+                                 </ion-label>
+                                </ion-item>
                             </ion-card>
                             <ion-card>
-                                <ion-card-header>                      
-                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Alumno</ion-card-title>
-                                <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
-                                </ion-card-header>
+                                <ion-item lines="none">
+                                  <ion-label>
+                                       <ion-title class="titulo" color="light">Trabajo Práctico 2</ion-title>
+                                 </ion-label>
+                                </ion-item>
                             </ion-card>
                             <ion-card>
-                                <ion-card-header>                      
-                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Pañol</ion-card-title>
-                                </ion-card-header>
+                                <ion-item lines="none">
+                                  <ion-label>
+                                       <ion-title class="titulo" color="light">Trabajo Práctico 3</ion-title>
+                                 </ion-label>
+                                </ion-item>
                             </ion-card>
                             <ion-card>
-                                <ion-card-header>                      
-                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Preceptor</ion-card-title>
-                                </ion-card-header>
-                            </ion-card>
-                            <ion-card>
-                                <ion-card-header>                      
-                                    <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Alumno</ion-card-title>
-                                    <ion-card-subtitle class="ion-text-end">Curso</ion-card-subtitle>
-                                </ion-card-header>
+                                <ion-item lines="none">
+                                  <ion-badge slot="end" color="success">Nuevo</ion-badge>
+                                  <ion-label>
+                                       <ion-title class="titulo" color="light">Trabajo Práctico 4</ion-title>
+                                 </ion-label>
+                                </ion-item>
                             </ion-card>
                             </ion-card>
-                            <ion-slides pager="true" :options="slideOpts" class="margin-buttom-50">    
-                            <ion-slide class="margin-buttom-50">
-                                <ion-card color="primary" class="fullwidth ion-margin">
-                                <ion-card-header color="primary">
-                                    <ion-text color="light" class="ion-text-left"><h4>Día: Lunes</h4></ion-text>
-                                    <ion-card-subtitle color="light" class="ion-text-left">Curso:</ion-card-subtitle>
-                                </ion-card-header>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>      
-                                </ion-card>                
-                            </ion-slide>
-                            <ion-slide class="margin-buttom-50">                
-                                <ion-card color="primary" class="fullwidth ion-margin">
-                                <ion-card-header color="primary">
-                                    <ion-text color="light" class="ion-text-left"><h4>Día: Martes</h4></ion-text>
-                                    <ion-card-subtitle color="light" class="ion-text-left">Curso:</ion-card-subtitle>
-                                </ion-card-header>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>           
-                                </ion-card>                
-                            </ion-slide>
-                            <!--otro día-->
-                            <ion-slide class="margin-buttom-50">                
-                                <ion-card color="primary" class="fullwidth ion-margin">
-                                <ion-card-header color="primary">
-                                    <ion-text color="light" class="ion-text-left"><h4>Día: Miercoles</h4></ion-text>
-                                    <ion-card-subtitle color="light" class="ion-text-left">Curso:</ion-card-subtitle>
-                                </ion-card-header>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>           
-                                </ion-card>                
-                            </ion-slide>
-                            <!--otro-->
-                            <ion-slide class="margin-buttom-50">                
-                                <ion-card color="primary" class="fullwidth ion-margin">
-                                <ion-card-header color="primary">
-                                    <ion-text color="light" class="ion-text-left"><h4>Día: Jueves</h4></ion-text>
-                                    <ion-card-subtitle color="light" class="ion-text-left">Curso:</ion-card-subtitle>
-                                </ion-card-header>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>           
-                                </ion-card>                
-                            </ion-slide>
-                            <!--otro-->
-                            <ion-slide class="margin-buttom-50">                
-                                <ion-card color="primary" class="fullwidth ion-margin">
-                                <ion-card-header color="primary">
-                                    <ion-text color="light" class="ion-text-left"><h4>Día: Viernes</h4></ion-text>
-                                    <ion-card-subtitle color="light" class="ion-text-left">Curso:</ion-card-subtitle>
-                                </ion-card-header>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 1</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 2</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 3</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>
-                                <ion-card>
-                                    <ion-card-header>                      
-                                        <ion-card-title color="light" class="ion-text-capitalize ion-text-start">Materia 4</ion-card-title>
-                                    </ion-card-header>
-                                </ion-card>           
-                                </ion-card>                
-                            </ion-slide>
-                            </ion-slides>
                         </ion-col>
                 </ion-row>
             </ion-content>
@@ -293,6 +150,9 @@ background: white;
    font-size: 25px;
    margin-inline-end: 16px; 
 }
+.titulo{
+    margin-inline-start: -15px;
+}
 </style>
 
 <script lang="ts">
@@ -305,10 +165,10 @@ export default defineComponent({
   setup() {
     
     const slideOpts = {
-      initialSlide: 1,
+      initialSlide: 0,
       speed: 400
     };
-    return { slideOpts, caretForwardOutline, chatbubbleEllipses, newspaper, ellipsisVertical, chevronForwardOutline } 
+    return { slideOpts, caretForwardOutline, chatbubbleEllipses, newspaper, ellipsisVertical, chevronForwardOutline }
   }
 });
 </script>
