@@ -21,11 +21,31 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'materias',
-        component: () => import('@/views/appProf/materias.vue')
+        component: () => import('@/views/appProf/materiasprof/materias.vue')
       },
       {
         path: 'materia',
-        component: () => import('@/views/appProf/materia.vue')
+        component: () => import('@/views/appProf/materiasprof/materia.vue')
+      },
+      {
+        path: 'pfprof',
+        component: () => import('@/views/appProf/materiasprof/perfilprof.vue')
+      },
+      {
+        path: 'ncom',
+        component: () => import('@/views/appProf/materiasprof/añadir/nuevocom.vue')
+      },
+      {
+        path: 'ntp',
+        component: () => import('@/views/appProf/materiasprof/añadir/nuevotp.vue')
+      },
+      {
+        path: 'neval',
+        component: () => import('@/views/appProf/materiasprof/añadir/nuevaev.vue')
+      },
+      {
+        path: 'nmat',
+        component: () => import('@/views/appProf/materiasprof/añadir/nuevomaterial.vue')
       }
     ]
   },
@@ -131,55 +151,55 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'pfalum',
-        component: () => import('@/views/maletinalum/perfilalumno.vue')
+        component: () => import('@/views/appAlum/maletinalumno/perfilalumno.vue')
       },
       {
         path: 'listmat',
-        component: () => import('@/views/maletinalum/listadematerias.vue')
+        component: () => import('@/views/appAlum/maletinalumno/listadematerias.vue')
       },
       {
         path: 'mat1',
-        component: () => import('@/views/maletinalum/materia1.vue')
+        component: () => import('@/views/appAlum/maletinalumno/materia1.vue')
       },
       {
         path: 'tps',
-        component: () => import('@/views/maletinalum/materia/tps.vue')
+        component: () => import('@/views/appAlum/maletinalumno/materia/tps.vue')
       },
       {
         path: 'tp1',
-        component: () => import('@/views/maletinalum/materia/tps/tp1.vue')
+        component: () => import('@/views/appAlum/maletinalumno/materia/tps/tp1.vue')
       },
       {
         path: 'tp2',
-        component: () => import('@/views/maletinalum/materia/tps/tp2.vue')
+        component: () => import('@/views/appAlum/maletinalumno/materia/tps/tp2.vue')
       },
       {
         path: 'tp3',
-        component: () => import('@/views/maletinalum/materia/tps/tp3.vue')
+        component: () => import('@/views/appAlum/maletinalumno/materia/tps/tp3.vue')
       },
       {
         path: 'comunicados',
-        component: () => import('@/views/maletinalum/materia/comunicados.vue')
+        component: () => import('@/views/appAlum/maletinalumno/materia/comunicados.vue')
       },
       {
         path: 'evaluaciones',
-        component: () => import('@/views/maletinalum/materia/evaluaciones.vue')
+        component: () => import('@/views/appAlum/maletinalumno/materia/evaluaciones.vue')
       },
       {
         path: 'evaluacion1',
-        component: () => import('@/views/maletinalum/materia/evaluacion1.vue')
+        component: () => import('@/views/appAlum/maletinalumno/materia/evaluacion1.vue')
       },
       {
         path: 'material',
-        component: () => import('@/views/maletinalum/materia/material.vue')
+        component: () => import('@/views/appAlum/maletinalumno/materia/material.vue')
       },
       {
         path: 'material1',
-        component: () => import('@/views/maletinalum/materia/material1.vue')
+        component: () => import('@/views/appAlum/maletinalumno/materia/material1.vue')
       },
       {
         path: 'personas',
-        component: () => import('@/views/maletinalum/materia/personas.vue')
+        component: () => import('@/views/appAlum/maletinalumno/materia/personas.vue')
       },
       {
         path: 'nothome1',
