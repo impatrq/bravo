@@ -26,7 +26,7 @@
                           <ion-thumbnail slot="start">
                             <img src="@/components/img/pdf-icon.jpg">
                           </ion-thumbnail>
-                            <ion-label>Trabajo Práctico.pdf</ion-label>
+                            <ion-label>Material.pdf</ion-label>
                         </ion-button>
                 </ion-list>
             </ion-content>

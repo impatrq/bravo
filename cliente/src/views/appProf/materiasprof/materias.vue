@@ -2,59 +2,59 @@
     <ion-page>
         <ion-header translucent class="margin-buttom-40">
             <ion-toolbar color="primary">
-                <router-link to="/maletin2" slot="start"><ion-icon :icon="arrowBackOutline" class="icon"></ion-icon></router-link>
-                <ion-title color="light">Volver a Maletin</ion-title>
+                 <ion-title class="ion-padding-start">Materias</ion-title>
+                <router-link to="/prof/pfprof" slot="end"><ion-icon :icon="personCircleOutline" slot="end" class="perfil"></ion-icon></router-link>
             </ion-toolbar>
         </ion-header>
             <ion-content :fullscreen="true">
                 <ion-row class="ion-justify-content-center fullheight">
                     <ion-col size-xl="4" size-sm="10">
-                  <router-link to="/mat1">
+                  <router-link to="/prof/materia">
                   <ion-card color="primary">
-                    <ion-card-header>
+                    <ion-item color="primary" lines="none">
+                      <ion-icon :icon="ellipsisVertical" slot="end"></ion-icon>
                       <ion-card-title>Materia 1</ion-card-title>
-                      <ion-card-subtitle>Profesor:</ion-card-subtitle>
-                   </ion-card-header>
+                    </ion-item>
                       <ion-item color="primary">
-                            <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
-                        </ion-item>
+                        <ion-card-subtitle>Alumnos: 0</ion-card-subtitle>
+                      </ion-item>
                   </ion-card>
                   </router-link>
                   <ion-card color="primary">
-                    <ion-card-header>
+                    <ion-item color="primary" lines="none">
+                      <ion-icon :icon="ellipsisVertical" slot="end"></ion-icon>
                       <ion-card-title>Materia 2</ion-card-title>
-                      <ion-card-subtitle>Profesor:</ion-card-subtitle>
-                   </ion-card-header>
+                    </ion-item>
                       <ion-item color="primary">
-                            <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
-                        </ion-item>
+                        <ion-card-subtitle>Alumnos: 0</ion-card-subtitle>
+                      </ion-item>
                   </ion-card>
                   <ion-card color="primary">
-                    <ion-card-header>
+                    <ion-item color="primary" lines="none">
+                      <ion-icon :icon="ellipsisVertical" slot="end"></ion-icon>
                       <ion-card-title>Materia 3</ion-card-title>
-                      <ion-card-subtitle>Profesor:</ion-card-subtitle>
-                   </ion-card-header>
+                    </ion-item>
                       <ion-item color="primary">
-                            <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
-                        </ion-item>
+                        <ion-card-subtitle>Alumnos: 0</ion-card-subtitle>
+                      </ion-item>
                   </ion-card>
                   <ion-card color="primary">
-                    <ion-card-header>
+                    <ion-item color="primary" lines="none">
+                      <ion-icon :icon="ellipsisVertical" slot="end"></ion-icon>
                       <ion-card-title>Materia 4</ion-card-title>
-                      <ion-card-subtitle>Profesor:</ion-card-subtitle>
-                   </ion-card-header>
+                    </ion-item>
                       <ion-item color="primary">
-                            <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
-                        </ion-item>
+                        <ion-card-subtitle>Alumnos: 0</ion-card-subtitle>
+                      </ion-item>
                   </ion-card>
-                  <ion-card class="margin-buttom-60" color="primary">
-                    <ion-card-header>
+                  <ion-card color="primary">
+                    <ion-item color="primary" lines="none">
+                      <ion-icon :icon="ellipsisVertical" slot="end"></ion-icon>
                       <ion-card-title>Materia 5</ion-card-title>
-                      <ion-card-subtitle>Profesor:</ion-card-subtitle>
-                   </ion-card-header>
+                    </ion-item>
                       <ion-item color="primary">
-                            <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
-                        </ion-item>
+                        <ion-card-subtitle>Alumnos: 0</ion-card-subtitle>
+                      </ion-item>
                   </ion-card>
                     </ion-col>
                 </ion-row>
@@ -104,12 +104,13 @@
    font-size: 35px;
    margin-inline-end: 16px; 
 }
+
 </style>
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow } from '@ionic/vue';
 import { defineComponent } from 'vue';
-import{ chevronForwardOutline, arrowBackOutline }from 'ionicons/icons';
+import{ chevronForwardOutline, arrowBackOutline, personCircleOutline, ellipsisVertical }from 'ionicons/icons';
 
 export default defineComponent({
   components: { IonPage, IonHeader, IonToolbar, IonContent, IonCol, IonRow },
@@ -119,7 +120,7 @@ export default defineComponent({
       initialSlide: 1,
       speed: 400
     };
-    return { slideOpts, chevronForwardOutline, arrowBackOutline } 
+    return { slideOpts, chevronForwardOutline, arrowBackOutline, personCircleOutline, ellipsisVertical } 
   }
 });
 </script>

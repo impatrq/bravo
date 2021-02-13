@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header translucent class="margin-buttom-40">
       <ion-toolbar color="primary">
-                <router-link to="/listmat" slot="start"><ion-icon :icon="arrowBackOutline" class="iconmat"></ion-icon></router-link>
+                <router-link to="/mat1" slot="start"><ion-icon :icon="arrowBackOutline" class="iconmat"></ion-icon></router-link>
                 <ion-title color="light">Volver a "Materia"</ion-title>
             </ion-toolbar>
     </ion-header>
