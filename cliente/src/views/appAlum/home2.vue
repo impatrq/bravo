@@ -74,37 +74,82 @@
                             </ion-item>
                             </router-link>
                             </ion-card>
-                            <ion-card color="primary" class="margin-buttom-50">
+                            <ion-card color="primary" class="margin-buttom-35">
                             <ion-card-header color="primary">
                                 <ion-text color="light"><h4>Trabajos prácticos:</h4></ion-text>                                
                             </ion-card-header>
                             <ion-card>
                                 <ion-item lines="none">
-                                  <ion-label>
-                                       <ion-title class="titulo" color="light">Trabajo Práctico 1</ion-title>
-                                 </ion-label>
+                                    <ion-card-header class="titulo">
+                                        <ion-card-title>Trabajo Práctico 1</ion-card-title>
+                                        <ion-card-subtitle>Materia: "Materia 1"</ion-card-subtitle>
+                                    </ion-card-header>
                                 </ion-item>
                             </ion-card>
                             <ion-card>
                                 <ion-item lines="none">
-                                  <ion-label>
-                                       <ion-title class="titulo" color="light">Trabajo Práctico 2</ion-title>
-                                 </ion-label>
+                                    <ion-card-header class="titulo">
+                                        <ion-card-title>Trabajo Práctico 2</ion-card-title>
+                                        <ion-card-subtitle>Materia: "Materia 1"</ion-card-subtitle>
+                                    </ion-card-header>
                                 </ion-item>
                             </ion-card>
                             <ion-card>
                                 <ion-item lines="none">
-                                  <ion-label>
-                                       <ion-title class="titulo" color="light">Trabajo Práctico 3</ion-title>
-                                 </ion-label>
+                                    <ion-card-header class="titulo">
+                                        <ion-card-title>Trabajo Práctico 3</ion-card-title>
+                                        <ion-card-subtitle>Materia: "Materia 1"</ion-card-subtitle>
+                                    </ion-card-header>
                                 </ion-item>
                             </ion-card>
                             <ion-card>
                                 <ion-item lines="none">
-                                  <ion-badge slot="end" color="success">Nuevo</ion-badge>
-                                  <ion-label>
-                                       <ion-title class="titulo" color="light">Trabajo Práctico 4</ion-title>
-                                 </ion-label>
+                                    <ion-card-header class="titulo">
+                                        <ion-card-title>Trabajo Práctico 4</ion-card-title>
+                                        <ion-card-subtitle>Materia: "Materia 1"</ion-card-subtitle>
+                                    </ion-card-header>
+                                    <ion-badge slot="end" color="success">Nuevo</ion-badge>
+                                </ion-item>
+                            </ion-card>
+                            </ion-card>
+                            <ion-card color="primary" class="margin-buttom-60">
+                            <ion-card-header color="primary">
+                                <ion-text color="light"><h4>Próximas evaluaciones:</h4></ion-text>                                
+                            </ion-card-header>
+                            <ion-card>
+                                <ion-item lines="none">
+                                    <ion-card-header class="titulo">
+                                        <ion-card-title>Evaluación 1</ion-card-title>
+                                        <ion-card-subtitle>Materia: "Materia 1"</ion-card-subtitle>
+                                        <ion-card-subtitle>Fecha: DD/MM/AAAA"</ion-card-subtitle>
+                                    </ion-card-header>
+                                </ion-item>
+                            </ion-card>
+                            <ion-card>
+                                <ion-item lines="none">
+                                    <ion-card-header class="titulo">
+                                        <ion-card-title>Evaluación 1</ion-card-title>
+                                        <ion-card-subtitle>Materia: "Materia 2"</ion-card-subtitle>
+                                        <ion-card-subtitle>Fecha: DD/MM/AAAA"</ion-card-subtitle>
+                                    </ion-card-header>
+                                </ion-item>
+                            </ion-card>
+                            <ion-card>
+                                <ion-item lines="none">
+                                    <ion-card-header class="titulo">
+                                        <ion-card-title>Evaluación 1</ion-card-title>
+                                        <ion-card-subtitle>Materia: "Materia 3"</ion-card-subtitle>
+                                        <ion-card-subtitle>Fecha: DD/MM/AAAA"</ion-card-subtitle>
+                                    </ion-card-header>
+                                </ion-item>
+                            </ion-card>
+                            <ion-card>
+                                <ion-item lines="none">
+                                    <ion-card-header class="titulo">
+                                        <ion-card-title>Evaluación 1</ion-card-title>
+                                        <ion-card-subtitle>Materia: "Materia 4"</ion-card-subtitle>
+                                        <ion-card-subtitle>Fecha: DD/MM/AAAA"</ion-card-subtitle>
+                                    </ion-card-header>
                                 </ion-item>
                             </ion-card>
                             </ion-card>
@@ -121,8 +166,8 @@
 .swiper-pagination-bullet{
 background: white;
 }
-.margin-buttom-50{
-  margin-bottom: 50px;
+.margin-buttom-60{
+  margin-bottom: 60px;
 }
 .margin-buttom-35{
   margin-bottom: 35px;
@@ -136,10 +181,6 @@ background: white;
 .fullwidth{
   width: 100%; 
 }
-.img{
-  width: 100%;
-  height: 23vh;
-}
 .logo {
    display: block;
    margin: 0;
@@ -151,7 +192,7 @@ background: white;
    margin-inline-end: 16px; 
 }
 .titulo{
-    margin-inline-start: -15px;
+    margin-inline-start: -10px;
 }
 </style>
 
