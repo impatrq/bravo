@@ -8,7 +8,7 @@
             <ion-content :fullscreen="true">
                 <ion-list>
                         <ion-text>
-                            <h7 class="letra-15 gris margen">Fecha de entrega: 20 de marzo de 2020 15:00</h7>
+                            <h7 class="gris margen">Fecha de entrega: 20 de marzo de 2020</h7>
                         </ion-text>
                         <ion-item lines="none" class="margenitem">
                         <ion-text>
