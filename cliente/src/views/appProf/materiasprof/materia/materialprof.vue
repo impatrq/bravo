@@ -9,21 +9,23 @@
             <ion-content :fullscreen="true">
                 <ion-row class="ion-justify-content-center fullheight">
                     <ion-col size-xl="4" size-sm="10">
-                          <router-link to="/material1">
                           <ion-card color="primary">
                             <ion-item lines="none" color="primary">
+                                <ion-icon :icon="ellipsisVertical" slot="end" @click="presentActionSheet"></ion-icon>
                                 <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
                               <ion-label>
                                 <ion-title slot="start" class="titulo" color="light">Material: TPN° 1</ion-title>
                               </ion-label>
                             </ion-item>
+                            <router-link to="/prof/material1">
                               <ion-item lines="none" color="primary">
                                 <ion-icon :icon="chevronForwardOutline" slot="end" class="iconmaterial1"></ion-icon>
                               </ion-item>
+                            </router-link>
                           </ion-card>
-                          </router-link>
                           <ion-card color="primary">
                             <ion-item lines="none" color="primary">
+                                <ion-icon :icon="ellipsisVertical" slot="end" @click="presentActionSheet"></ion-icon>
                                 <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
                               <ion-label>
                                 <ion-title slot="start" class="titulo" color="light">Material: TPN° 2</ion-title>
@@ -35,6 +37,7 @@
                           </ion-card>
                           <ion-card color="primary">
                             <ion-item lines="none" color="primary">
+                                <ion-icon :icon="ellipsisVertical" slot="end" @click="presentActionSheet"></ion-icon>
                                 <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
                               <ion-label>
                                 <ion-title slot="start" class="titulo" color="light">Material: TPN° 3</ion-title>
@@ -44,44 +47,12 @@
                                 <ion-icon :icon="chevronForwardOutline" slot="end" class="iconmaterial1"></ion-icon>
                               </ion-item>
                           </ion-card>
-                          <ion-card color="primary">
+                          <ion-card color="primary" class="margin-buttom-60">
                             <ion-item lines="none" color="primary">
+                                <ion-icon :icon="ellipsisVertical" slot="end" @click="presentActionSheet"></ion-icon>
                                 <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
                               <ion-label>
                                 <ion-title slot="start" class="titulo" color="light">Material: TPN° 4</ion-title>
-                              </ion-label>
-                            </ion-item>
-                              <ion-item lines="none" color="primary">
-                                <ion-icon :icon="chevronForwardOutline" slot="end" class="iconmaterial1"></ion-icon>
-                              </ion-item>
-                          </ion-card>
-                          <ion-card color="primary">
-                            <ion-item lines="none" color="primary">
-                                <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
-                              <ion-label>
-                                <ion-title slot="start" class="titulo" color="light">Material: TPN° 5</ion-title>
-                              </ion-label>
-                            </ion-item>
-                              <ion-item lines="none" color="primary">
-                                <ion-icon :icon="chevronForwardOutline" slot="end" class="iconmaterial1"></ion-icon>
-                              </ion-item>
-                          </ion-card>
-                          <ion-card color="primary">
-                            <ion-item lines="none" color="primary">
-                                <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
-                              <ion-label>
-                                <ion-title slot="start" class="titulo" color="light">Material: TPN° 6</ion-title>
-                              </ion-label>
-                            </ion-item>
-                              <ion-item lines="none" color="primary">
-                                <ion-icon :icon="chevronForwardOutline" slot="end" class="iconmaterial1"></ion-icon>
-                              </ion-item>
-                          </ion-card>
-                          <ion-card color="primary" class="margin-buttom-60">
-                            <ion-item lines="none" color="primary">
-                                <ion-icon :icon="bookOutline" slot="start" class="iconmaterial"></ion-icon>
-                              <ion-label>
-                                <ion-title slot="start" class="titulo" color="light">Material: TPN° 7</ion-title>
                               </ion-label>
                             </ion-item>
                               <ion-item lines="none" color="primary">
@@ -125,15 +96,38 @@
 </style>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonContent } from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonContent, actionSheetController } from '@ionic/vue';
 import { defineComponent } from 'vue';
-import{ arrowBackOutline, bookOutline, chevronForwardOutline }from 'ionicons/icons';
+import{ arrowBackOutline, bookOutline, chevronForwardOutline, pencilSharp, trash, close, ellipsisVertical }from 'ionicons/icons';
 
 export default defineComponent({
   components: { IonPage, IonHeader, IonToolbar, IonContent },
+    methods: {
+    async presentActionSheet() {
+      const actionSheet = await actionSheetController
+        .create({
+          cssClass: 'my-custom-class',
+          buttons: [
+            {
+              text: 'Editar',
+              icon: pencilSharp,
+            },
+            {
+              text: 'Borrar',
+              icon: trash,
+            },
+            {
+              text: 'Cancelar',
+              icon: close,
+            },
+          ],
+        });
+      return actionSheet.present();
+    },
+  },
     setup() {
 
-    return { arrowBackOutline, bookOutline, chevronForwardOutline } 
+    return { arrowBackOutline, bookOutline, chevronForwardOutline, pencilSharp, trash, close, ellipsisVertical } 
   }
 
 });
