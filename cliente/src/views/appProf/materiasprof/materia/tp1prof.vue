@@ -3,7 +3,7 @@
     <ion-header translucent>
       <ion-toolbar color="primary">
         <router-link to="/prof/tps" slot="start"><ion-icon :icon="arrowBackOutline" class="icon"></ion-icon></router-link>
-        <ion-title color="light">Volver a "Materia1"</ion-title>
+        <ion-icon :icon="ellipsisVertical" slot="end" @click="presentActionSheet" class="opts"></ion-icon>
       </ion-toolbar>
 
     </ion-header>
@@ -154,10 +154,15 @@
    font-size: 25px;
    margin-inline-start: 16px; 
 }
+.opts{
+  color: white; 
+   font-size: 25px;
+   margin-inline-end: 16px; 
+}
 </style>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonContent, actionSheetController, IonCheckbox } from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonContent, actionSheetController } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import{ arrowBackOutline, readerOutline, chevronForwardOutline, ellipsisVertical, trash, close, pencilSharp }from 'ionicons/icons';
 
