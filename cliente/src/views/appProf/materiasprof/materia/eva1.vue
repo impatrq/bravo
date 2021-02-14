@@ -3,7 +3,7 @@
     <ion-header translucent>
       <ion-toolbar color="primary">
         <router-link to="/prof/eval" slot="start"><ion-icon :icon="arrowBackOutline" class="icon"></ion-icon></router-link>
-        <ion-title color="light">Volver a "Materia1"</ion-title>
+        <ion-icon :icon="ellipsisVertical" slot="end" @click="presentActionSheet" class="opts"></ion-icon>
       </ion-toolbar>
 
     </ion-header>
@@ -15,7 +15,7 @@
             <ion-label>Contenido</ion-label>
           </ion-segment-button>
           <ion-segment-button @click="tabSwitch(2)">
-            <ion-label>Trabajo de alumnos</ion-label>
+            <ion-label>Entregas de alumnos</ion-label>
           </ion-segment-button>
             </ion-segment>
         </ion-row>
@@ -166,6 +166,11 @@
    color: white; 
    font-size: 25px;
    margin-inline-start: 16px; 
+}
+.opts{
+  color: white; 
+   font-size: 25px;
+   margin-inline-end: 16px; 
 }
 </style>
 
