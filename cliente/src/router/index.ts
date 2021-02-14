@@ -56,6 +56,10 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/appProf/materiasprof/materia/materialprof.vue')
       },
       {
+        path: 'material1',
+        component: () => import('@/views/appProf/materiasprof/materia/material1.vue')
+      },
+      {
         path: 'eval',
         component: () => import('@/views/appProf/materiasprof/materia/evalprof.vue')
       },
