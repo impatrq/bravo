@@ -46,6 +46,30 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'nmat',
         component: () => import('@/views/appProf/materiasprof/añadir/nuevomaterial.vue')
+      },
+      {
+        path: 'com',
+        component: () => import('@/views/appProf/materiasprof/materia/comprof.vue')
+      },
+      {
+        path: 'material',
+        component: () => import('@/views/appProf/materiasprof/materia/materialprof.vue')
+      },
+      {
+        path: 'eval',
+        component: () => import('@/views/appProf/materiasprof/materia/evalprof.vue')
+      },
+      {
+        path: 'eva1',
+        component: () => import('@/views/appProf/materiasprof/materia/eva1.vue')
+      },
+      {
+        path: 'tps',
+        component: () => import('@/views/appProf/materiasprof/materia/tpsprof.vue')
+      },
+      {
+        path: 'tp1',
+        component: () => import('@/views/appProf/materiasprof/materia/tp1prof.vue')
       }
     ]
   },
