@@ -36,61 +36,71 @@
                 </ion-fab>
                 <ion-row class="ion-justify-content-center fullheight">
                     <ion-col size-xl="4" size-sm="10">
-                  <ion-card color="primary">
-                    <ion-item lines="none" color="primary">
-                        <ion-icon :icon="megaphoneOutline" slot="start" class="icon2mat"></ion-icon>
-                        <ion-label>
-                        <ion-title slot="start" class="titulo" color="light">Comunicados</ion-title>
-                        </ion-label>
-                   </ion-item>
-                      <ion-item color="primary">
-                            <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1mat"></ion-icon>
-                        </ion-item>
-                  </ion-card>
-                  <ion-card color="primary">
-                    <ion-item lines="none" color="primary">
-                        <ion-icon :icon="fileTrayFullOutline" slot="start" class="icon2mat"></ion-icon>
-                        <ion-label>
-                        <ion-title slot="start" class="titulo" color="light">Trabajos Prácticos</ion-title>
-                        </ion-label>
-                   </ion-item>
-                      <ion-item color="primary">
-                            <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1mat"></ion-icon>
-                        </ion-item>
-                  </ion-card>
-                  <ion-card color="primary">
-                    <ion-item lines="none" color="primary">
-                        <ion-icon :icon="documentsOutline" slot="start" class="icon2mat"></ion-icon>
-                        <ion-label>
-                        <ion-title slot="start" class="titulo" color="light">Evaluaciones</ion-title>
-                        </ion-label>
-                   </ion-item>
-                      <ion-item color="primary">
+                      <router-link to="/prof/com">
+                        <ion-card color="primary">
+                          <ion-item lines="none" color="primary">
+                              <ion-icon :icon="megaphoneOutline" slot="start" class="icon2mat"></ion-icon>
+                              <ion-label>
+                                <ion-title slot="start" class="titulo" color="light">Comunicados</ion-title>
+                              </ion-label>
+                         </ion-item>
+                            <ion-item color="primary">
+                                  <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1mat"></ion-icon>
+                              </ion-item>
+                        </ion-card>
+                      </router-link>
+                      <router-link to="/prof/tps">
+                        <ion-card color="primary">
+                          <ion-item lines="none" color="primary">
+                              <ion-icon :icon="fileTrayFullOutline" slot="start" class="icon2mat"></ion-icon>
+                              <ion-label>
+                                <ion-title slot="start" class="titulo" color="light">Trabajos Prácticos</ion-title>
+                              </ion-label>
+                         </ion-item>
+                            <ion-item color="primary">
+                                  <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1mat"></ion-icon>
+                              </ion-item>
+                        </ion-card>
+                      </router-link>
+                      <router-link to="/prof/eval">
+                        <ion-card color="primary">
+                          <ion-item lines="none" color="primary">
+                              <ion-icon :icon="documentsOutline" slot="start" class="icon2mat"></ion-icon>
+                              <ion-label>
+                                <ion-title slot="start" class="titulo" color="light">Evaluaciones</ion-title>
+                              </ion-label>
+                          </ion-item>
+                          <ion-item color="primary">
                             <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
-                        </ion-item>
-                  </ion-card>
-                  <ion-card color="primary">
-                    <ion-item lines="none" color="primary">
-                        <ion-icon :icon="libraryOutline" slot="start" class="icon2mat"></ion-icon>
-                        <ion-label>
-                        <ion-title slot="start" class="titulo" color="light">Material</ion-title>
-                        </ion-label>
-                   </ion-item>
-                      <ion-item color="primary">
+                          </ion-item>
+                        </ion-card>
+                      </router-link>
+                      <router-link to="/prof/material">
+                        <ion-card color="primary">
+                          <ion-item lines="none" color="primary">
+                              <ion-icon :icon="libraryOutline" slot="start" class="icon2mat"></ion-icon>
+                              <ion-label>
+                                <ion-title slot="start" class="titulo" color="light">Material</ion-title>
+                              </ion-label>
+                          </ion-item>
+                          <ion-item color="primary">
                             <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1mat"></ion-icon>
-                        </ion-item>
-                  </ion-card>
-                  <ion-card color="primary" class="margin-buttom-50">
-                    <ion-item lines="none" color="primary">
-                        <ion-icon :icon="peopleOutline" slot="start" class="icon2mat"></ion-icon>
-                        <ion-label>
-                        <ion-title slot="start" class="titulo" color="light">Personas</ion-title>
-                        </ion-label>
-                   </ion-item>
-                      <ion-item color="primary">
+                          </ion-item>
+                        </ion-card>
+                      </router-link>
+                      <router-link to="/prof/ncom">
+                        <ion-card color="primary" class="margin-buttom-50">
+                          <ion-item lines="none" color="primary">
+                            <ion-icon :icon="peopleOutline" slot="start" class="icon2mat"></ion-icon>
+                            <ion-label>
+                              <ion-title slot="start" class="titulo" color="light">Personas</ion-title>
+                            </ion-label>
+                          </ion-item>
+                          <ion-item color="primary">
                             <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1mat"></ion-icon>
-                        </ion-item>
-                  </ion-card>
+                          </ion-item>
+                        </ion-card>
+                      </router-link>
                     </ion-col>
                 </ion-row>
             </ion-content>
