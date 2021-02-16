@@ -88,7 +88,7 @@
                           </ion-item>
                         </ion-card>
                       </router-link>
-                      <router-link to="/prof/ncom">
+                      <router-link to="/prof/personas">
                         <ion-card color="primary" class="margin-buttom-50">
                           <ion-item lines="none" color="primary">
                             <ion-icon :icon="peopleOutline" slot="start" class="icon2mat"></ion-icon>
