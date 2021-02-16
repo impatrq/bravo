@@ -10,7 +10,7 @@
                 <ion-row class="ion-justify-content-center fullheight">
                     <ion-col size-xl="4" size-sm="10">
                   <router-link to="/prof/materia">
-                  <ion-card color="primary">
+                  <ion-card color="primary" class="bordes">
                     <ion-item color="primary" lines="none">
                       <ion-icon :icon="ellipsisVertical" slot="end"></ion-icon>
                       <ion-card-title>Materia 1</ion-card-title>
@@ -20,25 +20,25 @@
                       </ion-item>
                   </ion-card>
                   </router-link>
-                  <ion-card color="primary">
-                    <ion-item color="primary" lines="none">
+                  <ion-card color="secondary" class="bordes">
+                    <ion-item color="secondary" lines="none">
                       <ion-icon :icon="ellipsisVertical" slot="end"></ion-icon>
                       <ion-card-title>Materia 2</ion-card-title>
                     </ion-item>
-                      <ion-item color="primary">
+                      <ion-item color="secondary">
                         <ion-card-subtitle>Alumnos: 0</ion-card-subtitle>
                       </ion-item>
                   </ion-card>
-                  <ion-card color="primary">
-                    <ion-item color="primary" lines="none">
+                  <ion-card color="tertiary" class="bordes">
+                    <ion-item color="tertiary" lines="none">
                       <ion-icon :icon="ellipsisVertical" slot="end"></ion-icon>
                       <ion-card-title>Materia 3</ion-card-title>
                     </ion-item>
-                      <ion-item color="primary">
+                      <ion-item color="tertiary">
                         <ion-card-subtitle>Alumnos: 0</ion-card-subtitle>
                       </ion-item>
                   </ion-card>
-                  <ion-card color="primary">
+                  <ion-card color="primary" class="bordes">
                     <ion-item color="primary" lines="none">
                       <ion-icon :icon="ellipsisVertical" slot="end"></ion-icon>
                       <ion-card-title>Materia 4</ion-card-title>
@@ -47,12 +47,12 @@
                         <ion-card-subtitle>Alumnos: 0</ion-card-subtitle>
                       </ion-item>
                   </ion-card>
-                  <ion-card color="primary">
-                    <ion-item color="primary" lines="none">
+                  <ion-card color="secondary" class="bordes">
+                    <ion-item color="secondary" lines="none">
                       <ion-icon :icon="ellipsisVertical" slot="end"></ion-icon>
                       <ion-card-title>Materia 5</ion-card-title>
                     </ion-item>
-                      <ion-item color="primary">
+                      <ion-item color="secondary">
                         <ion-card-subtitle>Alumnos: 0</ion-card-subtitle>
                       </ion-item>
                   </ion-card>
@@ -103,6 +103,9 @@
    color: white; 
    font-size: 35px;
    margin-inline-end: 16px; 
+}
+.bordes{
+    border-radius: 20px;
 }
 
 </style>
