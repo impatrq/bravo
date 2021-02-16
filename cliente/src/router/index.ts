@@ -74,6 +74,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'tp1',
         component: () => import('@/views/appProf/materiasprof/materia/tp1prof.vue')
+      },
+      {
+        path: 'personas',
+        component: () => import('@/views/appProf/materiasprof/materia/personasprof.vue')
       }
     ]
   },
