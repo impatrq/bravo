@@ -32,10 +32,10 @@
                               <ion-icon :icon="ellipsisVertical" slot="end" @click="presentActionSheet"></ion-icon>
                               <ion-icon :icon="readerOutline" slot="start" class="icon2"></ion-icon>
                               <ion-label>
-                              <ion-title slot="start" class="titulo" color="light">Evaluación 1</ion-title>
+                              <ion-title slot="start" class="titulo" color="light">Trabajo Práctico 2</ion-title>
                               </ion-label>
                             </ion-item>
-                              <router-link to="/prof/eva1">
+                            <router-link to="/prof/tp1">
                               <ion-item lines="none" color="primary">
                                 <ion-text slot="start">Publicado:</ion-text>
                                 <ion-text slot="start" class="estado" color="medium">DD/MM/AAAA</ion-text>
@@ -43,14 +43,14 @@
                               <ion-item lines="none" color="primary">
                                 <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
                               </ion-item>
-                          </router-link>
+                              </router-link>
                           </ion-card>
                           <ion-card color="primary">
                             <ion-item lines="none" color="primary">
                               <ion-icon :icon="ellipsisVertical" slot="end" @click="presentActionSheet"></ion-icon>
                               <ion-icon :icon="readerOutline" slot="start" class="icon2"></ion-icon>
                               <ion-label>
-                              <ion-title slot="start" class="titulo" color="light">Evaluación 2</ion-title>
+                              <ion-title slot="start" class="titulo" color="light">Trabajo Práctico 3</ion-title>
                               </ion-label>
                             </ion-item>
                               <ion-item lines="none" color="primary">
@@ -66,7 +66,7 @@
                               <ion-icon :icon="ellipsisVertical" slot="end" @click="presentActionSheet"></ion-icon>
                               <ion-icon :icon="readerOutline" slot="start" class="icon2"></ion-icon>
                               <ion-label>
-                              <ion-title slot="start" class="titulo" color="light">Evaluación 3</ion-title>
+                              <ion-title slot="start" class="titulo" color="light">Trabajo Práctico 4</ion-title>
                               </ion-label>
                             </ion-item>
                               <ion-item lines="none" color="primary">
