@@ -10,7 +10,7 @@
                 <ion-row class="ion-justify-content-center fullheight">
                     <ion-col size-xl="4" size-sm="10">
                   <router-link to="/mat1">
-                  <ion-card color="primary">
+                  <ion-card color="primary" class="bordes">
                     <ion-card-header>
                       <ion-card-title>Materia 1</ion-card-title>
                       <ion-card-subtitle>Profesor:</ion-card-subtitle>
@@ -20,25 +20,25 @@
                         </ion-item>
                   </ion-card>
                   </router-link>
-                  <ion-card color="primary">
+                  <ion-card color="secondary" class="bordes">
                     <ion-card-header>
                       <ion-card-title>Materia 2</ion-card-title>
                       <ion-card-subtitle>Profesor:</ion-card-subtitle>
                    </ion-card-header>
-                      <ion-item color="primary">
+                      <ion-item color="secondary">
                             <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
                         </ion-item>
                   </ion-card>
-                  <ion-card color="primary">
+                  <ion-card color="tertiary" class="bordes">
                     <ion-card-header>
                       <ion-card-title>Materia 3</ion-card-title>
                       <ion-card-subtitle>Profesor:</ion-card-subtitle>
                    </ion-card-header>
-                      <ion-item color="primary">
+                      <ion-item color="tertiary">
                             <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
                         </ion-item>
                   </ion-card>
-                  <ion-card color="primary">
+                  <ion-card color="primary" class="bordes">
                     <ion-card-header>
                       <ion-card-title>Materia 4</ion-card-title>
                       <ion-card-subtitle>Profesor:</ion-card-subtitle>
@@ -47,12 +47,12 @@
                             <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
                         </ion-item>
                   </ion-card>
-                  <ion-card class="margin-buttom-60" color="primary">
+                  <ion-card class="margin-buttom-60 bordes" color="secondary">
                     <ion-card-header>
                       <ion-card-title>Materia 5</ion-card-title>
                       <ion-card-subtitle>Profesor:</ion-card-subtitle>
                    </ion-card-header>
-                      <ion-item color="primary">
+                      <ion-item color="secondary">
                             <ion-icon :icon="chevronForwardOutline" slot="end" class="icon1"></ion-icon>
                         </ion-item>
                   </ion-card>
@@ -98,6 +98,9 @@
     font-size: 25px;
     margin-left: unset;
     margin-inline-start: 0px;
+}
+.bordes{
+  border-radius: 20px;
 }
 </style>
 
