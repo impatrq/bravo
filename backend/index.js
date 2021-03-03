@@ -18,9 +18,13 @@ mongoose.connect(uri,
 .catch(e => console.log('error db:', e))
 
 // importar routes
-const authRoutes = require('./Routes/auth');
+const authRoutes = require('./routes/auth');
+const validarToken = require('./routes/validate-token');
+const admin = require('./routes/admin');
+
 // route middlewares
 app.use('/api/user', authRoutes);
+app.use('/api/admin', validarToken, admin);
 
 app.get('/', (req, res) => {
     res.json({

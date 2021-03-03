@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 const User = require('../Models/User');
 
 //validacion de datos
@@ -13,8 +14,6 @@ const schemaRegister = Joi.object({
 })
 
 
-
-
 router.post('/register', async (req, res) => {
 
     const {error} = schemaRegister.validate(req.body)
@@ -22,8 +21,7 @@ router.post('/register', async (req, res) => {
     if (error) {
         return res.status(400).json(
             {error: error.details[0].message}
-        )
-    }
+        ) }
 
     const mailexistente = await User.findOne({email: req.body.email});
      if (mailexistente) {
@@ -39,8 +37,8 @@ router.post('/register', async (req, res) => {
    )}
 
 // hash de contraseña
-const salt = await bcrypt.genSalt(10);
-const password = await bcrypt.hash(req.body.password, salt);
+   const salt = await bcrypt.genSalt(10);
+   const password = await bcrypt.hash(req.body.password, salt);
 
     const user = new User({  
         name: req.body.name,
@@ -58,7 +56,41 @@ const password = await bcrypt.hash(req.body.password, salt);
     } catch (error) {
         res.status(400).json({error})
     }
+})
+
+
+//login
+
+const schemaLogin = Joi.object({
+    email: Joi.string().min(6).max(255).required().email(),
+    password: Joi.string().min(6).max(1024).required()
+  })
+
+ router.post('/login', async (req, res) => {
+    // validaciones
+    const { error } = schemaLogin.validate(req.body);
+    if (error) return res.status(400).json({error: error.details[0].message})
+    
+    const user = await User.findOne({email:req.body.email});
+    if (!user) return res.status(400).json({error:'Usuario no encontrado'});
+
+    const validPassword = await bcrypt.compare(req.body.password, user.password);
+    if (!validPassword) return res.status(400).json({error:'contraseña no válida'})
+    
+ //Genero una JWT
+ const token = jwt.sign({
+    name: user.name,
+    dni:user.dni,
+    email:user.email,
+    id: user._id
+ }, process.env.TOKEN_SECRET)
+
+ res.header('auth-token', token).json({
+    error: null,
+    data: {token}
+  })
 
 })
 
+//fin login
 module.exports = router;
