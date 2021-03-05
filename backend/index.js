@@ -5,7 +5,15 @@ require('dotenv').config()
 
 const app = express();
 
+// cors
+const cors = require('cors');
+var corsOptions = {
+    origin: '*', // Aca reemplazo x un dominio
+    optionsSuccessStatus: 200 
+}
+app.use(cors(corsOptions));
 
+//
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 
